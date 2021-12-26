@@ -15,7 +15,6 @@ public class Solution {
 
     public static void ourInterrupt() {
         isCancel = true;
-
     }
 
     public static class TestThread implements Runnable {
