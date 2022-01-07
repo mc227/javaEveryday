@@ -1,5 +1,5 @@
 public class Solution {
-    // incomplete Airport solution
+    // i still need to understand the use of synchronized and this
     public static volatile Runway RUNWAY = new Runway();
 
     public static class Runway {
@@ -46,11 +46,27 @@ public class Solution {
             start();
         }
 
-        //
+        public void run() {
+            boolean hasAlreadyTakenOff = false;
+            while(!hasAlreadyTakenOff) {
+                if (RUNWAY.trySetCurrentPlane(this)) {
+                    System.out.println(getName() + " is flying");
+                    takeOff();
+                    System.out.println(getName() + " in the sky");
+                    hasAlreadyTakenOff = true;
+                    RUNWAY.setCurrentPlane(null);
+                } else if(!this.equals(RUNWAY.getCurrentPlane())) {
+                    System.out.println(getName() + " is waiting");
+                    waitForTakeoff();
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
-
+        Plane plane1 = new Plane("Plane #1");
+        Plane plane2 = new Plane("Plane #2");
+        Plane plane3 = new Plane("Plane #3");
     }
 }
 
