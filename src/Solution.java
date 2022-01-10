@@ -1,8 +1,13 @@
 public class Solution {
     // how do you stop a thread?
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Clock clock =  new Clock();
+        Thread clockThread = new Thread(clock);
+        clockThread.start();
 
+        Thread.sleep(10000);
+        clock.cancel();
     }
 }
 
