@@ -1,15 +1,11 @@
 
 public class Clock implements Runnable {
-    private boolean isCancel = false;
-
-    public void cancel(){
-        this.isCancel = true;
-    }
 
     public void run() {
         try {
-            while (!isCancel) {
-                Thread.sleep(1000);
+            Thread current =  Thread.currentThread();
+            while(!current.isInterrupted()){
+             Thread.sleep(1000);
                 System.out.println("Tick");
             }
         } catch (InterruptedException e) {}
