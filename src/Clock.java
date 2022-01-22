@@ -1,16 +1,42 @@
+public class Clock extends Thread{
+    public static void main(String[] args) throws InterruptedException {
+        Clock clock = new Clock();
+        clock.start();
 
-public class Clock implements Runnable {
+        Thread.sleep(10000);
+        clock.interrupt();
+    }
 
     public void run() {
-        try {
-            Thread current =  Thread.currentThread();
-            while(!current.isInterrupted()){
-             Thread.sleep(1000);
-                System.out.println("Tick");
+        Thread current = Thread.currentThread();
+
+        while (!current.isInterrupted()) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("The thread was interrupted");
+                break;
             }
-        } catch (InterruptedException e) {}
+            System.out.println("Oh Hi Mark");
+        }
     }
 }
+
+
+
+//
+//public class Clock implements Runnable {
+//
+//    public void run() {
+//        try {
+//            Thread current =  Thread.currentThread();
+//            while(!current.isInterrupted()){
+//             Thread.sleep(1000);
+//                System.out.println("Tick");
+//            }
+//        } catch (InterruptedException e) {}
+//    }
+//}
 
 
 
