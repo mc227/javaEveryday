@@ -6,14 +6,19 @@ public class HandlingUncaughtExceptionsForEveryThread {
         String currentThreadName = Thread.currentThread().getName();
         System.out.println("[" + currentThreadName + "] Main thread starts here...");
 
-        try {
-            new Thread(new ExceptionLeakingTask(), "MyThread-1").start();
-            new Thread(new ExceptionLeakingTask(), "MyThread-2").start();
-            new Thread(new ExceptionLeakingTask(), "MyThread-3").start();
-            new Thread(new ExceptionLeakingTask(), "MyThread-4").start();
-        } catch (RuntimeException re) {
-            System.out.println("[" + currentThreadName + "] Caught Exception: " + re);
-        }
+        Thread.setDefaultUncaughtExceptionHandler(new ThreadExceptionHandler("DEFAULT_HANDLER"));
+        new Thread(new ExceptionLeakingTask(), "MyThread-1").start();
+        new Thread(new ExceptionLeakingTask(), "MyThread-2").start();
+        new Thread(new ExceptionLeakingTask(), "MyThread-3").start();
+        new Thread(new ExceptionLeakingTask(), "MyThread-4").start();
+//        try {
+//            new Thread(new ExceptionLeakingTask(), "MyThread-1").start();
+//            new Thread(new ExceptionLeakingTask(), "MyThread-2").start();
+//            new Thread(new ExceptionLeakingTask(), "MyThread-3").start();
+//            new Thread(new ExceptionLeakingTask(), "MyThread-4").start();
+//        } catch (RuntimeException re) {
+//            System.out.println("[" + currentThreadName + "] Caught Exception: " + re);
+//        }
 
         System.out.println("[" + currentThreadName + "] Main thread ends here...");
     }

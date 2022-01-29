@@ -15,5 +15,13 @@ public class Program {
         }
         return new int[0];
     }
+
+    public static void main(String[] args) {
+        //declare and initialize and array
+        int[] age = {12, 4, 5, 2, 5};
+        for(int i = 0; i < age.length; i++) {
+            System.out.println(age[i]);
+        }
+    }
 }
 
