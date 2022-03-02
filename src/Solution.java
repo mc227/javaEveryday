@@ -1,34 +1,73 @@
-/*1. Create a public static TestThread class that inherits the Thread class.
-2. Create a static block inside TestThread, which will display "This is the static block inside TestThread".
-3. The run method should display "This is the run method".
-
-Requirements:
-•	Add a public static class called TestThread to the Solution class.
-•	The TestThread class must inherit the Thread class.
-•	The TestThread class should not implement any additional interfaces.
-•	Create a static block inside TestThread, which will display "This is the static block inside TestThread".
-•	The TestThread class's run method should display "This is the run method".
-•	Don't change the main method
-* */
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution {
-    /*1. Create a public static TestThread class that inherits the Thread class.*/
-    public static class TestThread extends Thread {
-        // 2. Create a static block inside TestThread, which will display "This is the static block inside TestThread".
-        static {
-            System.out.println("This is the static block inside TestThread");
+    /*
+    *
+In the main method, add 5 threads to the static list. Each thread must be a new Thread object that works with its own SpecialThread object.
+Requirements:
+•	In the main method, create 5 SpecialThread objects.
+•	In the main method, create 5 Thread objects.
+•	Add 5 different threads to list.
+•	Each thread in list should work with its own SpecialThread object.
+•	The SpecialThread class's run method should display "This is the run method inside SpecialThread".*/
+    public static volatile List<Thread> list = new ArrayList<>(5);
+    public static void main(String[] args) {
+        SpecialThread thread1 = new SpecialThread();
+        SpecialThread thread2 = new SpecialThread();
+        SpecialThread thread3 = new SpecialThread();
+        SpecialThread thread4 = new SpecialThread();
+        SpecialThread thread5 = new SpecialThread();
+
+        list.add(thread1);
+        list.add(thread2);
+        list.add(thread3);
+        list.add(thread4);
+        list.add(thread5);
+
+        for(Thread thread: list) {
+            thread.start();
         }
+    }
+    public static class SpecialThread extends Thread {
         @Override
         public void run() {
-            // The run method should display "This is the run method".
-            System.out.println("This is the run method");
+            System.out.println("This is the special thread");
         }
     }
-    public static void main(String[] args) {
-        TestThread testThread = new TestThread();
-        testThread.start();
-    }
 }
+
+///*1. Create a public static TestThread class that inherits the Thread class.
+//2. Create a static block inside TestThread, which will display "This is the static block inside TestThread".
+//3. The run method should display "This is the run method".
+//
+//Requirements:
+//•	Add a public static class called TestThread to the Solution class.
+//•	The TestThread class must inherit the Thread class.
+//•	The TestThread class should not implement any additional interfaces.
+//•	Create a static block inside TestThread, which will display "This is the static block inside TestThread".
+//•	The TestThread class's run method should display "This is the run method".
+//•	Don't change the main method
+//* */
+//
+//public class Solution {
+//    /*1. Create a public static TestThread class that inherits the Thread class.*/
+//    public static class TestThread extends Thread {
+//        // 2. Create a static block inside TestThread, which will display "This is the static block inside TestThread".
+//        static {
+//            System.out.println("This is the static block inside TestThread");
+//        }
+//        @Override
+//        public void run() {
+//            // The run method should display "This is the run method".
+//            System.out.println("This is the run method");
+//        }
+//    }
+//    public static void main(String[] args) {
+//        TestThread testThread = new TestThread();
+//        testThread.start();
+//    }
+//}
 
 //public class Solution {
 //    /*
