@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c310f7b2-e542-4c19-9089-78dad303f8c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaEveryday.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/KeyWordTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/QLearning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/Solution$Countdown.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaEveryday/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyWordTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QLearning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/javaEveryday-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/javaEveryday-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +81,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle assemble" />
+      <command value="gradle jar" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,7 +102,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -111,7 +111,7 @@
             <option value="assemble" />
           </list>
         </option>
-        <option name="vmOptions" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
@@ -184,10 +184,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.javaEveryday [jar]" />
-        <item itemvalue="Gradle.javaEveryday [build]" />
-        <item itemvalue="Gradle.javaEveryday [clean]" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.javaEveryday [assemble]" />
+        <item itemvalue="Gradle.javaEveryday [build]" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Gradle.javaEveryday [clean]" />
       </list>
     </recent_temporary>
   </component>
