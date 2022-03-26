@@ -1,30 +1,55 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+/*
+Countdown at the races
+
+*/
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    public static volatile int numSeconds = 3;
+//    public static volatile int numSeconds = 4;
 
-        Stopwatch stopwatch = new Stopwatch();
-        stopwatch.start();
-
-        bufferedReader.readLine();
-        stopwatch.interrupt();
-        bufferedReader.close();
+    public static void main(String[] args) throws InterruptedException {
+        RacingClock clock = new RacingClock();
+        //write your code here
+        Thread.sleep(3500);
+        clock.interrupt();
     }
 
-    public static class Stopwatch extends Thread {
-        private int seconds;
+    public static class RacingClock extends Thread {
+        public RacingClock() {
+            start();
+        }
 
         public void run() {
-            try {
-                while (true) {
-                    Thread.sleep(1000);
-                    seconds++;
+            //write your code here
+            if (numSeconds < 3.5) {
+                while(numSeconds >=0) {
+                    try {
+                        Thread.sleep(1000);
+                        if(numSeconds ==0) {
+                            System.out.print("Go!");
+                        } else {
+                            System.out.print(numSeconds+" ");
+                        }
+                        numSeconds--;
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-            } catch (InterruptedException e) {
-                System.out.println(seconds);
+            } else {
+                while(numSeconds >=0) {
+                    try {
+                        Thread.sleep(1000);
+                        if(numSeconds ==0) {
+                            System.out.print("Interrupted!");
+                        } else {
+                            System.out.print(numSeconds+" ");
+                        }
+                        numSeconds--;
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
     }
