@@ -1,56 +1,116 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+One for all, all for one
+
+*/
+
 public class Solution {
-    private static boolean isCancel;
-    //    private boolean isCancel = false;
+    public static byte threadCount = 3;
+    static List<Thread> threads = new ArrayList<>(threadCount);
+
     public static void main(String[] args) throws InterruptedException {
-        Thread t = new Thread(new TestThread());
-        t.start();
+        initThreadsAndStart();
         Thread.sleep(3000);
         ourInterrupt();
     }
 
     public static void ourInterrupt() {
-        isCancel = true;
-
+        //write your code here
+        threads.get(0).interrupt();
+        threads.get(1).interrupt();
+        threads.get(2).interrupt();
     }
 
-    public static class TestThread implements Runnable {
+    private static void initThreadsAndStart() {
+        Water water = new Water("water");
+        for (int i = 0; i < threadCount; i++) {
+            threads.add(new Thread(water, "#" + i));
+        }
+
+        for (int i = 0; i < threadCount; i++) {
+            threads.get(i).start();
+        }
+    }
+
+    public static class Water implements Runnable {
+        private String sharedResource;
+
+        public Water(String sharedResource) {
+            this.sharedResource = sharedResource;
+        }
+
         public void run() {
-            while (!isCancel) {
-                try {
-                    System.out.println("he-he");
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
+            //fix 2 variables
+            boolean isCurrentThreadInterrupted = false;
+            String threadName = Thread.currentThread().getName();
+
+            try {
+                while (!isCurrentThreadInterrupted) {
+
+                    System.out.println("Object " + sharedResource + ", thread " + threadName);
+                    Thread.sleep(1000);
+                    isCurrentThreadInterrupted = Thread.currentThread().isInterrupted();
                 }
+            } catch (InterruptedException e) {
             }
         }
     }
 }
 
 
+//import java.util.ArrayList;
+//import java.util.List;
+//
 //public class Solution {
-//    private static boolean isCancel;
+//    public static byte threadCount = 3;
+//    static List<Thread> threads =  new ArrayList<>(threadCount);
 //
 //    public static void main(String[] args) throws InterruptedException {
-//        Thread t =  new Thread(new TestThread());
-//        t.start();
+//        initThreadsAndStart();
 //        Thread.sleep(3000);
 //        outInterrupt();
 //    }
 //
 //    private static void outInterrupt() {
-//        isCancel = true;
+//        threads.get(0).interrupt();
+//        threads.get(1).interrupt();
+//        threads.get(2).interrupt();
 //    }
 //
-//    public static class TestThread implements Runnable{
+//    public static void initThreadsAndStart() {
+//        Water water = new Water("water");
+//        for(int i = 0; i < threadCount; i++) {
+//            threads.add(new Thread(water, "#" + i));
+//        }
+//
+//        for(int i = 0; i < threadCount; i++) {
+//            threads.get(i).start();
+//        }
+//    }
+//
+//
+//    public static class Water implements Runnable{
+//        private String sharedResource;
+//
+//        public Water(String sharedResource) {
+//            this.sharedResource = sharedResource;
+//        }
+//
 //        public void run() {
+//            boolean isCurrentThreadInterrupted = false;
+//            String threadName = Thread.currentThread().getName();
+//
 //            try {
-//                while (!isCancel) {
-//                    System.out.println("he-he");
-//                    Thread.sleep(500);
+//                while (!isCurrentThreadInterrupted) {
+//                    System.out.println("Object " +  sharedResource + " thread " + threadName);
+//                    Thread.sleep(1000);
+//                    isCurrentThreadInterrupted = Thread.currentThread().isInterrupted();
 //                }
 //            } catch (InterruptedException e) {
-//                e.printStackTrace();
+//
 //            }
 //        }
 //    }
