@@ -1,15 +1,16 @@
+import java.util.concurrent.TimeUnit;
+
 public class HelloWorldApp {
     public static void main(String[] args) {
         Runnable task = () -> {
             try {
-                int secToWait = 60;
-                Thread.sleep(secToWait* 1000);
-                System.out.println("Woke up");
+                TimeUnit.SECONDS.sleep(60);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("Interrupted");
             }
         };
         Thread thread = new Thread(task);
         thread.start();
+        thread.interrupt();
     }
 }
