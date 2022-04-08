@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Clock">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Clock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Clock" />
       <module name="javaEveryday" />
@@ -70,6 +69,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
@@ -77,20 +83,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
         <item itemvalue="Application.Clock" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.MyFirstThread" />
         <item itemvalue="Application.KitchenSync" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -104,5 +103,61 @@
       <updated>1648151003737</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Program.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
