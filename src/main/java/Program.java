@@ -5,27 +5,29 @@ import java.util.Set;
 
 public class Program {
     public static void main(String[] args) {
-        /*Test Case 1*/
-        int[] intArray = new int[] {3, 5, -4, 8, 11, 1, -1, 6};
+//        /*Test Case 1*/
+//        int[] intArray = new int[] {3, 5, -4, 8, 11, 1, -1, 6};
+//        System.out.println(Arrays.toString(twoNumberSum(intArray,10)));
+        /*Test Case */
+        int[] intArray = new int[] {1,2,3,4,5,6,7,8,9};
         System.out.println(Arrays.toString(twoNumberSum(intArray,10)));
 
     }
-    // this is the algoexpert's second solution to Two Number Sum
-    // O(n) time | O(n) space
+    // this is the algoexpert's first solution to Two Number Sum
+    // working on muscle memory
+    // O(n^2)) time | O(1) space
     public static int[] twoNumberSum(int[] array, int targetSum) {
-        // create a hash set to store stuff and to also check stuff
-        Set<Integer> set = new HashSet<>();
-        // loop through every item in the array
+        //loop through the array
+        //loop through it again
+        // add the two arrays
+        // if it's equal the target sum print the two arrays
         for(int i = 0; i < array.length; i++) {
-            // define potential match as the target sum minus the item in the array
-            int potentialMatch = targetSum - array[i];
-            // if the set contain the potential match which is the difference between the target sum and the array item
-            // then return potential match and array in the loop
-            // else put it into the hash map
-            if (set.contains(potentialMatch)) {
-                return new int[] {potentialMatch, array[i]};
-            } else {
-                set.add(array[i]);
+            int firstItem = array[i];
+            for(int j = i + 1; j < array.length; j++) {
+                int secondItem = array[j];
+                if(firstItem+secondItem == targetSum) {
+                    return new int[] {firstItem, secondItem};
+                }
             }
         }
         return new int[0];
