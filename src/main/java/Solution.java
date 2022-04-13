@@ -4,20 +4,32 @@ import java.util.Random;
 import java.util.concurrent.locks.LockSupport;
 
 public class Solution {
-    public static void main(String []args) throws InterruptedException {
-        Runnable task = () -> {
-            // Park the current thread
-            System.err.println("Will be Parked");
-            LockSupport.park();
-            // As soon as we are unparked, we will start to act
-            System.err.println("Unparked");
-        };
-        Thread th = new Thread(task);
-        th.start();
-        Thread.currentThread().sleep(2000);
-        System.err.println("Thread state: " + th.getState());
+    static int count = 5;
 
-        LockSupport.unpark(th);
-        Thread.currentThread().sleep(2000);
+    public static void main(String []args) throws InterruptedException {
+        ThreadNamePrinter tnp = new ThreadNamePrinter();
+        tnp.start();
+        for(int i = 0; i < count; i++) {
+            tnp.printMsg();
+        }
+    }
+
+    public static class ThreadNamePrinter extends Thread{
+        public void run() {
+            for (int i = 0; i <  count; i++) {
+                try {
+                    printMsg();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        public void printMsg() throws InterruptedException{
+            Thread t = Thread.currentThread();
+            String name = t.getName();
+            System.out.println("Name = " + name);
+            Thread.sleep(1);
+        }
     }
 }
