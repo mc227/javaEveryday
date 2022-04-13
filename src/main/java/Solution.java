@@ -1,30 +1,23 @@
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.concurrent.locks.LockSupport;
 
 public class Solution {
-    public static void main(String[] args) throws InterruptedException {
-        Object lock = new Object();
-
-        Runnable task = ()  -> {
-            synchronized (lock) {
-                System.out.println("Here");
-                System.out.println("thread");
-            }
+    public static void main(String []args) throws InterruptedException {
+        Runnable task = () -> {
+            // Park the current thread
+            System.err.println("Will be Parked");
+            LockSupport.park();
+            // As soon as we are unparked, we will start to act
+            System.err.println("Unparked");
         };
+        Thread th = new Thread(task);
+        th.start();
+        Thread.currentThread().sleep(2000);
+        System.err.println("Thread state: " + th.getState());
 
-        Thread th1 = new Thread(task);
-        th1.start();
-//        System.out.println(th1.getThreadGroup());
-//        System.out.println(th1.getName());
-//        System.out.println(th1.getState());
-        synchronized (lock) {
-            for(int i = 0; i < 8; i++) {
-                System.out.println(Thread.currentThread().getName());
-                Thread.currentThread().sleep(1000);
-                System.out.print(" " + i);
-            }
-            System.out.println("...");
-        }
+        LockSupport.unpark(th);
+        Thread.currentThread().sleep(2000);
     }
 }
