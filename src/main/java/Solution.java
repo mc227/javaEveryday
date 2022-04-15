@@ -4,32 +4,39 @@ import java.util.Random;
 import java.util.concurrent.locks.LockSupport;
 
 public class Solution {
-    static int count = 5;
+    //task1622
+    public volatile static int COUNT = 4;
 
-    public static void main(String []args) throws InterruptedException {
-        ThreadNamePrinter tnp = new ThreadNamePrinter();
-        tnp.start();
-        for(int i = 0; i < count; i++) {
-            tnp.printMsg();
+    public static void main(String[] args) throws InterruptedException{
+        for(int i = 0; i < COUNT; i++) {
+            new SleepingThread().join();
         }
     }
 
-    public static class ThreadNamePrinter extends Thread{
+    public static class SleepingThread extends Thread{
+        private static volatile int threadCount = 0;
+        private volatile int countdownIndex = COUNT;
+
+        public SleepingThread() {
+            super(String.valueOf(++threadCount));
+            start();
+        }
+
         public void run() {
-            for (int i = 0; i <  count; i++) {
+            while(true) {
+                System.out.println(this);
+                if(--countdownIndex == 0) return;
                 try {
-                    printMsg();
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    System.out.println("Thread interrupted");
                 }
             }
         }
 
-        public void printMsg() throws InterruptedException{
-            Thread t = Thread.currentThread();
-            String name = t.getName();
-            System.out.println("Name = " + name);
-            Thread.sleep(1);
+        @Override
+        public String toString() {
+            return "#" + getName() + ":" + countdownIndex;
         }
     }
 }
