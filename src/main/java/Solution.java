@@ -1,40 +1,52 @@
-/*
-Deadlock
-
-*/
+//package com.codegym.task.task16.task1626;
 
 public class Solution {
-    static Thread t1 = new T1();
-    static Thread t2 = new T2();
+    public static int number = 5;
 
-    public static void main(String[] args) throws InterruptedException {
-        t1.start();
-        t1.join();
-        t2.start();
+    public static void main(String[] args) {
+        new Thread(new CountdownRunnable(), "Decrease").start();
+        new Thread(new CountUpRunnable(), "Increase").start();
     }
 
-    public static class T1 extends Thread {
-        @Override
+    public static class CountUpRunnable implements Runnable{
+        //write your code here
+        private int countdownIndex = Solution.number;
+        private int local_value = 1;
         public void run() {
             try {
-                t2.join();
-                System.out.println("T1 finished");
+                while (local_value <= countdownIndex) {
+                    System.out.println(toString());
+                    local_value += 1;
+//                    if (local_value == countdownIndex) return;
+                    Thread.sleep(500);
+                }
             } catch (InterruptedException e) {
-                System.out.println("T1 was interrupted");
             }
+        }
+
+        public String toString() {
+            return Thread.currentThread().getName() + ": " + local_value;
         }
     }
 
-    public static class T2 extends Thread {
-        @Override
+
+    public static class CountdownRunnable implements Runnable {
+        private int countdownIndex = Solution.number;
+
         public void run() {
             try {
-                t1.join();
-                System.out.println("T2 finished");
+                while (true) {
+                    System.out.println(toString());
+                    countdownIndex -= 1;
+                    if (countdownIndex == 0) return;
+                    Thread.sleep(500);
+                }
             } catch (InterruptedException e) {
-                System.out.println("T2 was interrupted");
             }
+        }
+
+        public String toString() {
+            return Thread.currentThread().getName() + ": " + countdownIndex;
         }
     }
 }
-
