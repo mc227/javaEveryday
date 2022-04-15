@@ -1,36 +1,36 @@
 /*
-Creating threads recursively
+Consecutive threads
 
 */
 
-import java.sql.SQLOutput;
-
 public class Solution {
-    static int count = 15;
-    static volatile int createdThreadCount;
-    public static void main(String[] args) {
-        System.out.println(new GenerateThread());
+    public static MyThread t = new MyThread();
+    static String message = "inside main ";
+
+    public static void main(String a[]) throws Exception {
+        t.start();
+        t.join();
+        for (int i = 0; i < 10; i++) {
+            System.out.println(message + i);
+            sleep();
+        }
     }
 
-    public static class GenerateThread extends Thread{
-
-        public GenerateThread() {
-            super(String.valueOf(++createdThreadCount));
-            start();
+    public static void sleep() {
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
         }
+    }
 
-        @Override
-        public String toString() {
-            return getName() + " created";
-        }
+    static class MyThread extends Thread {
+        String message = "inside MyThread ";
 
-        @Override
         public void run() {
-
-            if(createdThreadCount < Solution.count) {
-                System.out.println(new GenerateThread());
+            for (int i = 0; i < 10; i++) {
+                System.out.println(message + i);
+                Solution.sleep();
             }
-
         }
     }
 }
