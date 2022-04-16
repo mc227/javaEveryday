@@ -1,52 +1,67 @@
-//package com.codegym.task.task16.task1626;
+//package com.codegym.task.task16.task1627;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution {
-    public static int number = 5;
-
-    public static void main(String[] args) {
-        new Thread(new CountdownRunnable(), "Decrease").start();
-        new Thread(new CountUpRunnable(), "Increase").start();
+    public static void main(String[] args) throws InterruptedException {
+        OnlineGame onlineGame = new OnlineGame();
+        onlineGame.start();
     }
 
-    public static class CountUpRunnable implements Runnable{
-        //write your code here
-        private int countdownIndex = Solution.number;
-        private int local_value = 1;
-        public void run() {
-            try {
-                while (local_value <= countdownIndex) {
-                    System.out.println(toString());
-                    local_value += 1;
-//                    if (local_value == countdownIndex) return;
-                    Thread.sleep(500);
-                }
-            } catch (InterruptedException e) {
-            }
+    public static class OnlineGame extends Thread {
+        public static volatile boolean isWinnerFound = false;
+
+        public static List<String> actions = new ArrayList<>();
+
+        static {
+            actions.add("Start game");
+            actions.add("Gather resources");
+            actions.add("Grow economy");
+            actions.add("Kill enemies");
         }
 
-        public String toString() {
-            return Thread.currentThread().getName() + ": " + local_value;
+        protected Gamer gamer1 = new Gamer("Smith", 3);
+        protected Gamer gamer2 = new Gamer("Jones", 1);
+        protected Gamer gamer3 = new Gamer("Gates", 5);
+
+        public void run() {
+            gamer1.start();
+            gamer2.start();
+            gamer3.start();
+
+            while (!isWinnerFound) {
+            }
+            gamer1.interrupt();
+            gamer2.interrupt();
+            gamer3.interrupt();
         }
     }
 
+    public static class Gamer extends Thread {
+        private int rating;
 
-    public static class CountdownRunnable implements Runnable {
-        private int countdownIndex = Solution.number;
-
-        public void run() {
-            try {
-                while (true) {
-                    System.out.println(toString());
-                    countdownIndex -= 1;
-                    if (countdownIndex == 0) return;
-                    Thread.sleep(500);
-                }
-            } catch (InterruptedException e) {
-            }
+        public Gamer(String name, int rating) {
+            super(name);
+            this.rating = rating;
         }
 
-        public String toString() {
-            return Thread.currentThread().getName() + ": " + countdownIndex;
+        @Override
+        public void run() {
+            //write your code here
+            for(String action: OnlineGame.actions){
+                try {
+                    Thread.sleep((long) 1000/rating);
+                    System.out.println(getName()+":"+action);
+                } catch (InterruptedException e) {
+                    System.out.println(getName()+":lost");
+                    return;
+                }
+            }
+            if (OnlineGame.isWinnerFound == false) {
+                OnlineGame.isWinnerFound = true;
+                System.out.println(getName()+":won!");
+            }
         }
     }
 }
