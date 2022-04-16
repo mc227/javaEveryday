@@ -1,67 +1,83 @@
-//package com.codegym.task.task16.task1627;
+//package com.codegym.task.task16.task1628;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 
 public class Solution {
-    public static void main(String[] args) throws InterruptedException {
-        OnlineGame onlineGame = new OnlineGame();
-        onlineGame.start();
-    }
+    public static volatile AtomicInteger readStringCount = new AtomicInteger(0);
+    public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    // 2021.03.24.16.34.26
+    private static final SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 
-    public static class OnlineGame extends Thread {
-        public static volatile boolean isWinnerFound = false;
+    // 2021-03-24T16:44:39.083+08:00
+    private static final SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
 
-        public static List<String> actions = new ArrayList<>();
+    // 2021-03-24 16:48:05
+    private static final SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-        static {
-            actions.add("Start game");
-            actions.add("Gather resources");
-            actions.add("Grow economy");
-            actions.add("Kill enemies");
+
+    public static void main(String[] args) throws IOException {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
+        // Read string count
+        int count = Integer.parseInt(reader.readLine());
+
+        // Init threads
+        ReaderThread consoleReader1 = new ReaderThread();
+        ReaderThread consoleReader2 = new ReaderThread();
+        ReaderThread consoleReader3 = new ReaderThread();
+
+        consoleReader1.start();
+        consoleReader2.start();
+        consoleReader3.start();
+
+        while (count > readStringCount.get()) {
+
         }
 
-        protected Gamer gamer1 = new Gamer("Smith", 3);
-        protected Gamer gamer2 = new Gamer("Jones", 1);
-        protected Gamer gamer3 = new Gamer("Gates", 5);
+        consoleReader1.interrupt();
+        System.out.println(timestamp);
+        consoleReader2.interrupt();
+        System.out.println(timestamp);
+        consoleReader3.interrupt();
+        System.out.println(timestamp);
+        System.out.println("#1:" + consoleReader1);
+        System.out.println(timestamp);
+        System.out.println("#2:" + consoleReader2);
+        System.out.println(timestamp);
+        System.out.println("#3:" + consoleReader3);
+        System.out.println(timestamp);
+
+        reader.close();
+    }
+
+    public static class ReaderThread extends Thread {
+        private List<String> result = new ArrayList<>();
 
         public void run() {
-            gamer1.start();
-            gamer2.start();
-            gamer3.start();
-
-            while (!isWinnerFound) {
+            //write your code here
+            while (!Thread.currentThread().isInterrupted()) {
+                try {
+                    String line = reader.readLine();
+                    if (line !=null) {
+                        result.add(line);
+                        readStringCount.addAndGet(1);
+                    }
+                } catch (IOException e) {}
             }
-            gamer1.interrupt();
-            gamer2.interrupt();
-            gamer3.interrupt();
-        }
-    }
-
-    public static class Gamer extends Thread {
-        private int rating;
-
-        public Gamer(String name, int rating) {
-            super(name);
-            this.rating = rating;
         }
 
         @Override
-        public void run() {
-            //write your code here
-            for(String action: OnlineGame.actions){
-                try {
-                    Thread.sleep((long) 1000/rating);
-                    System.out.println(getName()+":"+action);
-                } catch (InterruptedException e) {
-                    System.out.println(getName()+":lost");
-                    return;
-                }
-            }
-            if (OnlineGame.isWinnerFound == false) {
-                OnlineGame.isWinnerFound = true;
-                System.out.println(getName()+":won!");
-            }
+        public String toString() {
+            return result.toString();
         }
     }
 }
+
