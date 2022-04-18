@@ -52,5 +52,8 @@ public class Solution {
             }
         }
     }
+
+    public static class SortThread extends Thread {
+    }
 }
 
