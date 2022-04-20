@@ -1,53 +1,38 @@
-//package com.codegym.task.task17.task1701;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /*
-Notes
+Synchronized notes
 
 */
 
 public class Solution {
+
     public static void main(String[] args) {
-        new NoteThread().start();
-        new NoteThread().start();
 
     }
 
     public static class Note {
 
-        public static final List<String> notes = new ArrayList<>();
+        public final List<String> notes = new ArrayList<>();
 
-        public static void addNote(String note) {
-            notes.add(0, note);;
+        public void addNote(int index, String note) {
+            System.out.println("A note [" + note + "] will now be added at position " + index);
+            synchronized (notes) {
+                notes.add(index, note);
+            }
+            System.out.println("The note [" + note + "] has already been added");
         }
 
-        public static void removeNote(String threadName) {
-            String note = notes.remove(0);
-            if (note == null) {
-                System.out.println("Another thread deleted our note");
-            } else if (!note.startsWith(threadName)) {
-                System.out.println("Thread [" + threadName + "] deleted someone else's note [" + note + "]");
-            } else {
-                System.out.println("Thread [" + threadName + "] deleted its own note [" + note + "]");
+        public void removeNote(int index) {
+            System.out.println("A note will now be deleted from position " + index);
+            String note;
+            synchronized (notes) {
+                note = notes.remove(index);
             }
+            System.out.println("The note [" + note + "] has already been deleted from position " + index);
+
         }
     }
 
-    public static class NoteThread  extends Thread{
-
-        public void run() {
-            Note note = new Note();
-            for(int i = 0; i < 1000; i++) {
-                try {
-                    note.addNote(getName() + "-Note" + i);
-                    Thread.sleep(1);
-                    note.removeNote(getName());
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
 }
