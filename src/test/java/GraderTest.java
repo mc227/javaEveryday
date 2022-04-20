@@ -20,4 +20,16 @@ class GraderTest {
         var grader = new Grader();
         assertEquals('C',grader.determineLetterGrade(79));
     }
+
+    @Test
+    void eightyNineShouldReturnB() {
+        var grader = new Grader();
+        assertEquals('B',grader.determineLetterGrade(89));
+    }
+
+    @Test
+    void ninetyNineShouldReturnA() {
+        var grader = new Grader();
+        assertEquals('A',grader.determineLetterGrade(99));
+    }
 }

@@ -15,4 +15,5 @@ public class SimpleCalculatorTest  {
         var calculator = new SimpleCalculator();
         assertEquals(10, calculator.add(3,7));
     }
+
 }
