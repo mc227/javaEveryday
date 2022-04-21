@@ -1,10 +1,10 @@
-//package com.codegym.task.task17.task1704;
+//package com.codegym.task.task17.task1705;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /* 
-Synchronized notes: part 2
+Time in the garden
 
 */
 
@@ -14,20 +14,25 @@ public class Solution {
 
     }
 
-    public static class Note {
+    public static class Garden {
 
-        public final List<String> notes = new ArrayList<>();
+        public final List<String> fruits = new ArrayList<>();
+        public final List<String> vegetables = new ArrayList<>();
 
-        public synchronized void addNote(int index, String note) {
-            System.out.println("A note [" + note + "] will now be added at position " + index);
-            notes.add(index, note);
-            System.out.println("The note [" + note + "] has already been added");
+        public synchronized void addFruit(int index, String fruit) {
+            fruits.add(index, fruit);
         }
 
-        public synchronized void removeNote(int index) {
-            System.out.println("A note will now be deleted from position " + index);
-            String note = notes.remove(index);
-            System.out.println("The note [" + note + "] has already been deleted from position " + index);
+        public synchronized void removeFruit(int index) {
+            fruits.remove(index);
+        }
+
+        public synchronized void addVegetable(int index, String vegetable) {
+            vegetables.add(index, vegetable);
+        }
+
+        public synchronized void removeVegetable(int index) {
+            vegetables.remove(index);
         }
     }
 }

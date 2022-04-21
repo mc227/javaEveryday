@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GraderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GraderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SimpleCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SimpleCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +124,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javaEveryday$GraderTest_fiftyNineShouldReturnF.ic" NAME="GraderTest.fiftyNineShouldReturnF Coverage Results" MODIFIED="1650367057631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/javaEveryday$GraderTest.ic" NAME="GraderTest Coverage Results" MODIFIED="1650367418647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/javaEveryday$GraderTest.ic" NAME="GraderTest Coverage Results" MODIFIED="1650492698476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
