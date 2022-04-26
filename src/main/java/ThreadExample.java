@@ -1,15 +1,34 @@
+//public class ThreadExample extends Thread {
+//
+//    @Override
+//    public void run() {
+//
+//        System.out.println("Thread started: " + getName());
+//
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("Thread " + getName() + " is finished.");
+//    }
+//}
 public class ThreadExample extends Thread {
 
-    @Override
+    public ThreadExample() {
+        this.start();
+    }
+
     public void run() {
 
-        System.out.println("Thread started: " + getName());
+        System.out.println(Thread.currentThread().getName() + " yields its place to others");
+        Thread.yield();
+        System.out.println(Thread.currentThread().getName() + " has finished executing.");
+    }
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Thread " + getName() + " is finished.");
+    public static void main(String[] args) {
+        new ThreadExample();
+        new ThreadExample();
+        new ThreadExample();
     }
 }

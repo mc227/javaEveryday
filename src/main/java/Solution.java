@@ -1,33 +1,61 @@
-//package com.codegym.task.task17.task1708;
-
-import java.util.ArrayList;
-import java.util.List;
+//package com.codegym.task.task17.task1718;
 
 /*
-Notes for all
+Ironing
 
 */
 
 public class Solution {
-
     public static void main(String[] args) {
-
+        Person diana = new Person("Diana");
+        Person steve = new Person("Steve");
+        diana.start();
+        steve.start();
     }
 
-    public static class Note {
+    public static class Person extends Thread {
 
-        public volatile List<String> notes = new ArrayList<>();
-
-        public void addNote(int index, String note) {
-            System.out.println("A note [" + note + "] will now be added at position " + index);
-            notes.add(index, note);
-            System.out.println("The note [" + note + "] has already been added");
+        public Person(String name) {
+            super(name);
         }
 
-        public void removeNote(int index) {
-            System.out.println("A note will now be deleted from position " + index);
-            String note = notes.remove(index);
-            System.out.println("The note [" + note + "] has already been deleted from position " + index);
+        @Override
+        public void run() {
+            synchronized (Iron.class) {
+                Iron iron = takeIron();
+                Clothes clothes = takeClothes();
+                iron(iron, clothes);
+                returnIron();
+            }
+        }
+
+        protected Iron takeIron() {
+            System.out.println("Taking the iron");
+            return new Iron();
+        }
+
+        protected Iron returnIron() {
+            System.out.println("Returning the iron");
+            return new Iron();
+        }
+
+        protected Clothes takeClothes() {
+            return new Clothes("T-shirt");
+        }
+
+        protected void iron(Iron iron, Clothes clothes) {
+            System.out.println(getName() + " is ironing a " + clothes.name);
+        }
+    }
+
+    public static class Iron {
+    }
+
+    public static class Clothes {
+        String name;
+
+        public Clothes(String name) {
+            this.name = name;
         }
     }
 }
