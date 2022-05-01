@@ -1,61 +1,46 @@
-//package com.codegym.task.task17.task1718;
+//package com.codegym.task.task17.task1710;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /*
-Ironing
+CRUD
 
 */
 
 public class Solution {
-    public static void main(String[] args) {
-        Person diana = new Person("Diana");
-        Person steve = new Person("Steve");
-        diana.start();
-        steve.start();
-    }
+//    public static List<Person> allPeople = new ArrayList<>();
+//
+//    static {
+//        allPeople.add(Person.createMale("Donald Chump", new Date()));  // id=0
+//        allPeople.add(Person.createMale("Larry Gates", new Date()));  // id=1
+//    }
+//
+//    public static void main(String[] args) throws IOException, ParseException {
+//        // Start here
+//        SimpleDateFormat formatter = new SimpleDateFormat("mm, dd, yyyy", Locale.ENGLISH);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        String inputString = bufferedReader.readLine();
+//        if (inputString.startsWith("-c")) {
+//            String value = inputString.replace("-c ", "");
+//            System.out.println(Arrays.toString(value.split(" ")));
+//            System.out.println(value.split(" ")[0]);
+//            String name = value.split(" ")[0];
+//            String gender = value.split(" ")[1];
+////            String dateInString = value.split(" ")[1];
+////            String dateInString = String.copyValueOf(value.split(" "), 2, 3);
+////            System.out.println(String.copyValueOf(, 2, 3););
+////            Date date = formatter.parse(dateInString);
+//
+////            if (gender.equals("m")) {
+////                System.out.println("here");
+////                allPeople.add(Person.createMale(name, date));  // id=0
+////            }
 
-    public static class Person extends Thread {
-
-        public Person(String name) {
-            super(name);
-        }
-
-        @Override
-        public void run() {
-            synchronized (Iron.class) {
-                Iron iron = takeIron();
-                Clothes clothes = takeClothes();
-                iron(iron, clothes);
-                returnIron();
-            }
-        }
-
-        protected Iron takeIron() {
-            System.out.println("Taking the iron");
-            return new Iron();
-        }
-
-        protected Iron returnIron() {
-            System.out.println("Returning the iron");
-            return new Iron();
-        }
-
-        protected Clothes takeClothes() {
-            return new Clothes("T-shirt");
-        }
-
-        protected void iron(Iron iron, Clothes clothes) {
-            System.out.println(getName() + " is ironing a " + clothes.name);
-        }
-    }
-
-    public static class Iron {
-    }
-
-    public static class Clothes {
-        String name;
-
-        public Clothes(String name) {
-            this.name = name;
         }
     }
 }
