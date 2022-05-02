@@ -1,4 +1,3 @@
-//package com.codegym.task.task17.task1710;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,27 +21,30 @@ public class Solution {
 
     public static void main(String[] args) throws IOException, ParseException {
         // Start here
-        SimpleDateFormat formatter = new SimpleDateFormat("\"mm dd yyyy\"", Locale.ENGLISH);
-        // I read the string with the next two lines
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String inputString = bufferedReader.readLine();
+        String pattern = "M d y";
+        SimpleDateFormat formatter = new SimpleDateFormat(pattern, Locale.ENGLISH);
 
-        if (inputString.startsWith("-c")) {
-            String gender = inputString.replace("-c ", "").split(" ")[1];
-            if (gender.equals("m")) {
-                String[] strSplit = inputString.replace("-c ", "").split(" m ");
-                ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strSplit));
-                allPeople.add(Person.createMale(strList.get(0), formatter.parse(strList.get(1))));
-                for (int i = 0; i < allPeople.size(); i++) {
-                    System.out.println(allPeople.get(i).getName());
-                }
+
+
+//        if (args[0].equals("-c")) {
+//            if (args[2].equals("m")) {
+//                allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
+//                System.out.println(allPeople.size()-1);
+//            }
+//            if (args[2].equals("f")) {
+//                allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
+//                System.out.println(allPeople.size()-1);
+//            }
+//        }
+        if(args[0].equals("-c")){
+            if(args[2].equals("m")){
+//                System.out.println(args[3]);
+//                System.out.println(formatter.parse(args[3]));
+                allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
                 System.out.println(allPeople.size()-1);
-            } else {
-                String[] strSplit = inputString.replace("-c ", "").split(" f ");
-                ArrayList<String> strList = new ArrayList<String>(Arrays.asList(strSplit));
-                allPeople.add(Person.createFemale(strList.get(0), formatter.parse(strList.get(1))));
-
-
+            }
+            else if(args[2].equals("f")){
+                allPeople.add(Person.createFemale(args[1],formatter.parse(args[3])));
                 System.out.println(allPeople.size()-1);
             }
         }
