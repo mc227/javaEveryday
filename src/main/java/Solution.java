@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +7,6 @@ import java.util.*;
 
 /*
 CRUD
-
 */
 
 public class Solution {
@@ -24,22 +22,8 @@ public class Solution {
         String pattern = "M d y";
         SimpleDateFormat formatter = new SimpleDateFormat(pattern, Locale.ENGLISH);
 
-
-
-//        if (args[0].equals("-c")) {
-//            if (args[2].equals("m")) {
-//                allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
-//                System.out.println(allPeople.size()-1);
-//            }
-//            if (args[2].equals("f")) {
-//                allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
-//                System.out.println(allPeople.size()-1);
-//            }
-//        }
         if(args[0].equals("-c")){
             if(args[2].equals("m")){
-//                System.out.println(args[3]);
-//                System.out.println(formatter.parse(args[3]));
                 allPeople.add(Person.createMale(args[1], formatter.parse(args[3])));
                 System.out.println(allPeople.size()-1);
             }
@@ -47,6 +31,10 @@ public class Solution {
                 allPeople.add(Person.createFemale(args[1],formatter.parse(args[3])));
                 System.out.println(allPeople.size()-1);
             }
+        }
+        if(args[0].equals("-u")){
+            System.out.println(args[0]);
+            System.out.println(args[1]);
         }
     }
 }
