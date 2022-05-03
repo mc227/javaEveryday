@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorldApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWorldApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorldApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWorldApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWorldApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWorldApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,14 +62,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloWorldApp">
-    <configuration name="HelloWorldApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloWorldApp" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.mark">
     <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyClass" />
       <module name="javaEveryday" />
@@ -92,6 +84,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mark" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWorldApp" />
+      <module name="javaEveryday" />
+      <option name="PROGRAM_PARAMETERS" value="-u Mark m &quot;05 05 05&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,9 +101,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.mark" />
+      <item itemvalue="Application.MyClass" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.ThreadExample" />
+      <item itemvalue="JUnit.GraderTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloWorldApp" />
+        <item itemvalue="Application.mark" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.ThreadExample" />
         <item itemvalue="JUnit.GraderTest" />
