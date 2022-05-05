@@ -3,11 +3,12 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.FieldPosition;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-/* 
+/*
 CRUD
 */
 
@@ -23,6 +24,7 @@ public class Solution {
         // Start here
         String pattern = "M d y";
         SimpleDateFormat formatter = new SimpleDateFormat(pattern, Locale.ENGLISH);
+        StringBuffer stringBuffer = new StringBuffer();
 
         if(args[0].equals("-c")){
             if(args[2].equals("m")){
@@ -49,6 +51,17 @@ public class Solution {
                 allPeople.get(Integer.parseInt(args[1])).setSex(Sex.FEMALE);
             }
             allPeople.get(Integer.parseInt(args[1])).setBirthDate(formatter.parse(args[4]));
+        }
+        if(args[0].equals("-d")){
+            allPeople.get(Integer.parseInt(args[1])).setName(null);
+            allPeople.get(Integer.parseInt(args[1])).setBirthDate(null);
+            allPeople.get(Integer.parseInt(args[1])).setSex(null);
+        }
+        if(args[0].equals("-i")){
+            Person mark = allPeople.get(Integer.parseInt(args[1]));
+            String stringGender = ((mark.getSex() == Sex.MALE) ? "m" : "f");
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd yyyy");
+            System.out.printf("%s %s %s", mark.getName(), stringGender,simpleDateFormat.format(mark.getBirthDate(), stringBuffer, new FieldPosition(0)));
         }
     }
 }
