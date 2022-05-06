@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0142/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Conditions.tcs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +54,16 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.codegym.task.task17.task1711" />
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task17\task1711" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -60,10 +73,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.mark">
-    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyClass" />
+  <component name="RunManager" selected="Application.Solution-1">
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task01.task0142.Solution" />
       <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task01.task0142.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution-1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task17.task1711.Solution" />
+      <module name="javaEveryday" />
+      <option name="PROGRAM_PARAMETERS" value="-c Uchi m &quot;05 05 1555&quot; Minori f &quot;10 05 1995&quot; Mizuki f &quot;03 05 1999&quot; Yuki m &quot;04 04 2003&quot; Makoto m &quot;10 10 2010&quot; " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codegym.task.task17.task1711.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,6 +104,7 @@
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
+      <option name="PROGRAM_PARAMETERS" value="-c" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,34 +119,25 @@
     <configuration name="mark" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="HelloWorldApp" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="-u Mark m &quot;05 05 05&quot;" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GraderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PROGRAM_PARAMETERS" value="-c name1 sex1 bd1 name2 sex2 bd2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.mark" />
-      <item itemvalue="Application.MyClass" />
       <item itemvalue="Application.Solution" />
       <item itemvalue="Application.ThreadExample" />
-      <item itemvalue="JUnit.GraderTest" />
+      <item itemvalue="Application.Solution (1)" />
+      <item itemvalue="Application.Solution-1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mark" />
+        <item itemvalue="Application.Solution-1" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.mark" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.ThreadExample" />
-        <item itemvalue="JUnit.GraderTest" />
-        <item itemvalue="Application.MyClass" />
       </list>
     </recent_temporary>
   </component>
