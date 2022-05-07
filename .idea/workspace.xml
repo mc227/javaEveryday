@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0102/Solution.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0142/Solution.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Conditions.tcs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Person.java" afterDir="false" />
@@ -25,8 +26,8 @@
         <option value="JUnit3 Test Class" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
