@@ -1,6 +1,7 @@
 package com.codegym.task.task17.task1711;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -19,12 +20,10 @@ public class Solution {
 
     public static void main(String[] args) {
         // Start here
-        /*-c (adds all people with the specified
-        arguments to the end of allPeople;
-        displays their ids in the appropriate order)
-        * */
-        for(int i = 0; i < args.length; i++) {
-            System.out.println(args[i]);
-        }
+        /*
+        -c Makoto m "11 21 1993"
+         */
+
     }
+
 }

@@ -1,20 +1,25 @@
-//package com.codeSystem.outgym.task.task01.task0101;
-/*
-Write a program that displays: "I think being a programmer is cool".
+import com.google.common.collect.Lists;
 
-Example output:
-I think being a programmer is cool
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.IntStream;
 
-Requirements:
-•	The program should output text.
-•	The text should begin with "I think".
-•	The text should end with "is cool".
-•	The text should consist of 34 characters, including spaces and punctuation marks.
-•	The text should consist of one line.
-
-* */
 public class Solution {
     public static void main(String[] args) {
-        System.out.print("I think being a programmer is cool");
+        String[] original = {"Volvo", "BMW", "Ford", "Mazda", "Toyota", "Ferrari","Kia","Testla","Hummer"};
+        String[][] original1 = new String[2][];
+        int chunk = 3; // chunk size to divide
+        for(int i=0;i<original.length;i+=chunk){
+            System.out.println(Arrays.toString(Arrays.copyOfRange(original, i, Math.min(original.length,i+chunk))));
+            original1[i] = new String[] {Arrays.toString(Arrays.copyOfRange(original, i, Math.min(original.length,i+chunk)))};
+        }
+        for(String[] o: original1) {
+            for(String item: o) {
+                System.out.println(item+" ");
+            }
+            System.out.println();
+        }
     }
 }
