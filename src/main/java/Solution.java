@@ -7,19 +7,29 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class Solution {
+    // one-dimensional array of strings is of type String[]
     public static void main(String[] args) {
-        String[] original = {"Volvo", "BMW", "Ford", "Mazda", "Toyota", "Ferrari","Kia","Testla","Hummer"};
-        String[][] original1 = new String[2][];
-        int chunk = 3; // chunk size to divide
-        for(int i=0;i<original.length;i+=chunk){
-            System.out.println(Arrays.toString(Arrays.copyOfRange(original, i, Math.min(original.length,i+chunk))));
-            original1[i] = new String[] {Arrays.toString(Arrays.copyOfRange(original, i, Math.min(original.length,i+chunk)))};
+        // convert one-dimensional array of strings to ArrayList of Strings
+        List<String> wordList = Arrays.asList(args);
+        for (String e : wordList) {
+            System.out.println(e);
         }
-        for(String[] o: original1) {
-            for(String item: o) {
-                System.out.println(item+" ");
-            }
-            System.out.println();
+        // I want to get rid of -c
+        wordList.remove(new String("-c"));
+        for (String e : wordList) {
+            System.out.println(e);
         }
+        // now try splitting them
+//        List<String> first = wordList.subList(0,2);
+//        List<String> last = wordList.subList(2,4);
+//        System.out.println("###");
+//        for(String e: first) {
+//            System.out.println(e);
+//        }
+//        System.out.println("###");
+//        for(String e: last) {
+//            System.out.println(e);
+//        }
+        // we will use .subList on the
     }
 }
