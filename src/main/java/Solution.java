@@ -19,6 +19,7 @@ public class Solution {
         for (String e : wordList) {
             System.out.println(e);
         }
+        // https://stackoverflow.com/questions/2965747/why-do-i-get-an-unsupportedoperationexception-when-trying-to-remove-an-element-f
         // now try splitting them
 //        List<String> first = wordList.subList(0,2);
 //        List<String> last = wordList.subList(2,4);
