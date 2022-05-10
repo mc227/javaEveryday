@@ -5,32 +5,32 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
+import org.apache.commons.collections4.ListUtils;
 
 public class Solution {
     // one-dimensional array of strings is of type String[]
     public static void main(String[] args) {
+
+
         // convert one-dimensional array of strings to ArrayList of Strings
-        List<String> wordList = Arrays.asList(args);
-        for (String e : wordList) {
-            System.out.println(e);
+        // added them one by one because adding them at the same time using ... causes errors
+        ArrayList<String> wordList = new ArrayList<>();
+        for (int i = 0; i < args.length; i++) {
+            wordList.add(args[i]);
         }
-        // I want to get rid of -c
-        wordList.remove(new String("-c"));
-        for (String e : wordList) {
-            System.out.println(e);
-        }
-        // https://stackoverflow.com/questions/2965747/why-do-i-get-an-unsupportedoperationexception-when-trying-to-remove-an-element-f
-        // now try splitting them
-//        List<String> first = wordList.subList(0,2);
-//        List<String> last = wordList.subList(2,4);
-//        System.out.println("###");
-//        for(String e: first) {
+
+        // then here I remove the tag
+        wordList.remove("-c");
+//        for (String e : wordList) {
 //            System.out.println(e);
 //        }
-//        System.out.println("###");
-//        for(String e: last) {
-//            System.out.println(e);
-//        }
-        // we will use .subList on the
+
+
+        int targetSize = 3;
+        List<String> largeListString = wordList;
+        List<List<String>> output = ListUtils.partition(largeListString, targetSize);
+
+        System.out.println(output.get(0).get(0));
+
     }
 }
