@@ -1,5 +1,6 @@
 package com.codegym.task.task17.task1711;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -31,14 +32,32 @@ public class Solution {
 
         // first I find out what they start out with; c, u, i or d
         if(args[0].equals("-c")){
-            System.out.println("Here");
             // then here I remove the tag
             wordList.remove("-c");
             // create an arraylist of arraylist of strings in chunks of 3
             int targetSize = 3;
             List<String> largeListString = wordList;
             List<List<String>> output = Solution.partition(largeListString, targetSize);
-
+            // now loop through the arraylist of array list and populate allPeople
+            for (List<String> item: output) {
+                // determine bender
+                if(item.get(1).equals("m")){
+                    try {
+                        allPeople.add(Person.createMale(item.get(0), formatter.parse(item.get(2))));
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(allPeople.size()-1);
+                }
+                if(item.get(1).equals("f")){
+                    try {
+                        allPeople.add(Person.createFemale(item.get(0),formatter.parse(item.get(2))));
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(allPeople.size()-1);
+                }
+            }
         }
     }
 
