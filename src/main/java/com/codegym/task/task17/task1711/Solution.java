@@ -1,5 +1,6 @@
 package com.codegym.task.task17.task1711;
 
+import java.text.FieldPosition;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -17,7 +18,7 @@ public class Solution {
         allPeople.add(Person.createMale("Larry Gates", new Date()));  // id=1
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         // Start here
         // here are things the others will be using
         String pattern = "M d y";
@@ -59,8 +60,44 @@ public class Solution {
                 }
             }
         }
-    }
+        if(args[0].equals("-u")){
+            wordList.remove("-u");
+            int targetSize = 4;
+            List<String> largeListString = wordList;
+            List<List<String>> output = Solution.partition(largeListString, targetSize);
+            for (List<String> item: output) {
+                allPeople.get(Integer.parseInt(item.get(0))).setName(item.get(1));
+                if (item.get(2).equals("m")) {
+                    allPeople.get(Integer.parseInt(item.get(0))).setSex(com.codegym.task.task17.task1711.Sex.MALE);
+                } else {
+                    allPeople.get(Integer.parseInt(item.get(0))).setSex(Sex.FEMALE);
+                }
+                allPeople.get(Integer.parseInt(item.get(0))).setBirthDate(formatter.parse(item.get(3)));
+            }
+        }
+        if(args[0].equals("-d")){
+            wordList.remove("-d");
+            for(String item: wordList){
+//                System.out.println(item);
+                allPeople.get(Integer.parseInt(item)).setName(null);
+                allPeople.get(Integer.parseInt(item)).setBirthDate(null);
+                allPeople.get(Integer.parseInt(item)).setSex(null);
+            }
+        }
 
+        if(args[0].equals("-i")){
+            wordList.remove("-i");
+            for(String item: wordList){
+                Person mark = allPeople.get(Integer.parseInt(item));
+                String stringGender = ((mark.getSex() == Sex.MALE) ? "m" : "f");
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd yyyy");
+                System.out.printf("%s %s %s", mark.getName(), stringGender,simpleDateFormat.format(mark.getBirthDate(), stringBuffer, new FieldPosition(0)));
+                System.out.println();
+            }
+
+        }
+    }
+    //
     // I feel like that this is really long
     public static <T> List<List<T>> partition(List<T> list, int size) {
         if (list == null) {
