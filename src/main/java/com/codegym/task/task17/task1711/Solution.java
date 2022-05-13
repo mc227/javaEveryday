@@ -1,5 +1,6 @@
 package com.codegym.task.task17.task1711;
 
+import java.text.DateFormat;
 import java.text.FieldPosition;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -31,71 +32,140 @@ public class Solution {
             wordList.add(args[i]);
         }
 
-        // first I find out what they start out with; c, u, i or d
-        if(args[0].equals("-c")){
-            // then here I remove the tag
-            wordList.remove("-c");
-            // create an arraylist of arraylist of strings in chunks of 3
-            int targetSize = 3;
-            List<String> largeListString = wordList;
-            List<List<String>> output = Solution.partition(largeListString, targetSize);
-            // now loop through the arraylist of array list and populate allPeople
-            for (List<String> item: output) {
-                // determine bender
-                if(item.get(1).equals("m")){
-                    try {
-                        allPeople.add(Person.createMale(item.get(0), formatter.parse(item.get(2))));
-                    } catch (ParseException e) {
-                        e.printStackTrace();
+        switch (args[0]){
+            case "-c":
+                // then here I remove the tag
+                wordList.remove("-c");
+                // create an arraylist of arraylist of strings in chunks of 3
+                int targetSize = 3;
+                List<String> largeListString = wordList;
+                List<List<String>> output = Solution.partition(largeListString, targetSize);
+                // now loop through the arraylist of array list and populate allPeople
+                for (List<String> item: output) {
+                    // determine bender
+                    if(item.get(1).equals("m")){
+                        try {
+                            allPeople.add(Person.createMale(item.get(0), formatter.parse(item.get(2))));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println(allPeople.size()-1);
                     }
-                    System.out.println(allPeople.size()-1);
-                }
-                if(item.get(1).equals("f")){
-                    try {
-                        allPeople.add(Person.createFemale(item.get(0),formatter.parse(item.get(2))));
-                    } catch (ParseException e) {
-                        e.printStackTrace();
+                    if(item.get(1).equals("f")){
+                        try {
+                            allPeople.add(Person.createFemale(item.get(0),formatter.parse(item.get(2))));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println(allPeople.size()-1);
                     }
-                    System.out.println(allPeople.size()-1);
                 }
-            }
-        }
-        if(args[0].equals("-u")){
-            wordList.remove("-u");
-            int targetSize = 4;
-            List<String> largeListString = wordList;
-            List<List<String>> output = Solution.partition(largeListString, targetSize);
-            for (List<String> item: output) {
-                allPeople.get(Integer.parseInt(item.get(0))).setName(item.get(1));
-                if (item.get(2).equals("m")) {
-                    allPeople.get(Integer.parseInt(item.get(0))).setSex(com.codegym.task.task17.task1711.Sex.MALE);
-                } else {
-                    allPeople.get(Integer.parseInt(item.get(0))).setSex(Sex.FEMALE);
+                break;
+            case "-u":
+                wordList.remove("-u");
+//                int targetSize = 4;
+                List<String> largeListString2 = wordList;
+                List<List<String>> output2 = Solution.partition(largeListString2, 4);
+                for (List<String> item: output2) {
+                    allPeople.get(Integer.parseInt(item.get(0))).setName(item.get(1));
+                    if (item.get(2).equals("m")) {
+                        allPeople.get(Integer.parseInt(item.get(0))).setSex(com.codegym.task.task17.task1711.Sex.MALE);
+                    } else {
+                        allPeople.get(Integer.parseInt(item.get(0))).setSex(Sex.FEMALE);
+                    }
+                    allPeople.get(Integer.parseInt(item.get(0))).setBirthDate(formatter.parse(item.get(3)));
                 }
-                allPeople.get(Integer.parseInt(item.get(0))).setBirthDate(formatter.parse(item.get(3)));
-            }
-        }
-        if(args[0].equals("-d")){
-            wordList.remove("-d");
-            for(String item: wordList){
+                break;
+
+            case "-d":
+                wordList.remove("-d");
+                for(String item: wordList){
 //                System.out.println(item);
-                allPeople.get(Integer.parseInt(item)).setName(null);
-                allPeople.get(Integer.parseInt(item)).setBirthDate(null);
-                allPeople.get(Integer.parseInt(item)).setSex(null);
-            }
-        }
-
-        if(args[0].equals("-i")){
-            wordList.remove("-i");
-            for(String item: wordList){
-                Person mark = allPeople.get(Integer.parseInt(item));
-                String stringGender = ((mark.getSex() == Sex.MALE) ? "m" : "f");
+                    allPeople.get(Integer.parseInt(item)).setName(null);
+                    allPeople.get(Integer.parseInt(item)).setBirthDate(null);
+                    allPeople.get(Integer.parseInt(item)).setSex(null);
+                }
+                break;
+            case "-i":
+                wordList.remove("-i");
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd yyyy");
-                System.out.printf("%s %s %s", mark.getName(), stringGender,simpleDateFormat.format(mark.getBirthDate(), stringBuffer, new FieldPosition(0)));
-                System.out.println();
-            }
+                Date date = Calendar.getInstance().getTime();
+                DateFormat dateFormat = new SimpleDateFormat("MMM dd yyyy");
 
+                for(String item: wordList){
+                    Person person = allPeople.get(Integer.parseInt(item));
+                    String strDate = dateFormat.format(person.getBirthDate());
+                    String stringGender = ((person.getSex() == Sex.MALE) ? "m" : "f");
+                    System.out.printf("%s %s %s \n", person.getName(), stringGender,strDate);
+                }
         }
+        // first I find out what they start out with; c, u, i or d
+//        if(args[0].equals("-c")){
+//            // then here I remove the tag
+//            wordList.remove("-c");
+//            // create an arraylist of arraylist of strings in chunks of 3
+//            int targetSize = 3;
+//            List<String> largeListString = wordList;
+//            List<List<String>> output = Solution.partition(largeListString, targetSize);
+//            // now loop through the arraylist of array list and populate allPeople
+//            for (List<String> item: output) {
+//                // determine bender
+//                if(item.get(1).equals("m")){
+//                    try {
+//                        allPeople.add(Person.createMale(item.get(0), formatter.parse(item.get(2))));
+//                    } catch (ParseException e) {
+//                        e.printStackTrace();
+//                    }
+//                    System.out.println(allPeople.size()-1);
+//                }
+//                if(item.get(1).equals("f")){
+//                    try {
+//                        allPeople.add(Person.createFemale(item.get(0),formatter.parse(item.get(2))));
+//                    } catch (ParseException e) {
+//                        e.printStackTrace();
+//                    }
+//                    System.out.println(allPeople.size()-1);
+//                }
+//            }
+//        }
+//        if(args[0].equals("-u")){
+//            wordList.remove("-u");
+//            int targetSize = 4;
+//            List<String> largeListString = wordList;
+//            List<List<String>> output = Solution.partition(largeListString, targetSize);
+//            for (List<String> item: output) {
+//                allPeople.get(Integer.parseInt(item.get(0))).setName(item.get(1));
+//                if (item.get(2).equals("m")) {
+//                    allPeople.get(Integer.parseInt(item.get(0))).setSex(com.codegym.task.task17.task1711.Sex.MALE);
+//                } else {
+//                    allPeople.get(Integer.parseInt(item.get(0))).setSex(Sex.FEMALE);
+//                }
+//                allPeople.get(Integer.parseInt(item.get(0))).setBirthDate(formatter.parse(item.get(3)));
+//            }
+//        }
+//        if(args[0].equals("-d")){
+//            wordList.remove("-d");
+//            for(String item: wordList){
+////                System.out.println(item);
+//                allPeople.get(Integer.parseInt(item)).setName(null);
+//                allPeople.get(Integer.parseInt(item)).setBirthDate(null);
+//                allPeople.get(Integer.parseInt(item)).setSex(null);
+//            }
+//        }
+//        if(args[0].equals("-i")){
+//            wordList.remove("-i");
+//            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd yyyy");
+//            Date date = Calendar.getInstance().getTime();
+//            DateFormat dateFormat = new SimpleDateFormat("MMM dd yyyy");
+//
+//            for(String item: wordList){
+//                Person person = allPeople.get(Integer.parseInt(item));
+//                String strDate = dateFormat.format(person.getBirthDate());
+//                String stringGender = ((person.getSex() == Sex.MALE) ? "m" : "f");
+//                System.out.printf("%s %s %s \n", person.getName(), stringGender,strDate);
+//            }
+//
+//        }
     }
     //
     // I feel like that this is really long
