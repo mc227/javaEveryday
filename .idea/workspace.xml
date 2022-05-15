@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,6 @@
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="-c" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
