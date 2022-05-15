@@ -21,76 +21,72 @@ public class Solution implements List<Long>{
 
     @Override
     public synchronized boolean isEmpty() {
-        if (original.size() >0){
-            return false;
-        } else {
-            return true;
-        }
+        return original.isEmpty();
     }
 
     @Override
     public synchronized boolean contains(Object o) {
-        return false;
+        return original.contains(o);
     }
 
     @Override
     public synchronized Iterator<Long> iterator() {
-        return null;
+        return original.iterator();
     }
 
     @Override
     public synchronized Object[] toArray() {
-        return new Object[0];
+        return original.toArray();
     }
 
     @Override
     public synchronized <T> T[] toArray(T[] a) {
-        return null;
+        return original.toArray(a);
     }
 
     @Override
     public synchronized boolean add(Long aLong) {
-        return false;
+        return original.add(aLong);
     }
 
     @Override
     public synchronized boolean remove(Object o) {
-        return false;
+        return original.remove(o);
     }
 
     @Override
     public synchronized boolean containsAll(Collection<?> c) {
-        return false;
+        return original.containsAll(c);
     }
 
     @Override
     public synchronized boolean addAll(Collection<? extends Long> c) {
-        return false;
+        return original.addAll(c);
     }
 
     @Override
     public synchronized boolean addAll(int index, Collection<? extends Long> c) {
-        return false;
+        return original.addAll(index, c);
     }
 
     @Override
     public synchronized boolean removeAll(Collection<?> c) {
-        return false;
+        return original.removeAll(c);
     }
 
     @Override
     public synchronized boolean retainAll(Collection<?> c) {
-        return false;
+        return original.retainAll(c);
     }
 
     @Override
     public synchronized void clear() {
-
+        original.clear();
     }
 
     @Override
     public synchronized Long get(int index) {
-        return null;
+        return original.get(index);
     }
 
     @Override
@@ -101,36 +97,40 @@ public class Solution implements List<Long>{
 
     @Override
     public synchronized void add(int index, Long element) {
-
+        original.add(index,element);
     }
 
     @Override
     public synchronized Long remove(int index) {
+        original.remove(index);
         return null;
     }
 
     @Override
     public synchronized int indexOf(Object o) {
-        return 0;
+        return original.indexOf(o);
     }
 
     @Override
     public synchronized int lastIndexOf(Object o) {
-        return 0;
+        return original.lastIndexOf(o);
     }
 
     @Override
     public synchronized ListIterator<Long> listIterator() {
-        return null;
+
+        return original.listIterator();
     }
 
     @Override
     public synchronized ListIterator<Long> listIterator(int index) {
-        return null;
+
+        return original.listIterator(index);
     }
 
     @Override
     public synchronized List<Long> subList(int fromIndex, int toIndex) {
-        return null;
+
+        return original.subList(fromIndex,toIndex);
     }
 }
