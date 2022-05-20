@@ -1,25 +1,31 @@
-import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
 
 public class Solution {
-    public static void main(String[] args) throws Exception
-    {
-        //Create a stream to read bytes from a file
-        FileInputStream inputStream = new FileInputStream("data.txt");
-        //Create a stream to write bytes to a file
-        FileOutputStream outputStream = new FileOutputStream("result.txt");
+    public static void main(String[] args) throws Exception {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Lena").append('\n');
+        sb.append("Olya").append('\n');
+        sb.append("Anya").append('\n');
+        String data = sb.toString();
 
-        while (inputStream.available() > 0) //as long as there are unread bytes
+        InputStream is = new ByteArrayInputStream(data.getBytes());
+
+        System.setIn(is);
+
+        readAndPrintLine();
+    }
+
+    public static void readAndPrintLine() throws IOException {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(isr);
+
+        while (true)
         {
-            int data = inputStream.read(); // Read the next byte into the data variable
-            outputStream.write(data); // and write it to the second stream
+            String line = reader.readLine();
+            if (line == null) break;
+            System.out.println(line);
         }
-
-        inputStream.close(); //Close both streams. We don't need them any more.
-        outputStream.close();
+        reader.close();
+        isr.close();
     }
 }
