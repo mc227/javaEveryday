@@ -34,33 +34,35 @@ Requirements:
 * */
 public class Solution {
     public static void main(String[] args) throws Exception {
-
-        // Create a stream to read from the file passed
-        // as the first argument of the main method.
+        // Calculate how often each symbol is encountered.
+        // create file input stream for file
         FileInputStream fileInputStream = new FileInputStream(args[0]);
-        BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
-        byte[] contents = new byte[1024];
+        // create buffered stream input
+        BufferedInputStream in = new BufferedInputStream(fileInputStream);
+        // put it into a string
         int bytesRead = 0;
-        String strContent = "";
-        // read all the bytes into strContent
-        while((bytesRead = bufferedInputStream.read(contents)) != -1) {
-            strContent += new String(contents, 0, bytesRead);
+        byte[] contents = new byte[1024];
+        String strContents = "";
+        while((bytesRead = in.read(contents)) != -1){
+            strContents += new String(contents,0,bytesRead);
         }
-//        System.out.println(strContent);
-        fileInputStream.close();
-        bufferedInputStream.close();
 
-        byte[] foo = strContent.getBytes("US-ASCII");
-        Map<Byte, Integer> map = new TreeMap<>();
-        for(Byte item: foo) {
-            if (map.containsKey(item)){
+        // put string into byte array
+        byte[] strContentsBytes = strContents.getBytes("US-ASCII");
+        Map<Byte,Integer> map = new TreeMap<>();
+        for(Byte item: strContentsBytes) {
+            if (map.containsKey(item)) {
                 map.put(item, map.get(item)+1);
             } else {
-                map.put(item, 1);
+                map.put(item,1);
             }
         }
-        for (Map.Entry<Byte,Integer> entry : map.entrySet()){
-            System.out.println((char)entry.getKey().byteValue() + " " + entry.getValue());
+        for(Map.Entry<Byte,Integer> entry : map.entrySet()) {
+            System.out.println((char) entry.getKey().byteValue() + " " + entry.getValue());
         }
+        // count frequencies in treemap
+        // question: am i converting byte to char?
+        // print each one in (char) mode
+
     }
 }
