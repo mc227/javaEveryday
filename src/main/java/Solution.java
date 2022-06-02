@@ -5,15 +5,15 @@ import java.io.IOException;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        /*Sum up all the bytes in a file*/
+        /*Copy a file on a disk*/
         FileInputStream fileInputStream = new FileInputStream("file1.txt");
-        long sum = 0;
+        FileOutputStream fileOutputStream = new FileOutputStream("result.txt");
 
         while(fileInputStream.available() > 0) {
             int foo = fileInputStream.read();
-            sum += foo;
+            fileOutputStream.write(foo);
         }
-        System.out.println(sum);
         fileInputStream.close();
+        fileOutputStream.close();
     }
 }
