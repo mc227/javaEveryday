@@ -1,29 +1,19 @@
-
-/*
-Bubble Sort
-
-*/
-
-import java.util.Arrays;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        int[] foo = new int[]{10,9,8,7,6,5,4,3,2,1};
-//        System.out.println(Arrays.toString(foo)); // nice
-        bubbleSort(foo);
-        System.out.println(Arrays.toString(foo));
-    }
-
-    private static void bubbleSort(int[] foo) {
-        for(int i = foo.length-1; i > 1; i--) {
-            for(int j = 0; j < i; j++) {
-                if(foo[j] > foo[j+1]){
-                    int temp = foo[j];
-                    foo[j] = foo[j+1];
-                    foo[j+1] = temp;
-                }
-            }
+    public static void main(String[] args) throws IOException {
+        // Copy a file on disk
+        FileInputStream fileInputStream = new FileInputStream("data.txt");
+        FileOutputStream fileOutputStream = new FileOutputStream("result.txt");
+        byte[] buffer = new byte[1000];
+        while(fileInputStream.available() > 0) {
+            int count = fileInputStream.read(buffer);
+            fileOutputStream.write(buffer,0,count);
         }
+        fileInputStream.close();
+        fileOutputStream.close();
     }
-
 }
