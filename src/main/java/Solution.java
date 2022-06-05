@@ -1,19 +1,30 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        // Copy a file on disk
-        FileInputStream fileInputStream = new FileInputStream("data.txt");
-        FileOutputStream fileOutputStream = new FileOutputStream("result.txt");
-        byte[] buffer = new byte[1000];
+//        Read a file name from the console.
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        FileInputStream fileInputStream = new FileInputStream(bufferedReader.readLine());
+//                Count the number of commas (',') in the file. Display the number.
+        int comma = 0;
         while(fileInputStream.available() > 0) {
-            int count = fileInputStream.read(buffer);
-            fileOutputStream.write(buffer,0,count);
+            int count = fileInputStream.read();
+            if (count == 44) {
+                comma++;
+            }
         }
+        System.out.println(comma);
+//                Close the streams.
+        bufferedReader.close();
         fileInputStream.close();
-        fileOutputStream.close();
+//
+//        Hint:
+//        You need to compare with the ASCII code for ','.
+//
+//                Requirements:
+//•	The program should read a file name from the console.
+//•	Use a FileInputStream to read from the file.
+//•	The program should display the number of commas in the read file.
+//•	The stream used to read the file must be closed.
     }
 }
