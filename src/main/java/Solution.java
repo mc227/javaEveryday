@@ -3,47 +3,40 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+
 /*
-Read 3 file names from the console: file1, file2, file3.
-Split file1 as follows:
-Write the first half of its bytes to file2,and write the second half of its bytes to file3.
-If the number of bytes in file1 is odd, then file2 should contain the larger half.
+Read 2 file names from the console: file1, file2.
+Write all the bytes in file1 to file2, but in the reverse order.
 Close the streams.
 
 Requirements:
-•	The program should read a file name three times from the console.
-•	Use FileInputStream to read from a file, and use FileOutputStream to write to files.
-•	The first half of the bytes in the first file must be written to the second file.
-•	The second half of the bytes in the first file must be written to the third file.
+•	The program should read a file name twice from the console.
+•	Use FileInputStream to read from a file, and use FileOutputStream to write to a file.
+•	In the second file, you need to write all the bytes from the first file in the reverse order.
 •	The FileInputStream and FileOutputStream must be closed.
 * */
 public class Solution {
     private static final Logger logger = LoggerFactory.getLogger(Solution.class);
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        FileInputStream fileInputStream = new FileInputStream(bufferedReader.readLine());
-        FileOutputStream fileOutputStream = new FileOutputStream(bufferedReader.readLine());
-        FileOutputStream fileOutputStream2 = new FileOutputStream(bufferedReader.readLine());
+        logger.info("oh hi Mark");
+        FileInputStream fileInputStream =  new FileInputStream("data.txt");
+        FileOutputStream fileOutputStream = new FileOutputStream("result.txt");
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
-        logger.info(String.valueOf(fileInputStream.available()));
-
-        if (fileInputStream.available()%2==0) {
-            byte[] buffer = new byte[fileInputStream.available()/2];
-            int count = fileInputStream.read(buffer);
-            fileOutputStream.write(buffer,0, count);
-            byte[] buffer2 = new byte[fileInputStream.available()];
-            int count2 = fileInputStream.read(buffer2);
-            fileOutputStream2.write(buffer2,0, count2);
-        } else{
-            byte[] buffer = new byte[fileInputStream.available()/2+1];
-            int count = fileInputStream.read(buffer);
-            fileOutputStream.write(buffer,0, count);
-            byte[] buffer2 = new byte[fileInputStream.available()];
-            int count2 = fileInputStream.read(buffer2);
-            fileOutputStream2.write(buffer2,0, count2);
+        while(fileInputStream.available() > 0) {
+            int count = fileInputStream.read();
+            arrayList.add(count);
         }
+
+        Collections.reverse(arrayList);
+
+        for(int i = 0; i < arrayList.size(); i++) {
+            fileOutputStream.write(arrayList.get(i));
+        }
+
         fileInputStream.close();
         fileOutputStream.close();
-        fileOutputStream2.close();
     }
 }
