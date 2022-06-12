@@ -1,9 +1,7 @@
-
 public class Solution {
-//    private static final Logger logger = LoggerFactory.getLogger(Solution.class);
-public static void main(String[] args) {
-    new Thread(new DecoratorRunnableImpl(new DecoratorMyRunnableImpl(new RunnableImpl()))).start();
-}
+    public static void main(String[] args) {
+        new Thread(new DecoratorRunnableImpl(new DecoratorMyRunnableImpl(new RunnableImpl()))).start();
+    }
 
     public static class RunnableImpl implements Runnable {
         @Override
@@ -21,7 +19,7 @@ public static void main(String[] args) {
 
         @Override
         public void run() {
-            System.out.print("DecoratorRunnableImpl body ");
+            System.out.println("DecoratorRunnableImpl body");
             component.run();
         }
     }
@@ -35,7 +33,7 @@ public static void main(String[] args) {
 
         @Override
         public void run() {
-            System.out.print("DecoratorMyRunnableImpl body ");
+            System.out.println("DecoratorMyRunnableImpl body");
             component.run();
         }
     }
