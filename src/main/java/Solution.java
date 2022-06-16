@@ -2,9 +2,13 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        PrintStream filePrintStream = new PrintStream(new File("mark.txt"));
-        filePrintStream.println(222);
-        filePrintStream.println("Hello World");
-        filePrintStream.println(false);
+        PrintStream printStream = new PrintStream("mark1.txt");
+
+        printStream.println("Hello!");
+        printStream.println("I'm a robot!");
+
+        printStream.printf("My name is %s. I am %d!", "Amigo", 18);
+
+        printStream.close();
     }
 }
