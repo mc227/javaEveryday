@@ -5,7 +5,8 @@ public class Solution {
 
 
     public static void main(String[] args) throws IOException {
-        String greetings = "Hi! My name is Amigo!\nI'm learning Java on the CodeGym website.\nOne day I will become a cool programmer!\n";
+        String greetings = "A stream is, in essence, a moving piece of data.\nIn other words, in programming,\nit " +
+                "isn't water that flows - but rather data in the form of bytes and characters";
         byte[] bytes = greetings.getBytes();
 
         InputStream inputStream = new ByteArrayInputStream(bytes);
