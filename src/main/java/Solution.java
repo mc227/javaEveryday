@@ -2,19 +2,25 @@ import java.io.*;
 import java.util.Locale;
 
 public class Solution {
-    private static final String GREETINGS_MESSAGE = "My name is %s. I am %d!";
+
 
     public static void main(String[] args) throws IOException {
-        PrintStream printStream = new PrintStream("mark2.txt");
+        String greetings = "Hi! My name is Amigo!\nI'm learning Java on the CodeGym website.\nOne day I will become a cool programmer!\n";
+        byte[] bytes = greetings.getBytes();
 
-        printStream.println("Hello!");
-        printStream.println("We are robots!");
+        InputStream inputStream = new ByteArrayInputStream(bytes);
 
+        System.setIn(inputStream);
 
-        printStream.printf(GREETINGS_MESSAGE, "Amigo", 18);
-        printStream.printf(GREETINGS_MESSAGE, "R2-D2", 35);
-        printStream.printf(GREETINGS_MESSAGE, "C-3PO", 35);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        printStream.close();
+        String str;
+
+        while ((str = reader.readLine())!= null) {
+
+            System.out.println(str);
+        }
+
     }
+
 }
