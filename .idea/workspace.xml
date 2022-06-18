@@ -74,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReadFile">
+  <component name="RunManager" selected="Application.WriteFile">
     <configuration name="AmigoFileOutputStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AmigoFileOutputStream" />
       <module name="javaEveryday" />
@@ -119,8 +119,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReadFile" />
         <item itemvalue="Application.WriteFile" />
+        <item itemvalue="Application.ReadFile" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.AmigoFileOutputStream" />
         <item itemvalue="Application.CatWrapper" />
