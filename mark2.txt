@@ -1,3 +1,2 @@
-Hello!
-We are robots!
-My name is Amigo. I am 18!My name is R2-D2. I am 35!My name is C-3PO. I am 35!
+This will be written in the file
+This will be written in the console
