@@ -1,2 +1,1 @@
-contents of second file
-contents of third file
+contents of second filecontents of third file
