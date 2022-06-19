@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SystemRedirectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mark2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SystemRedirectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SystemRedirectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SystemRedirectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SystemRedirectService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SystemRedirectService">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="ConsoleRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConsoleRead" />
       <module name="javaEveryday" />
@@ -120,8 +119,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SystemRedirectService" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.SystemRedirectService" />
         <item itemvalue="Application.ConsoleRead" />
         <item itemvalue="Application.WriteFile" />
         <item itemvalue="Application.ReadFile" />

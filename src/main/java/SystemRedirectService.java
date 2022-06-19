@@ -3,16 +3,17 @@ import java.io.*;
 public class SystemRedirectService {
     public static void main(String[] args) {
         try {
-            PrintStream printStream = new PrintStream(new File("mark2.txt"));
+            PrintStream fileStream = new PrintStream(new File("mark3.txt"));
             PrintStream console = System.out;
-            System.setOut(printStream);
-            System.out.println("This will be written in the file");
-//            PrintStream console = System.out;
+            System.setOut(fileStream);
+            System.out.println("This goes to mark3.txt");
             System.setOut(console);
-            System.out.println("This will be written in the console");
+            System.out.println("This one goes out to the console");
 
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+
     }
 }

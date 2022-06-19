@@ -1,17 +1,19 @@
-import java.io.*;
-import java.net.URL;
 
 public class Solution {
+/*
+The first parameter of the main method is a file name.
+Count the letters of the English alphabet in the file.
+Display the number of letters.
+Close the streams.
 
-    public static void main(String[] args) throws Exception {
-
-        URL oracle = new URL("http://info.cern.ch/");
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(oracle.openStream()));
-
-        String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
-        in.close();
+Requirements:
+•	You don't need to read anything from the console.
+•	Create a stream to read from the file passed as the first argument of the main method.
+•	You need to count the letters of the English alphabet in the file and display the number.
+•	You must count both uppercase and lowercase letters.
+•	The stream used to read the file must be closed.
+* */
+    public static void main(String[] args) {
+        System.out.println("Oh Hi Mark");
     }
 }
