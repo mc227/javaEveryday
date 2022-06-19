@@ -14,6 +14,7 @@ Requirements:
 •	The stream used to read the file must be closed.
 * */
     public static void main(String[] args) {
-        System.out.println("Oh Hi Mark");
+        // The first parameter of the main method is a file name.
+        System.out.println(args[0]);
     }
 }
