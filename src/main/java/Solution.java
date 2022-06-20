@@ -18,20 +18,15 @@ public class Solution {
             while (fileInputStream1.available() > 0) {
                 byteArrayOutputStream.write(fileInputStream1.read());
             }
+            fileInputStream1.close();
+            fileInputStream2.close();
         }
         try(FileOutputStream fileOutputStream = new FileOutputStream(file1)) {
             byteArrayOutputStream.writeTo(fileOutputStream);
+            byteArrayOutputStream.close();
         }
-    }
+        bufferedReader.close();
 
-        //    Close the streams.
-        //
-        //            Requirements:
-        //            •	The program should read a file name twice from the console.
-        //•	Create an input stream for the first file and read its contents.
-        //•	Then create an output stream for the first file. And an input stream for the second file.
-        //•	The contents of the first and second files must be combined in the first file.
-        //•	The contents of the second file should go first, then the contents of the first file.
-        //•	The file streams must be closed.
+    }
 
 }
