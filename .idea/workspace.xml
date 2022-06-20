@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mark10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mark11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/appendFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myProgram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mark5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
@@ -52,7 +62,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -82,13 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReadFile" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
@@ -110,20 +113,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="myProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="myProgram" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Solution" />
       <item itemvalue="Application.WriteFile" />
-      <item itemvalue="Application.ReadFile" />
       <item itemvalue="Application.ConsoleRead" />
       <item itemvalue="Application.SystemRedirectService" />
+      <item itemvalue="Application.myProgram" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.myProgram" />
         <item itemvalue="Application.SystemRedirectService" />
         <item itemvalue="Application.ConsoleRead" />
         <item itemvalue="Application.WriteFile" />
-        <item itemvalue="Application.ReadFile" />
       </list>
     </recent_temporary>
   </component>
