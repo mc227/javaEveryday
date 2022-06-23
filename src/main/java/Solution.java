@@ -1,41 +1,32 @@
-import java.io.*;
+
 
 /*
-Finding data inside a file
-
+Combining files
+Read 2 file names from the console.
+Write the contents of the second file to the beginning of the first file so that the files are combined.
+Close the streams.
 */
+
+import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        //Read a file name from the console.
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        //Search the file for information related to the specified id. Display it in the format used in the file.
-        //The program is started with one argument: id (an int).
-        String str;
-        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(bufferedReader.readLine()))){
-            while((str = bufferedFileReader.readLine())!=null) {
-                if(str.startsWith(args[0] + " ")) {
-                    System.out.println(str);
-                    break;
-                }
+        String filename1 = bufferedReader.readLine();
+        String filename2 = bufferedReader.readLine();
+
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try(FileInputStream fileInputStream1 = new FileInputStream(filename1);
+            FileInputStream fileInputStream2 = new FileInputStream(filename2)) {
+            while(fileInputStream2.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream2.read());
+            }
+            while(fileInputStream1.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream1.read());
             }
         }
-        //Close the streams.
-        //
-        //The file data is separated by spaces and stored in the following order:
-        //id productName price quantity
-        //where id is an int
-        //productName is a String — it can contain spaces
-        //price is a double
-        //quantity is an int
-        //
-        //The information for each product is stored on a separate line.
-        //
-        //Requirements:
-        //•	The program should read a file name from the console.
-        //•	Create an input stream for the file.
-        //•	The program should search the file and display information related to the specified id passed as the first
-        // argument.
-        //•	The stream used to read the file must be closed.
+        try(FileOutputStream fileOutputStream = new FileOutputStream(filename1)) {
+            byteArrayOutputStream.writeTo(fileOutputStream);
+        }
     }
 }
