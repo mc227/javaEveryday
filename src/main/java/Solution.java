@@ -1,30 +1,38 @@
 
 
 /*
-Finding data inside a file
-Read a file name from the console.
-Search the file for information
-related to the specified id.
-Display it in the format used in the file.
-The program is started with one argument:
-id (an int). Close the streams.
-The file data is separated by spaces and stored in the following order: id productName
+Combining files
+Read 2 file names from the console.
+Write the contents of the second
+file to the beginning of the first
+file so that the files are combined.
+Close the streams.
 */
 
 import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        // Read 2 filenames from the console.
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String filename1 = bufferedReader.readLine();
+        String filename2 = bufferedReader.readLine();
 
-        String str;
-        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(bufferedReader.readLine()))){
-            while((str = bufferedFileReader.readLine())!= null) {
-                if(str.startsWith(args[0] + " ")){
-                    System.out.println(str);
-                    break;
-                }
+        // Write the contents of the second file to the beginning of the first file so that the files are combined
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try(FileInputStream fileInputStream1 = new FileInputStream(filename1);
+            FileInputStream fileInputStream2 = new FileInputStream(filename2)) {
+            while(fileInputStream2.available() > 0){
+                byteArrayOutputStream.write(fileInputStream2.read());
+            }
+            while(fileInputStream1.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream1.read());
             }
         }
+        try(FileOutputStream fileOutputStream = new FileOutputStream(filename1)) {
+            byteArrayOutputStream.writeTo(fileOutputStream);
+        }
+
+
     }
 }
