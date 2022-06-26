@@ -1,57 +1,41 @@
 
 
-/*
-Threads and bytes
-Read file names from the console until the word "exit" is entered.
-Pass the file name to the ReadThread thread.
-The ReadThread thread should find the byte that occurs most frequently in the file, and add it to resultMap,
-where the String parameter is the file name and the Integer parameter is the relevant byte.
-Close the streams.
-*/
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+* Combining files
+* Read 2 file names from the console.
+* Write the contents of the second
+* file to the beginning of the first
+* file so that the files are combined.
+* Close the streams.
+* */
 public class Solution {
-    public static Map<String, Integer> resultMap = new HashMap<>();
-
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String str;
-        while(!(str = reader.readLine()).equals("exit")) {
-
-        }
-    }
-
-    public static class ReadThread extends Thread {
-        private String fileName;
-
-        public ReadThread(String fileName) {
-            this.fileName = fileName;
-        }
-
-        @Override
-        public void run() {
-            byte[] bytesCount = new byte[256];
-            try(FileInputStream fileInputStream = new FileInputStream(fileName)){
-                while(fileInputStream.available() > 0) {
-                    int aByte = fileInputStream.read();
-                    bytesCount[aByte]++;
-                }
-            }catch (IOException e) {
-                e.printStackTrace();
+        // Read 2 file names from the console.
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String filename1 = bufferedReader.readLine();
+        String filename2 = bufferedReader.readLine();
+        // Write the contents of the second file to the beginning of the first file
+        // so that the files are combined
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try(FileInputStream fileInputStream1 = new FileInputStream(filename1);
+            FileInputStream fileInputStream2 = new FileInputStream(filename2)){
+            while(fileInputStream2.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream2.read());
             }
-            int maxCount = 0;
-            int maxCountByte = 0;
-            for(int i = 0; i < bytesCount.length; i++) {
-                if(bytesCount[i] > maxCount) {
-                    maxCount = bytesCount[i];
-                    maxCountByte = i;
-                }
+            while(fileInputStream1.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream1.read());
             }
-            resultMap.put(fileName, maxCountByte);
+            fileInputStream1.close();
+            fileInputStream2.close();
         }
+        try(FileOutputStream fileOutputStream = new FileOutputStream(filename1)) {
+            byteArrayOutputStream.writeTo(fileOutputStream);
+            fileOutputStream.close();
+        }
+        byteArrayOutputStream.close();
     }
-
 }
