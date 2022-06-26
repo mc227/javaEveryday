@@ -18,9 +18,9 @@ public class Solution {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String readString;
-        while(!(readString = reader.readLine()).equals("exit")){
-            new ReadThread(readString).start();
+        String str;
+        while(!(str = reader.readLine()).equals("exit")) {
+
         }
     }
 
@@ -34,12 +34,12 @@ public class Solution {
         @Override
         public void run() {
             byte[] bytesCount = new byte[256];
-            try(FileInputStream fileInputStream = new FileInputStream(fileName)) {
+            try(FileInputStream fileInputStream = new FileInputStream(fileName)){
                 while(fileInputStream.available() > 0) {
                     int aByte = fileInputStream.read();
                     bytesCount[aByte]++;
                 }
-            } catch (IOException e) {
+            }catch (IOException e) {
                 e.printStackTrace();
             }
             int maxCount = 0;
@@ -50,7 +50,7 @@ public class Solution {
                     maxCountByte = i;
                 }
             }
-            resultMap.put(fileName,maxCountByte);
+            resultMap.put(fileName, maxCountByte);
         }
     }
 
