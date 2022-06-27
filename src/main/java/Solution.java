@@ -6,33 +6,31 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 /*
-* Rounding numbers
+Combining files
 * Read 2 file names from the console.
-* The first file contains real (fractional) numbers, separated by spaces.
-* For example, 3.1415.
-* Round the numbers to integers and write them,
-* separated by spaces,
-* to the second file.
+* Write the contents of the second
+* file to the beginning of the first file so that
+* the files are combined.
 * Close the streams.
-* The rounding should work like this: 3.49 => 3 3.50 => 4 3.51 => 4
 * */
 public class Solution {
     public static void main(String[] args) throws IOException {
-        // Read 2 file names from the console.
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String filename1 = bufferedReader.readLine();
         String filename2 = bufferedReader.readLine();
 
-        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename1));
-            PrintWriter printWriter = new PrintWriter(new FileWriter(filename2))){
-            while(bufferedFileReader.ready()){
-                String[] splittedLine = bufferedFileReader.readLine().split(" ");
-                for(String item: splittedLine) {
-                    double parsedDouble = Double.parseDouble(item);
-                    long roundedItem = Math.round(parsedDouble);
-                    printWriter.print(roundedItem + " ");
-                }
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try(FileInputStream fileInputStream1 = new FileInputStream(filename1);
+            FileInputStream fileInputStream2 = new FileInputStream(filename2)) {
+            while(fileInputStream2.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream2.read());
             }
+            while(fileInputStream1.available() > 0) {
+                byteArrayOutputStream.write(fileInputStream1.read());
+            }
+        }
+        try(FileOutputStream fileOutputStream = new FileOutputStream(filename1)) {
+            byteArrayOutputStream.writeTo(fileOutputStream);
         }
     }
 }
