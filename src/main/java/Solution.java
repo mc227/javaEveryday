@@ -4,34 +4,31 @@
 import java.io.*;
 /*
 *
-Symbol frequency
-The program is started with one argument:
-* the name of a file that contains text.
-* Calculate how often each symbol is encountered.
-* Sort the results by increasing ASCII code
-* (read about it online).
-* Example: ','=44, 's'=115, 't'=116.
-* Display the sorted results:
-* [symbol1] frequency1 [symbol2] frequency2
-* Example output:
-, 19
-- 7
-f 361
+Finding data inside a file
+Read a file name from the console.
+* Search the file for information
+* related to the specified id.
+* Display it in the format
+* used in the file.
+* The program is started with
+* one argument: id (an int).
+* Close the streams.
+* The file data is separated by
+* spaces and stored in the following
+* order: id productName
 * */
 public class Solution {
     public static void main(String[] args) throws IOException {
-        try(FileReader fileReader = new FileReader(args[0]);){
-            int[] aSCII = new int[128];
-            while(fileReader.ready()) {
-                aSCII[fileReader.read()]++;
-            }
-            for(int i = 0; i < aSCII.length; i++) {
-                if(aSCII[i]!=0){
-                    System.out.println((char)i + " " + aSCII[i]);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(bufferedReader.readLine()))) {
+            String str;
+            while((str = bufferedFileReader.readLine()) != null) {
+                if(str.startsWith(args[1] + " ")){
+                    System.out.println(str);
+                    break;
                 }
             }
         }
-
-
     }
 }
