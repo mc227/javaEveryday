@@ -1,36 +1,35 @@
-
-
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-/*
-*
-Finding data inside a file
-Read a file name from the console.
-* Search the file for information
-* related to the specified id.
-* Display it in the format
-* used in the file.
-* The program is started with one
-* argument: id (an int).
-* Close the streams.
-* The file data is separated by spaces and stored in the following order: id productName
-* */
 public class Solution {
+
+//    Rounding numbers
+//    Read 2 file names from the console.
+//    The first file contains real (fractional)
+//    numbers, separated by spaces. For example, 3.1415.
+//    Round the numbers to integers and write them,
+//    separated by spaces, to the second file.
+//    Close the streams.
+//    The rounding should work like this: 3.49 => 3 3.50 => 4 3.51 => 4
+
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String filename = bufferedReader.readLine();
+        String filename1 = bufferedReader.readLine();
+        String filename2 = bufferedReader.readLine();
 
-        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename))){
-            String str;
-            while((str = bufferedFileReader.readLine())!= null){
-                if(str.startsWith(args[1] + " ")){
-                    System.out.println(str);
-                    break;
+        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename1));
+            PrintWriter printWriter = new PrintWriter(new FileWriter(filename2))) {
+            while(bufferedFileReader.ready()) {
+                String[] splittedLine = bufferedFileReader.readLine().split(" ");
+                for(String item: splittedLine) {
+                    double parsedDouble = Double.parseDouble(item);
+                    long roundNumber = Math.round(parsedDouble);
+                    printWriter.print(roundNumber + " ");
                 }
             }
+            bufferedFileReader.close();
+            printWriter.close();
         }
     }
 }
