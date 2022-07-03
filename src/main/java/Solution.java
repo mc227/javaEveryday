@@ -63,32 +63,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-Rounding numbers
-Read 2 file names from the console.
-The first file contains real (fractional) numbers,
-separated by spaces.
-For example, 3.1415.
-Round the numbers to integers
-and write them, separated by spaces,
-to the second file. Close the streams.
-The rounding should work like this: 3.49 => 3 3.50 => 4 3.51 => 4
+Symbol frequency
+The program is started
+with one argument:
+the name of a file
+that contains text.
+Calculate how often each symbol is encountered.
+Sort the results by increasing ASCII code (read about it online).
+Example: ','=44, 's'=115, 't'=116.
+Display the sorted results: [symbol1] frequency1 [symbol2] frequency2
 */
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String filename1 = bufferedReader.readLine();
-        String filename2 = bufferedReader.readLine();
-        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename1));
-            PrintWriter printWriter = new PrintWriter(new FileWriter(filename2))){
-            String str;
-            while((str = bufferedFileReader.readLine())!=null) {
-                String[] splittedLine = str.split(" ");
-                for(String item: splittedLine){
-                    double parsedDouble = Double.parseDouble(item);
-                    long roundNumber = Math.round(parsedDouble);
-                    printWriter.print(roundNumber + " ");
-                }
+        FileReader fileReader = new FileReader(args[0]);
+        int[] aSCII = new int[128];
+        while(fileReader.ready()){
+            aSCII[fileReader.read()]++;
+        }
+        for(int i = 0; i < aSCII.length; i++){
+            if(aSCII[i]!=0){
+                System.out.println((char) i + " " + aSCII[i]);
             }
         }
     }
