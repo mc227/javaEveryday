@@ -58,57 +58,38 @@
 //
 //    }
 //}
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
 /*
-Threads and bytes
-
+Rounding numbers
+Read 2 file names from the console.
+The first file contains real (fractional) numbers,
+separated by spaces.
+For example, 3.1415.
+Round the numbers to integers
+and write them, separated by spaces,
+to the second file. Close the streams.
+The rounding should work like this: 3.49 => 3 3.50 => 4 3.51 => 4
 */
 
 public class Solution {
-    public static Map<String, Integer> resultMap = new HashMap<String, Integer>();
-
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String readString;
-        while (!(readString = reader.readLine()).equals("exit")) {
-            new ReadThread(readString).start();
-        }
-    }
-
-    public static class ReadThread extends Thread {
-        private String fileName;
-
-        public ReadThread(String fileName) {
-            this.fileName = fileName;
-        }
-
-        @Override
-        public void run() {
-            byte[] bytesCount = new byte[256];
-            try (FileInputStream fileInputStream = new FileInputStream(fileName)) {
-                while (fileInputStream.available() > 0) {
-                    int aByte = fileInputStream.read();
-                    bytesCount[aByte]++;
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            int maxCount = 0;
-            int maxCountByte = 0;
-            for (int i = 0; i < bytesCount.length; i++) {
-                if (bytesCount[i] > maxCount) {
-                    maxCount = bytesCount[i];
-                    maxCountByte = i;
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String filename1 = bufferedReader.readLine();
+        String filename2 = bufferedReader.readLine();
+        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename1));
+            PrintWriter printWriter = new PrintWriter(new FileWriter(filename2))){
+            String str;
+            while((str = bufferedFileReader.readLine())!=null) {
+                String[] splittedLine = str.split(" ");
+                for(String item: splittedLine){
+                    double parsedDouble = Double.parseDouble(item);
+                    long roundNumber = Math.round(parsedDouble);
+                    printWriter.print(roundNumber + " ");
                 }
             }
-            resultMap.put(fileName, maxCountByte);
-            System.out.println(resultMap);
         }
     }
 }
