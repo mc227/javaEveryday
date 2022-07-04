@@ -1,33 +1,46 @@
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /*
-Symbol frequency
-The program is started with one argument:
-the name of a file that contains text.
-Calculate how often each symbol is
-encountered. Sort the results by increasing
-ASCII code (read about it online).
-Example: ','=44, 's'=115, 't'=116.
-Display the sorted results: [symbol1] frequency1 [symbol2] frequency2
-Example output:
-, 19
-- 7
-f 361
+Finding data inside a file
+Read a file name from the console.
+Search the file for information related to the specified id. Display it in the format used in the file.
+The program is started with one argument: id (an int).
+Close the streams.
+
+The file data is separated by spaces and stored in the following order:
+id productName price quantity
+where id is an int
+productName is a String — it can contain spaces
+price is a double
+quantity is an int
+
+The information for each product is stored on a separate line.
+
+Requirements:
+•	The program should read a file name from the console.
+•	Create an input stream for the file.
+•	The program should search the file and display information related to the specified id passed as the first argument.
+•	The stream used to read the file must be closed.
 * */
 public class Solution {
     public static void main(String[] args) throws IOException {
-        FileReader fileReader = new FileReader(args[0]);
-        int[] aSCII = new int[128];
-        try(BufferedReader bufferedReader = new BufferedReader(fileReader)){
-            while(bufferedReader.ready()){
-                aSCII[bufferedReader.read()]++;
-            }
-            for(int i = 0; i < aSCII.length; i++) {
-                if(aSCII[i]!=0){
-                    System.out.println((char) i + " " + aSCII[i]);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String filename = bufferedReader.readLine();
+        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename))){
+            String str;
+            while((str=bufferedFileReader.readLine())!=null){
+                if(str.startsWith(args[1] + " ")){
+                    System.out.println(str);
+                    break;
                 }
             }
         }
     }
 }
+
+
+
