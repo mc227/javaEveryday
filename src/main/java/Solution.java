@@ -1,28 +1,26 @@
 
 import java.io.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /*
-Files and exceptions
-Read file names from the console.
-If the file does not exist
-(i.e. an invalid file name is given),
-then catch the FileNotFoundException,
-display the invalid file name,
-and exit the program.
+Finding data inside a file
+Read a file name from the console.
+Search the file for information related to the specified id. Display it in the format used in the file.
+The program is started with one argument: id (an int).
 Close the streams.
-Don't use System.exit();
 * */
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        while(true) {
-            String filename = bufferedReader.readLine();
-            try(FileInputStream fileInputStream = new FileInputStream(filename)){
-
-            } catch (FileNotFoundException e) {
-                System.out.println(filename);
-                break;
+        String filename = bufferedReader.readLine();
+        try(BufferedReader bufferedFileReader = new BufferedReader(new FileReader(filename))){
+            String str;
+            while((str = bufferedFileReader.readLine())!=null){
+                if(str.startsWith(args[1] + " ")){
+                    System.out.println(str);
+                    break;
+                }
             }
         }
     }
