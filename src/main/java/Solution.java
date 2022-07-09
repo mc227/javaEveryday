@@ -1,29 +1,27 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 /*
-Files and exceptions
-Read file names from the console.
-If the file does not exist
-(i.e. an invalid file name is given),
-then catch the FileNotFoundException,
-display the invalid file name,
-and exit the program.
+Threads and bytes
+Read file names from the console until the word "exit" is entered.
+Pass the file name to the ReadThread thread.
+The ReadThread thread should find the byte that occurs most frequently in the file, and add it to resultMap,
+where the String parameter is the file name and the Integer parameter is the relevant byte.
 Close the streams.
-Don't use System.exit();
+
+Requirements:
+
 */
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        while(true) {
-            String str = bufferedReader.readLine();
-            try(FileInputStream fileInputStream = new FileInputStream(str)){
+        // Read file names from the console until the word "exit" is entered.
+        String filename;
+        while(!(filename = bufferedReader.readLine()).equals("exit")){
 
-            } catch (FileNotFoundException fileNotFoundException){
-                System.out.println(str);
-                break;
-            }
         }
     }
 }
