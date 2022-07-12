@@ -13,11 +13,12 @@ public class Solution {
             public int compare(String o1, String o2) {
                 String[] parts1 = o1.split(".part");
                 String[] parts2 = o2.split(".part");
-                int number1 = Integer.parseInt(parts1[parts1.length()-1]);
-                int number2 = Integer.parseInt(parts2[parts2.length()-1]);
+                int number1 = Integer.parseInt(parts1[parts1.length-1]);
+                int number2 = Integer.parseInt(parts2[parts2.length-1]);
                 return number1 - number2;
             }
         });
         String outputFile = null;
+        String readString;
     }
 }
