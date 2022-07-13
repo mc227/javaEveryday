@@ -1,24 +1,59 @@
+
+
+/*
+Threads and bytes
+Read file names from the console until the word "exit" is entered.
+Pass the file name to the ReadThread thread.
+The ReadThread thread should find the byte that occurs most frequently in the file, and add it to resultMap,
+where the String parameter is the file name and the Integer parameter is the relevant byte.
+Close the streams.
+* */
+
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
+    public static Map<String,Integer> resultMap = new HashMap<>();
     public static void main(String[] args) throws IOException {
+        // Read file names from the console until the word "exit" is entered.
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        Set<String> files = new TreeSet<>(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                String[] parts1 = o1.split(".part");
-                String[] parts2 = o2.split(".part");
-                int number1 = Integer.parseInt(parts1[parts1.length-1]);
-                int number2 = Integer.parseInt(parts2[parts2.length-1]);
-                return number1 - number2;
+        String filename;
+        while(!(filename = bufferedReader.readLine()).equals("exit")){
+            new ReadThread(filename).start();
+        }
+    }
+
+    private static class ReadThread extends Thread{
+        public String filename;
+
+        public ReadThread(String filename) {
+            this.filename = filename;
+        }
+
+        @Override
+        public void run() {
+            byte[] bytesCount = new byte[256];
+            try(FileInputStream fileInputStream = new FileInputStream(filename)){
+                while(fileInputStream.available() > 0) {
+                    bytesCount[fileInputStream.read()]++;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        });
-        String outputFile = null;
-        String readString;
+            int maxCount = 0;
+            int maxCountByte = 0;
+            for(int i = 0; i < bytesCount.length; i++) {
+                if(bytesCount[i] > maxCount){
+                    maxCount = bytesCount[i];
+                    maxCountByte = i;
+                }
+            }
+            resultMap.put(filename,maxCountByte);
+            System.out.println(resultMap);
+        }
     }
 }
