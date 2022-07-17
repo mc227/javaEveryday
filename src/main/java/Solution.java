@@ -1,61 +1,95 @@
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
-/*
-Building a file
-Let's build a file from various pieces.
-Read file names from the console.
-Each file has a name: <someName>.partN.
+/* 
+Prices
 
-For example, Lion.avi.part1, Lion.avi.part2, ..., Lion.avi.part37.
+19847   Swim trunks, blue             159.00  12.0
+19848   product                       10      10
 
-The file names are supplied in random order. The word "end" is used to stop reading in file names.
-In the folder where all the files are located, create a file without the "part" suffix, i.e. without ".<partN>".
 
-For example, Lion.avi.
-
-Use a buffer to copy all the bytes from the partial files to the created file.
-Copy the first in the proper order, first the first part, then the second, ..., finally - the last part.
-Close the streams.
-* */
-
-import java.io.*;
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+*/
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        Set<String> files = new TreeSet<>(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                String[] parts1 = o1.split(".part");
-                String[] parts2 = o2.split(".part");
-                int number1 = Integer.parseInt(parts1[parts1.length-1]);
-                int number2 = Integer.parseInt(parts2[parts2.length-1]);
-                return number1 - number2;
-            }
-        });
-        String outputFile = null;
-        String readString;
-        while(!(readString = bufferedReader.readLine()).equals("ends")){
-            files.add(readString);
-            if(outputFile == null) {
-                int indexOfSuffix = readString.lastIndexOf(".part");
-                outputFile = readString.substring(0,indexOfSuffix);
+    public static class Product {
+        int id;
+        String name;
+        String price;
+        String quantity;
+
+        public Product(int id, String name, String price, String quantity) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("%-8d%-30s%-8s%-4s", id, name, price, quantity);
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        if (args.length == 0) {
+            return;
+        }
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String fileName = reader.readLine();
+
+        List<Product> products = new ArrayList<>();
+
+        try (BufferedReader fileReader = new BufferedReader(new FileReader(fileName))) {
+            while (fileReader.ready()) {
+                Product product = getProduct(fileReader.readLine());
+                products.add(product);
             }
         }
-        if(outputFile == null) return;
-        try(FileOutputStream fileOutputStream = new FileOutputStream(outputFile)){
-            for(String file: files) {
-                try(FileInputStream fileInputStream = new FileInputStream(file)){
-                    byte[] buffer = new byte[fileInputStream.available()];
-                    while(fileInputStream.available() > 0) {
-                        int bytesRead = fileInputStream.read(buffer);
-                        fileOutputStream.write(buffer, 0, bytesRead);
-                    }
+
+        switch (args[0]) {
+            case "-c":
+                int id = 0;
+                for (Product product : products) {
+                    if (product.id > id) id = product.id;
                 }
+                String name = "";
+                for (int i = 1; i < args.length - 2; i++) {
+                    name += args[i] + " ";
+                }
+                if (name.length() > 30) {
+                    name = name.substring(0, 30);
+                }
+                String price =  args[args.length - 2];
+                if (price.length() > 8) {
+                    price = price.substring(0, 8);
+                }
+                String quantity = args[args.length - 1];
+                if (quantity.length() > 4) {
+                    quantity = quantity.substring(0, 4);
+                }
+                Product product = new Product(++id, name.trim(), price, quantity);
+                products.add(product);
+        }
+
+        try (FileWriter fileWriter = new FileWriter(fileName)) {
+            for (Product product : products) {
+                fileWriter.write(product.toString());
+                fileWriter.write("\n");
             }
         }
+    }
+
+    public static Product getProduct(String string) {
+        String id = string.substring(0, 8).trim();
+        String name = string.substring(8, 38).trim();
+        String price = string.substring(38, 46).trim();
+        String quantity = string.substring(46, 50).trim();
+        return new Product(Integer.parseInt(id), name, price, quantity);
     }
 }
