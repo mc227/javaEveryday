@@ -1,30 +1,50 @@
-
-
-/* 
-Files and exceptions
+/*
+Building a file
+Let's build a file from various pieces.
 Read file names from the console.
-If the file does not exist
-(i.e. an invalid file name is given),
-then catch the FileNotFoundException,
-display the invalid file name,
-and exit the program.
-Close the streams.
-Don't use System.exit();
-
+Each file has a name: .partN.
+For example, Lion.avi.part1, Lion.avi.part2, ..., Lion.avi.part37.
+The file names are supplied in random order.
+The word "end" is used to stop reading in file names.
 */
 
 import java.io.*;
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        while(true) {
-            String readString = bufferedReader.readLine();
-            try(FileInputStream fileInputStream = new FileInputStream(readString)){
-
-            }catch (FileNotFoundException fileNotFoundException){
-                System.out.println(readString);
-                break;
+        Set<String> files = new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                String[] parts1 = o1.split(".part");
+                String[] parts2 = o2.split(".part");
+                int number1 = Integer.parseInt(parts1[parts1.length - 1]);
+                int number2 = Integer.parseInt(parts2[parts2.length - 1]);
+                return number1 - number2;
+            }
+        });
+        String outputFile = null;
+        String readString;
+        while(!(readString = bufferedReader.readLine()).equals("end")){
+            files.add(readString);
+            if(outputFile == null) {
+                int indexOfSuffix = readString.lastIndexOf(".part");
+                outputFile = readString.substring(0, indexOfSuffix);
+            }
+        }
+        if(outputFile == null) return;
+        try(FileOutputStream fileOutputStream = new FileOutputStream(outputFile)){
+            for(String file:files) {
+                try(FileInputStream fileInputStream = new FileInputStream(file)){
+                    byte[] buffer = new byte[fileInputStream.available()];
+                    while(fileInputStream.available() > 0) {
+                        int bytesRead = fileInputStream.read(buffer);
+                        fileOutputStream.write(buffer,0, bytesRead);
+                    }
+                }
             }
         }
     }
