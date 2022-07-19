@@ -33,12 +33,12 @@ public class Solution {
             FileOutputStream fileOutputStream = new FileOutputStream(args[2])){
 
             if(mode.equals("-e")){
-                while(fileInputStream.available()>0){
-                    fileOutputStream.write(fileInputStream.read() + 32);
+                while(fileInputStream.available() > 0) {
+                    fileOutputStream.write(fileInputStream.read()+32);
                 }
             } else {
                 while(fileInputStream.available() > 0) {
-                    fileOutputStream.write(fileInputStream.read() - 32);
+                    fileOutputStream.write(fileInputStream.read()-32);
                 }
             }
         }
