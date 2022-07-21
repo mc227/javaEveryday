@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +77,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Encryption">
-    <configuration name="ConsoleRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConsoleRead" />
+    <configuration name="CatWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CatWrapper" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,19 +121,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConsoleRead" />
       <item itemvalue="Application.SystemRedirectService" />
       <item itemvalue="Application.Encryption" />
       <item itemvalue="Application.Decryption" />
       <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.CatWrapper" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Encryption" />
+        <item itemvalue="Application.CatWrapper" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Decryption" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.SystemRedirectService" />
       </list>
     </recent_temporary>
   </component>
