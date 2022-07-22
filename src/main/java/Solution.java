@@ -1,27 +1,30 @@
 /*
-Files and exceptions
-Read file names from the console.
-If the file does not exist
-(i.e. an invalid file name is given),
-then catch the FileNotFoundException,
-display the invalid file name,
-and exit the program.
-Close the streams.
-Don't use System.exit();
+Encryption
+Come up with an encryption/decryption mechanism.
+The program runs with one of the following sets
+of arguments: -e fileName fileOutputName
+-d fileName fileOutputName where:
+fileName is the name of a file to be encrypted/decrypted.
 * */
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        while(true){
-            String filename = bufferedReader.readLine();
-            try(FileInputStream fileInputStream = new FileInputStream(filename)) {
-
-            } catch (FileNotFoundException fileNotFoundException) {
-                System.out.println(filename);
-                break;
+        String mode = args[0];
+        if(!(mode.equals("-e") || mode.equals("-d"))) return;
+        try(FileInputStream fileInputStream = new FileInputStream(args[1]);
+            FileOutputStream fileOutputStream = new FileOutputStream(args[2]);){
+            if (mode.equals("-e")){
+                while(fileInputStream.available() > 0){
+                    fileOutputStream.write(fileInputStream.read() + 4);
+                }
+            } else {
+                while(fileInputStream.available() > 0){
+                    fileOutputStream.write(fileInputStream.read() - 4);
+                }
             }
         }
     }

@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi" beforeDir="false" afterPath="$PROJECT_DIR$/Lion.avi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Encryption">
+  <component name="RunManager" selected="Application.Decryption">
     <configuration name="CatWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CatWrapper" />
       <module name="javaEveryday" />
@@ -86,7 +89,7 @@
     <configuration name="Decryption" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="-d mark8.txt mark10.txt" />
+      <option name="PROGRAM_PARAMETERS" value="-d mark8.txt mark9.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.codegym.task.task18.task1827.*" />
@@ -128,10 +131,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Encryption" />
-        <item itemvalue="Application.CatWrapper" />
-        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Decryption" />
+        <item itemvalue="Application.Encryption" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.CatWrapper" />
         <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
