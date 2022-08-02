@@ -1,50 +1,40 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Solution {
-    public static class Product{
-        int id;
-        String name;
-        String price;
-        String quantity;
+    public interface ATable {
+        String getCurrentUserName();
+        String getTableName();
+    }
 
-        public Product(int id, String name, String price, String quantity) {
-            this.id = id;
-            this.name = name;
-            this.price = price;
-            this.quantity = quantity;
+    public interface BTable {
+        String getHeaderText();
+    }
+
+    public static class TableAdapter implements BTable {
+        private ATable aTable;
+
+        public TableAdapter(ATable aTable) {
+            this.aTable = aTable;
         }
 
         @Override
-        public String toString() {
-            return String.format("%-8d%-30s%-8s%-4s%", id, name, price, quantity);
+        public String getHeaderText() {
+            return "[" + aTable.getCurrentUserName() + "]" + " : " + aTable.getTableName();
         }
     }
 
-    public static void main(String[] args) throws Exception{
-        if(args.length == 0) return;
-
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String filename = bufferedReader.readLine();
-        List<Product> products = new ArrayList<>();
-
-        try(BufferedReader fileReader = new BufferedReader(new FileReader(filename))){
-            while (fileReader.ready()){
-                Product product = getProduct(fileReader.readLine());
-                products.add(product);
+    public static void main(String[] args) {
+        ATable aTable = new ATable() {
+            @Override
+            public String getCurrentUserName() {
+                return "Amigo";
             }
-        }
 
-        switch (args[0]){
-            case "-c":
+            @Override
+            public String getTableName() {
+                return "DashboardTable";
+            }
+        };
 
-        }
-    }
-
-    private static Product getProduct(String readLine) {
-        return new Product(1,"name","price","q");
+        BTable table = new TableAdapter(aTable);
+        System.out.println(table.getHeaderText());
     }
 }
