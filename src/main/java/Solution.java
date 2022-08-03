@@ -1,81 +1,91 @@
+/*
+Yet another adapter
+Adapt Scanner to the PersonScanner interface.
+The adapter class is PersonScannerAdapter.
+Create a private final Scanner field called fileScanner in the adapter class.
+Initialize the field in a constructor with one Scanner parameter.
 
-import java.util.HashMap;
-import java.util.Map;
+The file stores data in the following format:
+John Michael Peterson 12 31 1950
+Larry Thomas Gates 12 31 1957
+The file contains information about a lot of people. Each line has data for a single person. The read() method must read only one person's information.
 
-/* 
-Adapting multiple interfaces
+
+Requirements:
+1. PersonScanner must be an interface.
+2. The PersonScannerAdapter class must implement the PersonScanner interface.
+3. The PersonScannerAdapter class must have a private Scanner field called fileScanner.
+4. The PersonScannerAdapter class must have a constructor with a Scanner parameter.
+5. The PersonScannerAdapter class's close() method must delegate the call to fileScanner.
+6. The PersonScannerAdapter class's read() method should read a line from the file, parse it, and return only one person's data as an Person object.
+* */
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+/*
+Yet another adapter
 
 */
 
 public class Solution {
-    public static Map<String, String> countries = new HashMap<>();
 
-    static {
-        countries.put("UA", "Ukraine");
-        countries.put("US", "United States");
-        countries.put("FR", "France");
+    public static void main(String[] args) throws IOException {
+        try {
+            //the file to be opened for reading
+            FileInputStream fis=new FileInputStream("ted.txt");
+            Scanner sc=new Scanner(fis);    //file to be scanned
+            //returns true if there is another line to read
+            while(sc.hasNextLine())
+            {
+                System.out.println(sc.nextLine());      //returns the line that was skipped
+            }
+            sc.close();     //closes the scanner
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
-    public static void main(String[] args) {
+    // The PersonScannerAdapter class must implement the PersonScanner interface.
+    public static class PersonScannerAdapter implements PersonScanner{
+        // The PersonScannerAdapter class must have a private Scanner field called fileScanner.
+        private Scanner fileScanner;
 
-    }
-
-    public static class IncomeDataAdapter implements Customer, Contact {
-        private IncomeData data;
-
-        public IncomeDataAdapter(IncomeData data) {
-            this.data = data;
+        public PersonScannerAdapter(Scanner fileScanner) {
+            this.fileScanner = fileScanner;
         }
 
         @Override
-        public String getName() {
-            return data.getContactLastName() + ", " + data.getContactFirstName();
+        public Person read() throws IOException {
+            // The PersonScannerAdapter class's read()
+            // method should read a line from the file, parse it, and return only one person's data as an Person object.
+            if (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine();
+                List<String> splitword1 = Arrays.asList(line.split(" "));
+                Person person = null;
+                try {
+                    person = new Person(splitword1.get(2), splitword1.get(0),splitword1.get(1),
+                            new SimpleDateFormat("MM ddyyyy").parse(splitword1.get(3)+" "+splitword1.get(4)+" "+splitword1.get(5)));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                return person;
+            }
+            return null;
         }
 
         @Override
-        public String getPhoneNumber() {
-            return String.format("+%d(%2$s)%3$s-%4$s-%5$s", data.getCountryPhoneCode(),
-                    String.format("%010d", data.getPhoneNumber()).substring(0, 3),
-                    String.format("%010d", data.getPhoneNumber()).substring(3, 6),
-                    String.format("%010d", data.getPhoneNumber()).substring(6, 8),
-                    String.format("%010d", data.getPhoneNumber()).substring(8));
+        public void close() throws IOException {
+            // The PersonScannerAdapter class's close() method must delegate the call to fileScanner.
+            fileScanner.close();
+
         }
-
-
-        @Override
-        public String getCompanyName() {
-            return data.getCompany();
-        }
-
-        @Override
-        public String getCountryName() {
-            return countries.get(data.getCountryCode());
-        }
-    }
-
-    public static interface IncomeData {
-        String getCountryCode();        // For example: US
-
-        String getCompany();            // For example: CodeGym Ltd.
-
-        String getContactFirstName();   // For example: John
-
-        String getContactLastName();    // For example: Smith
-
-        int getCountryPhoneCode();      // For example: 1
-
-        int getPhoneNumber();           // For example: 991234567
-    }
-
-    public static interface Customer {
-        String getCompanyName();        // For example: CodeGym Ltd.
-
-        String getCountryName();        // For example: United States
-    }
-
-    public static interface Contact {
-        String getName();               // For example: Smith, John
-
-        String getPhoneNumber();        // For example: +1(099)123-45-67
     }
 }
