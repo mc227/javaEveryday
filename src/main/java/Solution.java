@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 /*
 Even characters
@@ -22,30 +23,32 @@ Requirements:
 
 */
 
+/*
+Even characters
+
+*/
+
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String file1 = bufferedReader.readLine();
-        String file2 = bufferedReader.readLine();
+        String fileName1;
+        String fileName2;
 
-        FileReader reader = new FileReader(file1);
-        FileWriter writer = new FileWriter(file2);
-
-        int i = 1;
-        while (reader.ready()) {
-//            System.out.println(i);
-            int data = reader.read(); //Read one character (the char will be widened to an int)
-            if(i%2 == 0) {
-//                System.out.println(i);
-                writer.write(data); //Write one character (the int will be truncated/narrowed to a char)
-            }
-            i++;
-
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
+            fileName1 = bufferedReader.readLine();
+            fileName2 = bufferedReader.readLine();
         }
 
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        try (FileReader fileReader = new FileReader(fileName1)) {
+            while (fileReader.ready()) {
+                list.add(fileReader.read());
+            }
+        }
 
-        bufferedReader.close();
-        reader.close();
-        writer.close();
+        try (FileWriter fileWriter = new FileWriter(fileName2)) {
+            for (int i = 1; i < list.size(); i = i + 2) {
+                fileWriter.write((byte) (int) list.get(i));
+            }
+        }
     }
 }
