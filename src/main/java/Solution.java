@@ -1,64 +1,114 @@
-/*
-Yet another adapter
-Adapt Scanner to the PersonScanner interface.
-The adapter class is PersonScannerAdapter.
-Create a private final Scanner field called fileScanner in the adapter class.
-Initialize the field in a constructor with one Scanner parameter.
 
-The file stores data in the following format:
-John Michael Peterson 12 31 1950
-Larry Thomas Gates 12 31 1957
-The file contains information about a lot of people. Each line has data for a single person. The read() method must read only one person's information.
+import java.util.HashMap;
+import java.util.Map;
 
-
-Requirements:
-1. PersonScanner must be an interface.
-2. The PersonScannerAdapter class must implement the PersonScanner interface.
-3. The PersonScannerAdapter class must have a private Scanner field called fileScanner.
-4. The PersonScannerAdapter class must have a constructor with a Scanner parameter.
-5. The PersonScannerAdapter class's close() method must delegate the call to fileScanner.
-6. The PersonScannerAdapter class's read() method should read a line from the file, parse it, and return only one person's data as an Person object.
-* */
-
-import java.io.IOException;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Scanner;
-
-/*
+/* 
+Reinforce the adapter
 
 */
 
 public class Solution {
+    public static Map<String, String> countries = new HashMap<>();
 
-    public static void main(String[] args) {
-
+    static {
+        countries.put("UA", "Ukraine");
+        countries.put("US", "United States");
+        countries.put("FR", "France");
     }
 
-    public static class PersonScannerAdapter implements PersonScanner {
+    public static void main(String[] args) {
+        Customer customer = new Customer() {
+            @Override
+            public String getCompanyName() {
+                return null;
+            }
 
-        private final Scanner fileScanner;
+            @Override
+            public String getCountryName() {
+                return null;
+            }
+        };
+        Contact contact = new Contact() {
+            @Override
+            public String getName() {
+                return null;
+            }
 
-        public PersonScannerAdapter(Scanner scanner) {
-            fileScanner = scanner;
+            @Override
+            public String getPhoneNumber() {
+                return "+1(111)222-3333, +3(805)0123-4567, +380(50)123-4567, etc.";
+            }
+        };
+        RowItem rowItem = new DataAdapter(customer, contact);
+        System.out.println(rowItem.getDialString());
+    }
+
+    public static class DataAdapter implements RowItem {
+        private Customer customer;
+        private Contact contact;
+
+        public DataAdapter(Customer customer, Contact contact) {
+            this.customer = customer;
+            this.contact = contact;
         }
 
         @Override
-        public Person read() {
-            String str = fileScanner.nextLine();
-            String[] split = str.split(" ");
-
-            Calendar calendar = new GregorianCalendar(Integer.parseInt(split[5]),
-                    Integer.parseInt(split[3]) - 1, Integer.parseInt(split[4]));
-            Date date = calendar.getTime();
-            return new Person(split[2], split[0], split[1], date);
-
+        public String getCountryCode() {
+            for (Map.Entry<String, String> entry : countries.entrySet()) {
+                if (entry.getValue().equals(customer.getCountryName())) {
+                    return entry.getKey();
+                }
+            }
+            return null;
         }
 
         @Override
-        public void close() throws IOException {
-            fileScanner.close();
+        public String getCompany() {
+            return customer.getCompanyName();
         }
+
+        @Override
+        public String getContactFirstName() {
+            return contact.getName().split(", ")[1];
+        }
+
+        @Override
+        public String getContactLastName() {
+            return contact.getName().split(", ")[0];
+        }
+
+        @Override
+        public String getDialString() {
+            // +1(111)222-3333, +3(805)0123-4567, +380(50)123-4567, etc.
+//            String foo = contact.getPhoneNumber().substring(0,16);
+//            String fooAllNumbers = foo.replaceAll("[^\\d.]", "");
+//            return String.format("callto://+%s", fooAllNumbers);
+            return "callto://+" + contact.getPhoneNumber().replaceAll("[^0-9]", "");
+        }
+    }
+
+    public static interface RowItem {
+        String getCountryCode();        // For example: US
+
+        String getCompany();            // For example: CodeGym Ltd.
+
+        String getContactFirstName();   // For example: John
+
+        String getContactLastName();    // For example: Peterson
+
+        // callto://+11112223333
+        String getDialString();         // For example: callto://+11112223333
+    }
+
+    public static interface Customer {
+        String getCompanyName();        // For example: CodeGym Ltd.
+
+        String getCountryName();        // For example: United States
+    }
+
+    public static interface Contact {
+        String getName();               // For example: Peterson, John
+
+        String getPhoneNumber();        // For example: +1(111)222-3333, +3(805)0123-4567, +380(50)123-4567, etc.
     }
 }
