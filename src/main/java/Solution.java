@@ -20,12 +20,10 @@ Requirements:
 6. The PersonScannerAdapter class's read() method should read a line from the file, parse it, and return only one person's data as an Person object.
 * */
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /*
@@ -35,57 +33,33 @@ Yet another adapter
 
 public class Solution {
 
-    public static void main(String[] args) throws IOException {
-        try {
-            //the file to be opened for reading
-            FileInputStream fis=new FileInputStream("ted.txt");
-            Scanner sc=new Scanner(fis);    //file to be scanned
-            //returns true if there is another line to read
-            while(sc.hasNextLine())
-            {
-                System.out.println(sc.nextLine());      //returns the line that was skipped
-            }
-            sc.close();     //closes the scanner
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) {
+
     }
 
-    // The PersonScannerAdapter class must implement the PersonScanner interface.
-    public static class PersonScannerAdapter implements PersonScanner{
-        // The PersonScannerAdapter class must have a private Scanner field called fileScanner.
-        private Scanner fileScanner;
+    public static class PersonScannerAdapter implements PersonScanner {
 
-        public PersonScannerAdapter(Scanner fileScanner) {
-            this.fileScanner = fileScanner;
+        private final Scanner fileScanner;
+
+        public PersonScannerAdapter(Scanner scanner) {
+            fileScanner = scanner;
         }
 
         @Override
-        public Person read() throws IOException {
-            // The PersonScannerAdapter class's read()
-            // method should read a line from the file, parse it, and return only one person's data as an Person object.
-            if (fileScanner.hasNextLine()) {
-                String line = fileScanner.nextLine();
-                List<String> splitword1 = Arrays.asList(line.split(" "));
-                Person person = null;
-                try {
-                    person = new Person(splitword1.get(2), splitword1.get(0),splitword1.get(1),
-                            new SimpleDateFormat("MM ddyyyy").parse(splitword1.get(3)+" "+splitword1.get(4)+" "+splitword1.get(5)));
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-                return person;
-            }
-            return null;
+        public Person read() {
+            String str = fileScanner.nextLine();
+            String[] split = str.split(" ");
+
+            Calendar calendar = new GregorianCalendar(Integer.parseInt(split[5]),
+                    Integer.parseInt(split[3]) - 1, Integer.parseInt(split[4]));
+            Date date = calendar.getTime();
+            return new Person(split[2], split[0], split[1], date);
+
         }
 
         @Override
         public void close() throws IOException {
-            // The PersonScannerAdapter class's close() method must delegate the call to fileScanner.
             fileScanner.close();
-
         }
     }
 }
