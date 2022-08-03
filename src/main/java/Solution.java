@@ -1,79 +1,51 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.io.*;
 
 /*
-Reinforce the adapter
+Even characters
+Read 2 file names from the console.
+Output to the second file all characters from the first file with an even ordinal number (ordinal numbers start with 1).
+
+Example first file:
+text in file
+Output in the second file:
+eti ie
+Close the IO streams.
+
+
+Requirements:
+1. The program should read file names from the console (use BufferedReader).
+2. The BufferedReader used for reading input from the console must be closed after use.
+3. The program must read the first file's contents (use the FileReader constructor with a String parameter).
+4. The file input stream (FileReader) must be closed.
+5. The program must write to the second file all chars from the first file with an even ordinal number (use FileWriter).
+6. The file output stream (FileWriter) must be closed.
 
 */
 
 public class Solution {
-    public static Map<String,String> countries = new HashMap<>();
-    static {
-        countries.put("UA","Ukraine");
-        countries.put("US","United States");
-        countries.put("FR","France");
-    }
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String file1 = bufferedReader.readLine();
+        String file2 = bufferedReader.readLine();
 
-    public static void main(String[] args) {
+        FileReader reader = new FileReader(file1);
+        FileWriter writer = new FileWriter(file2);
 
-    }
-
-    public static class DataAdapter implements RowItem {
-        private Customer customer;
-        private Contact contact;
-        public DataAdapter(Customer customer, Contact contact) {
-            this.customer = customer;
-            this.contact = contact;
-        }
-
-        @Override
-        public String getCountryCode() {
-            for (Map.Entry<String, String> entry : countries.entrySet()) {
-                if (entry.getValue().equals(customer.getCountryName())) {
-                    return entry.getKey();
-                }
+        int i = 1;
+        while (reader.ready()) {
+//            System.out.println(i);
+            int data = reader.read(); //Read one character (the char will be widened to an int)
+            if(i%2 == 0) {
+//                System.out.println(i);
+                writer.write(data); //Write one character (the int will be truncated/narrowed to a char)
             }
-            return null;
+            i++;
+
         }
 
-        @Override
-        public String getCompany() {
-            return customer.getCompanyName();
-        }
 
-        @Override
-        public String getContactFirstName() {
-            String[]name = contact.getName().split(", ");
-            return  name[1];
-        }
-
-        @Override
-        public String getContactLastName() {
-            String[]name = contact.getName().split(", ");
-            return  name[0];
-        }
-
-        @Override
-        public String getDialString() {
-            return "callto://+" + contact.getPhoneNumber().replaceAll("\\D","");
-        }
-    }
-
-    public static interface RowItem {
-        String getCountryCode();        // For example: US
-        String getCompany();            // For example: CodeGym Ltd.
-        String getContactFirstName();   // For example: John
-        String getContactLastName();    // For example: Peterson
-        String getDialString();         // For example: callto://+11112223333
-    }
-
-    public static interface Customer {
-        String getCompanyName();        // For example: CodeGym Ltd.
-        String getCountryName();        // For example: United States
-    }
-
-    public static interface Contact {
-        String getName();               // For example: Peterson, John
-        String getPhoneNumber();        // For example: +1(111)222-3333, +3(805)0123-4567, +380(50)123-4567, etc.
+        bufferedReader.close();
+        reader.close();
+        writer.close();
     }
 }
