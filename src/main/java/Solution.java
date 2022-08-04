@@ -1,7 +1,7 @@
-//package com.codegym.task.task19.task1909;
+//package com.codegym.task.task19.task1910;
 
 /*
-Changing punctuation marks
+Punctuation
 
 */
 
@@ -28,8 +28,9 @@ public class Solution {
             for (String line : fileContent) {
 //                System.out.println(line);
                 try{
-                    line = line.replace(".","!");
-                    outputFileWriter.write(line+"\n");
+                    line = line.replaceAll("[^a-zA-Z0-9 ]", "");
+//                    line = line.replaceAll("\n","");
+                    outputFileWriter.write(line);
                 }catch (Exception ignore) {
 
                 }
