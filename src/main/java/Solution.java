@@ -1,17 +1,15 @@
-//package com.codegym.task.task19.task1908;
+//package com.codegym.task.task19.task1909;
 
+/*
+Changing punctuation marks
+
+*/
 
 import java.io.*;
 import java.util.ArrayList;
 
-/*
-Picking out numbers
-
-*/
-
 public class Solution {
     public static void main(String[] args) throws IOException {
-
         String inputFileName;
         String outputFileName;
 
@@ -26,19 +24,18 @@ public class Solution {
                 fileContent.add(inputFileReader.readLine());
             }
         }
-
         try (BufferedWriter outputFileWriter=new BufferedWriter(new FileWriter(outputFileName))){
             for (String line : fileContent) {
-                String[] splitLine = line.trim().split(" ");
-                for (String word : splitLine) {
-                    try {
-                        int num = Integer.parseInt(word);
-                        outputFileWriter.write(word + " ");
-                    } catch (Exception ignore) {
-                        /* NOP */
-                    }
+//                System.out.println(line);
+                try{
+                    line = line.replace(".","!");
+                    outputFileWriter.write(line+"\n");
+                }catch (Exception ignore) {
+
                 }
             }
         }
+
+
     }
 }
