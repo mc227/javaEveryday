@@ -1,12 +1,12 @@
 //package com.codegym.task.task19.task1910;
 
+import java.io.*;
+import java.util.ArrayList;
+
 /*
 Punctuation
 
 */
-
-import java.io.*;
-import java.util.ArrayList;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
@@ -24,19 +24,11 @@ public class Solution {
                 fileContent.add(inputFileReader.readLine());
             }
         }
-        try (BufferedWriter outputFileWriter=new BufferedWriter(new FileWriter(outputFileName))){
-            for (String line : fileContent) {
-//                System.out.println(line);
-                try{
-                    line = line.replaceAll("[^a-zA-Z0-9 ]", "");
-//                    line = line.replaceAll("\n","");
-                    outputFileWriter.write(line);
-                }catch (Exception ignore) {
 
-                }
+        try (BufferedWriter outputFileWriter = new BufferedWriter(new FileWriter(outputFileName))) {
+            for (String s : fileContent) {
+                outputFileWriter.write(s.replaceAll("\\p{P}", ""));
             }
         }
-
-
     }
 }
