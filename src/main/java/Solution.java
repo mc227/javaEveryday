@@ -1,28 +1,25 @@
 //package com.codegym.task.task19.task1913;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 /*
 Output only digits
 
 */
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 public class Solution {
     public static TestString testString = new TestString();
 
     public static void main(String[] args) {
         PrintStream defaultPrintStream = System.out;
-
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        PrintStream newPrintStream = new PrintStream(byteArrayOutputStream);
-        System.setOut(newPrintStream);
-
+        System.setOut(new PrintStream(byteArrayOutputStream));
         testString.printSomething();
-
         System.setOut(defaultPrintStream);
 
-        String result = byteArrayOutputStream.toString().replaceAll("[^0-9]", "");
+        String result = byteArrayOutputStream.toString();
+        result = result.replaceAll("\\D", "");
         System.out.println(result);
     }
 
