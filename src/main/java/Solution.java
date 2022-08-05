@@ -1,7 +1,7 @@
-//package com.codegym.task.task19.task1912;
+//package com.codegym.task.task19.task1913;
 
 /*
-Reader Wrapper 2
+Output only digits
 
 */
 
@@ -22,13 +22,13 @@ public class Solution {
 
         System.setOut(defaultPrintStream);
 
-        String result = byteArrayOutputStream.toString().replace("te","??");
+        String result = byteArrayOutputStream.toString().replaceAll("[^0-9]", "");
         System.out.println(result);
     }
 
     public static class TestString {
         public void printSomething() {
-            System.out.println("This is text for testing");
+            System.out.println("This 1 text 23 is 4 f5-6or7 tes8ting");
         }
     }
 }
