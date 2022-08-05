@@ -1,12 +1,12 @@
-//package com.codegym.task.task19.task1911;
+//package com.codegym.task.task19.task1912;
+
+/*
+Reader Wrapper 2
+
+*/
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
-/*
-Reader wrapper
-
-*/
 
 public class Solution {
     public static TestString testString = new TestString();
@@ -22,7 +22,7 @@ public class Solution {
 
         System.setOut(defaultPrintStream);
 
-        String result = byteArrayOutputStream.toString().toUpperCase();
+        String result = byteArrayOutputStream.toString().replace("te","??");
         System.out.println(result);
     }
 
