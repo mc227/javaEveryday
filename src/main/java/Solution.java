@@ -1,43 +1,53 @@
-//package com.codegym.task.task19.task1914;
-
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+//package com.codegym.task.task19.task1915;
 
 /*
-Problem solving
+Duplicate text
 
 */
+
+import java.io.*;
 
 public class Solution {
     public static TestString testString = new TestString();
 
-    public static void main(String[] args) {
-        PrintStream defaultPrintStream = System.out;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(byteArrayOutputStream));
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String fileName = reader.readLine();
+        FileOutputStream fileOutputStream = new FileOutputStream(fileName);
+        //Save the current PrintStream in a special variable
+        PrintStream consoleStream = System.out;
+
+        //Create a dynamic array
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        //Create an adapter for the PrintStream class
+        PrintStream stream = new PrintStream(outputStream);
+        //Set it as the current System.out
+        System.setOut(stream);
+
+        //Call a function that knows nothing about our changes
         testString.printSomething();
-        System.setOut(defaultPrintStream);
 
-        String result = byteArrayOutputStream.toString();
-        String[] resultArray = result.split(" ");
-        int firstNum = Integer.parseInt(resultArray[0]);
-        int secondNum = Integer.parseInt(resultArray[2]);
-        int arithmeticResult;
+        //Convert the data written to our ByteArray into a string
+        String result = outputStream.toString();
+        fileOutputStream.write(outputStream.toByteArray());
+        //Put everything back to the way it was
+        System.setOut(consoleStream);
 
-        if (resultArray[1].trim().equals("+"))
-            arithmeticResult = firstNum + secondNum;
-        else if (resultArray[1].trim().equals("-"))
-            arithmeticResult = firstNum - secondNum;
-        else
-            arithmeticResult = firstNum * secondNum;
+        //Reverse the string
+        StringBuilder stringBuilder = new StringBuilder(result);
+//        stringBuilder.reverse();
+        String reverseString = stringBuilder.toString();
 
-        System.out.println(firstNum+" "+resultArray[1]+" "+secondNum+" = "+arithmeticResult);
+        //Output it to the console
+        System.out.println(reverseString);
+        reader.close();
+        fileOutputStream.close();
     }
 
     public static class TestString {
         public void printSomething() {
-            System.out.println("3 + 6 = ");
+            System.out.println("This is text for testing");
         }
     }
 }
+
