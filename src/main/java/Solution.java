@@ -33,8 +33,8 @@ class Solution {
     public static int locateOperatorIndex(ArrayList<String> array_list){
         int locOfOperand = 0;
         for (int j = 0; j < array_list.size(); j++){
-            if(array_list.get(j).contains("/")||array_list.get(j).contains("+")||array_list.get(j).contains("-")||
-                    array_list.get(j).contains("*")) {
+            if(array_list.get(j).equals("/")||array_list.get(j).equals("+")||array_list.get(j).equals("-")||
+                    array_list.get(j).equals("*")) {
                 locOfOperand = j;
                 break;
             }
@@ -57,10 +57,64 @@ class Solution {
 
     public static void main(String[] args) {
 
-        String[] arr = new String[] {"2","1","+","3","*"};
+//        String[] arr = new String[] {"2","1","+","3","*"};
 //        String[] arr = new String[] { "4", "13", "5", "/", "+" };
-//        String[] arr = new String[] {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
+        // System.out.println(evalRPN(arr));
+        String[] arr = new String[] {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
 
-        System.out.println(evalRPN(arr));
+        int result = 0;
+        ArrayList<String> arrayList = turnToArrayList(arr);
+        int locationOfFirstOperator = locateOperatorIndex(arrayList);
+        int first = Integer.parseInt(arrayList.get(locationOfFirstOperator-2));
+        int second = Integer.parseInt(arrayList.get(locationOfFirstOperator-1));
+        String operator = arrayList.get(locationOfFirstOperator);
+        result = operate(first,second,operator);
+        System.out.println(arrayList);
+        arrayList.set(locationOfFirstOperator, String.valueOf(result));
+        System.out.println(arrayList);
+        arrayList.remove(locationOfFirstOperator-1);
+        System.out.println(arrayList);
+        arrayList.remove(locationOfFirstOperator-2);
+        System.out.println(arrayList);
+
+        int locationOfFirstOperator1 = locateOperatorIndex(arrayList);
+        int first1 = Integer.parseInt(arrayList.get(locationOfFirstOperator1-2));
+        int second1 = Integer.parseInt(arrayList.get(locationOfFirstOperator1-1));
+        String operator1 = arrayList.get(locationOfFirstOperator1);
+        result = operate(first1,second1,operator1);
+        arrayList.set(locationOfFirstOperator, String.valueOf(result));
+        arrayList.remove(locationOfFirstOperator1-1);
+        arrayList.remove(locationOfFirstOperator1-2);
+
+        int locationOfFirstOperator2 = locateOperatorIndex(arrayList);
+        int first2 = Integer.parseInt(arrayList.get(locationOfFirstOperator2-2));
+        int second2 = Integer.parseInt(arrayList.get(locationOfFirstOperator2-1));
+        String operator2 = arrayList.get(locationOfFirstOperator2);
+        result = operate(first2,second2,operator2);
+        arrayList.set(locationOfFirstOperator2, String.valueOf(result));
+        arrayList.remove(locationOfFirstOperator2-1);
+        arrayList.remove(locationOfFirstOperator2-2);
+        System.out.println(arrayList);
+
+        int locationOfFirstOperator3 = locateOperatorIndex(arrayList);
+        int first3 = Integer.parseInt(arrayList.get(locationOfFirstOperator3-2));
+        int second3 = Integer.parseInt(arrayList.get(locationOfFirstOperator3-1));
+        String operator3 = arrayList.get(locationOfFirstOperator3);
+        result = operate(first3,second3,operator3);
+        arrayList.set(locationOfFirstOperator3, String.valueOf(result));
+        arrayList.remove(locationOfFirstOperator3-1);
+        arrayList.remove(locationOfFirstOperator3-2);
+        System.out.println(arrayList);
+
+        int locationOfFirstOperator4 = locateOperatorIndex(arrayList);
+        int first4 = Integer.parseInt(arrayList.get(locationOfFirstOperator4-2));
+        int second4 = Integer.parseInt(arrayList.get(locationOfFirstOperator4-1));
+        String operator4 = arrayList.get(locationOfFirstOperator4);
+        result = operate(first4,second4,operator4);
+        arrayList.set(locationOfFirstOperator4, String.valueOf(result));
+        arrayList.remove(locationOfFirstOperator4-1);
+        arrayList.remove(locationOfFirstOperator4-2);
+        System.out.println(arrayList);
+
     }
 }
