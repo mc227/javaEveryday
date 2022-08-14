@@ -1,5 +1,8 @@
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,89 +12,54 @@ Tracking changes
 */
 
 public class Solution {
-    //List to store merged lines from both files
-    public static List<LineItem> lines = new ArrayList<>();
+    public static List<LineItem> lines = new ArrayList<LineItem>();
 
-    public static void main(String[] args) throws IOException {
-        //read in 2 file names
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        String file1="";//"C:\\Users\\k.shayakhmetov\\Desktop\\CodeGym\\CodeGymTasks\\CodeGymTasks\\2.JavaCore\\src\\com\\codegym\\task\\task19\\task1916\\file1";
-        String file2="";//""C:\\Users\\k.shayakhmetov\\Desktop\\CodeGym\\CodeGymTasks\\CodeGymTasks\\2.JavaCore\\src\\com\\codegym\\task\\task19\\task1916\\file2";
-        try {
-            file1= reader.readLine();
-            file2= reader.readLine();
-            reader.close();
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws Exception {
+        BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+        String oldFileName = console.readLine();
+        String newFileName = console.readLine();
+        console.close();
 
-        //ArrayList objects to store content of both files
-        ArrayList<String> file1Content=readFile(file1);
-        ArrayList<String> file2Content=readFile(file2);
+        List<String> oldFileLines = readFileLines(oldFileName);
+        List<String> newFileLines = readFileLines(newFileName);
 
-        int index1 = 0, index2=0;
-        String file1Line= null;
-        String file2Line=null;
-        while (index1<file1Content.size() && index2<file2Content.size()){
-            file1Line=file1Content.get(index1);
-            file2Line=file2Content.get(index2);
+        int oldFileLine = 0;
+        int newFileLine = 0;
 
-            if (file2Line.equals(file1Line)) {
-                lines.add(new LineItem(Type.SAME, file2Line));
-                index1++; index2++;
-            }
-            else {
-                if (index1 + 1 < file1Content.size() && file2Line.equals(file1Content.get(index1 + 1))) {
-                    lines.add(new LineItem(Type.REMOVED, file1Content.get(index1)));
-                    index1++;
-                }
-                else {
-                    lines.add(new LineItem(Type.ADDED, file2Line));
-                    index2++;
-                }
-            }
-        }
-        if(index1 == file1Content.size() && index2 < file2Content.size()){
-            lines.add(new LineItem(Type.ADDED, file2Content.get(index2)));
-        }
-        if (file1Content.size()>file2Content.size()){
-            for (int i=index1++;i<file1Content.size();i++){
-                file1Line=file1Content.get(i);
-                lines.add(new LineItem(Type.REMOVED,file1Line));
-            }
-        }
-        if (file2Content.size()>file1Content.size()){
-            for (int i=index2++;i<file2Content.size();i++){
-                file2Line=file2Content.get(i);
-                lines.add(new LineItem(Type.ADDED,file2Line));
+        while ((oldFileLine < oldFileLines.size()) && (newFileLine < newFileLines.size())) {
+
+            if (oldFileLines.get(oldFileLine).equals(newFileLines.get(newFileLine))) {
+                lines.add(new LineItem(Type.SAME, oldFileLines.get(oldFileLine)));
+                oldFileLine++;
+                newFileLine++;
+            } else if ((newFileLine + 1 < newFileLines.size()) && oldFileLines.get(oldFileLine).equals(newFileLines.get(newFileLine + 1))) {
+                lines.add(new LineItem(Type.ADDED, newFileLines.get(newFileLine)));
+                newFileLine++;
+            } else if ((oldFileLine + 1 < oldFileLines.size()) && oldFileLines.get(oldFileLine + 1).equals(newFileLines.get(newFileLine))){
+                lines.add(new LineItem(Type.REMOVED, oldFileLines.get(oldFileLine)));
+                oldFileLine++;
             }
         }
 
-
-
-
-        for(int i=0;i<lines.size();i++){
-            System.out.println(lines.get(i).type + "    " + lines.get(i).line);
+        while (oldFileLine < (oldFileLines.size())) {
+            lines.add(new LineItem(Type.REMOVED, oldFileLines.get(oldFileLine)));
+            oldFileLine++;
         }
-
-
-
-
-
+        while (newFileLine < (newFileLines.size())) {
+            lines.add(new LineItem(Type.ADDED, newFileLines.get(newFileLine)));
+            newFileLine++;
+        }
     }
 
-    public static ArrayList<String> readFile(String fileName) throws IOException {
-        //ArrayList object to store file content
-        ArrayList<String> fileContent=new ArrayList<>();
-        //BufferedReader object to read the file content
-        BufferedReader reader=new BufferedReader(new FileReader(fileName));
-        while (reader.ready()){
-            fileContent.add(reader.readLine());
+    static List<String> readFileLines(String fileName) throws IOException {
+        BufferedReader fReader = new BufferedReader(new FileReader(fileName));
+        List<String> fileLines = new ArrayList<String>();
+        String line;
+        while ((line = fReader.readLine()) != null) {
+            fileLines.add(line);
         }
-        reader.close();//close BufferedReader object
-        //return the file content
-        return fileContent;
+        fReader.close();
+        return fileLines;
     }
 
     public static enum Type {
