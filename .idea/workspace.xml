@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/StackDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test$LineItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test$Type.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +29,8 @@
         <option value="JUnit3 Test Class" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +59,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaStuff/how-tos/create-a-jar-file-in-java" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -79,18 +83,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="CatWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CatWrapper" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Decryption" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="150" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="-d mark8.txt mark9.txt" />
+      <option name="PROGRAM_PARAMETERS" value="10 6 9 3 + -11 * / * 17 + 5 +" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.codegym.task.task18.task1827.*" />
@@ -101,10 +98,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Encryption" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
+    <configuration name="CatWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CatWrapper" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="-e mark7.txt mark8.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,7 +120,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application">
+    <configuration name="StackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StackDemo" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stack" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="javaEveryday" />
       <method v="2">
@@ -126,17 +136,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Prices" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Encryption" />
-      <item itemvalue="Application.Decryption" />
+      <item itemvalue="Application.stack" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.150" />
       <item itemvalue="Application.CatWrapper" />
+      <item itemvalue="Application.StackDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Decryption" />
-        <item itemvalue="Application.Encryption" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.150" />
+        <item itemvalue="Application.StackDemo" />
         <item itemvalue="Application.CatWrapper" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.stack" />
       </list>
     </recent_temporary>
   </component>

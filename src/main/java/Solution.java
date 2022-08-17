@@ -1,80 +1,44 @@
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
-/*
-Tracking changes
-
-*/
-
+import java.util.*;
+import java.util.function.BiFunction;
+// 2 1 + 3 *
+// 4 13 5 / +
+// 10 6 9 3 + -11 * / * 17 + 5 +
 public class Solution {
-    public static List<LineItem> lines = new ArrayList<LineItem>();
-
-    public static void main(String[] args) throws Exception {
-        BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-        String oldFileName = console.readLine();
-        String newFileName = console.readLine();
-        console.close();
-
-        List<String> oldFileLines = readFileLines(oldFileName);
-        List<String> newFileLines = readFileLines(newFileName);
-
-        int oldFileLine = 0;
-        int newFileLine = 0;
-
-        while ((oldFileLine < oldFileLines.size()) && (newFileLine < newFileLines.size())) {
-
-            if (oldFileLines.get(oldFileLine).equals(newFileLines.get(newFileLine))) {
-                lines.add(new LineItem(Type.SAME, oldFileLines.get(oldFileLine)));
-                oldFileLine++;
-                newFileLine++;
-            } else if ((newFileLine + 1 < newFileLines.size()) && oldFileLines.get(oldFileLine).equals(newFileLines.get(newFileLine + 1))) {
-                lines.add(new LineItem(Type.ADDED, newFileLines.get(newFileLine)));
-                newFileLine++;
-            } else if ((oldFileLine + 1 < oldFileLines.size()) && oldFileLines.get(oldFileLine + 1).equals(newFileLines.get(newFileLine))){
-                lines.add(new LineItem(Type.REMOVED, oldFileLines.get(oldFileLine)));
-                oldFileLine++;
+    public static Map<String, BiFunction<Integer, Integer,Integer>> OPERATORS = new HashMap<>();
+    static {
+        OPERATORS.put("+",(x1,x2) -> x1+x2);
+        OPERATORS.put("-",(x1,x2) -> x1-x2);
+        OPERATORS.put("*",(x1,x2) -> x1*x2);
+        OPERATORS.put("/",(x1,x2) -> x1/x2);
+    }
+    public static void main(String[] args) {
+        Stack<String> stack = new Stack<String>();
+        for(int i = 0; i < args.length; i++) {
+            if(!OPERATORS.containsKey(args[i])){
+                stack.push(args[i]);
+            } else {
+                int number_2 = Integer.parseInt(stack.pop());
+                int number_1 = Integer.parseInt(stack.pop());
+                BiFunction<Integer,Integer,Integer> operand = OPERATORS.get(args[i]);
+                int result = operand.apply(number_1,number_2);
+                stack.push(String.valueOf(result));
             }
         }
-
-        while (oldFileLine < (oldFileLines.size())) {
-            lines.add(new LineItem(Type.REMOVED, oldFileLines.get(oldFileLine)));
-            oldFileLine++;
-        }
-        while (newFileLine < (newFileLines.size())) {
-            lines.add(new LineItem(Type.ADDED, newFileLines.get(newFileLine)));
-            newFileLine++;
-        }
+        System.out.println(stack.pop());
     }
-
-    static List<String> readFileLines(String fileName) throws IOException {
-        BufferedReader fReader = new BufferedReader(new FileReader(fileName));
-        List<String> fileLines = new ArrayList<String>();
-        String line;
-        while ((line = fReader.readLine()) != null) {
-            fileLines.add(line);
+    public int evalRPN(String[] tokens) {
+        Stack<String> stack = new Stack<String>();
+        for(int i = 0; i < tokens.length; i++) {
+            if(!OPERATORS.containsKey(tokens[i])){
+                stack.push(tokens[i]);
+            } else {
+                int number_2 = Integer.parseInt(stack.pop());
+                int number_1 = Integer.parseInt(stack.pop());
+                BiFunction<Integer,Integer,Integer> operand = OPERATORS.get(tokens[i]);
+                int result = operand.apply(number_1,number_2);
+                stack.push(String.valueOf(result));
+            }
         }
-        fReader.close();
-        return fileLines;
-    }
-
-    public static enum Type {
-        ADDED,        // New line added
-        REMOVED,      // Line deleted
-        SAME          // No change
-    }
-
-    public static class LineItem {
-        public Type type;
-        public String line;
-
-        public LineItem(Type type, String line) {
-            this.type = type;
-            this.line = line;
-        }
+        return Integer.parseInt(stack.pop());
     }
 }
