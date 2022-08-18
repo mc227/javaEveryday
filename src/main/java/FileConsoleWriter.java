@@ -1,86 +1,68 @@
-package com.codegym.task.task19.task1917;
+
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /*
 Your own FileWriter
 
 */
 
-import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Arrays;
+public class FileConsoleWriter  {
 
-public class FileConsoleWriter {
     private FileWriter fileWriter;
+
+    public FileConsoleWriter(String fileName) throws IOException {
+        fileWriter = new FileWriter(fileName);
+    }
+
+    public FileConsoleWriter(String fileName, boolean append) throws IOException {
+        fileWriter = new FileWriter(fileName, append);
+    }
 
     public FileConsoleWriter(File file) throws IOException {
         fileWriter = new FileWriter(file);
     }
 
     public FileConsoleWriter(File file, boolean append) throws IOException {
-        fileWriter = new FileWriter(file, append);
+        fileWriter = new FileWriter(file,append);
     }
 
-    public FileConsoleWriter(String file) throws IOException {
-        fileWriter = new FileWriter(file);
+    public FileConsoleWriter(FileDescriptor fd) {
+        fileWriter = new FileWriter(fd);
     }
 
-    public FileConsoleWriter(String file, boolean append) throws IOException {
-        fileWriter = new FileWriter(file, append);
-    }
-
-    public FileConsoleWriter(FileDescriptor file) throws IOException {
-        fileWriter = new FileWriter(file);
-    }
     public void write(char[] cbuf, int off, int len) throws IOException {
         fileWriter.write(cbuf, off, len);
-        String result = Arrays.toString(cbuf).replace(",", "")  //remove the commas
-                .replace("[", "")  //remove the right bracket
-                .replace("]", "")  //remove the left bracket
-                .replace(" ", "")
-                .trim();
-        System.out.println(result.substring(off,off+len));
-        fileWriter.flush();
+        System.out.println(new String(cbuf).substring(off, off + len));
     }
 
     public void write(int c) throws IOException {
         fileWriter.write(c);
-        System.out.println(c);
-        fileWriter.flush();
+        System.out.println((char) c);
     }
 
-    public void write(String c) throws IOException {
-        fileWriter.write(c);
-        System.out.println(c);
-        fileWriter.flush();
+    public void write(String str) throws IOException {
+        fileWriter.write(str);
+        System.out.println(str);
     }
-    //
-    public void write(String  s,  int  off,  int  len) throws IOException {
-        fileWriter.write(s, off, len);
-        System.out.println(s.substring(off, off+len));
-        fileWriter.flush();
+
+    public void write(String str, int off, int len) throws IOException {
+        fileWriter.write(str, off, len);
+        System.out.println(str.substring(off, off + len));
     }
-    // write(char[] cbuf)
+
     public void write(char[] cbuf) throws IOException {
         fileWriter.write(cbuf);
-        String result = Arrays.toString(cbuf).replace(",", "")  //remove the commas
-                .replace("[", "")  //remove the right bracket
-                .replace("]", "")  //remove the left bracket
-                .replace(" ", "")
-                .trim();
-        System.out.println(result);
-        fileWriter.flush();
+        System.out.println(new String(cbuf));
     }
 
     public void close() throws IOException {
         fileWriter.close();
     }
 
-    public static void main(String[] args) throws IOException {
-        FileConsoleWriter fileConsoleWriter = new FileConsoleWriter("mark.txt");
-        String str = "hello world";
-        fileConsoleWriter.write(str.toCharArray(),0,2);
-    }
+    public static void main(String[] args) {
 
+    }
 }
