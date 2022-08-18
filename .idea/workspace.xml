@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/StackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileWriterWriteCharArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileWriterWriteIntExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileWriterWriteIntTryWithResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileWriterWriteStringExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$LineItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mark.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.FileWriterWriteCharArray">
     <configuration name="150" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
@@ -98,8 +95,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CatWrapper" />
+    <configuration name="FileWriterWriteCharArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileWriterWriteCharArray" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileWriterWriteIntExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileWriterWriteIntExample" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileWriterWriteIntTryWithResource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileWriterWriteIntTryWithResource" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,13 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StackDemo" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="stack" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="javaEveryday" />
@@ -139,16 +143,17 @@
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.150" />
-      <item itemvalue="Application.CatWrapper" />
-      <item itemvalue="Application.StackDemo" />
+      <item itemvalue="Application.FileWriterWriteIntExample" />
+      <item itemvalue="Application.FileWriterWriteIntTryWithResource" />
+      <item itemvalue="Application.FileWriterWriteCharArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FileWriterWriteCharArray" />
+        <item itemvalue="Application.FileWriterWriteIntTryWithResource" />
+        <item itemvalue="Application.FileWriterWriteIntExample" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.150" />
-        <item itemvalue="Application.StackDemo" />
-        <item itemvalue="Application.CatWrapper" />
-        <item itemvalue="Application.stack" />
       </list>
     </recent_temporary>
   </component>
