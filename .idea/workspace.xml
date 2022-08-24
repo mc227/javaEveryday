@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="" />
+    <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OctalToDecimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BinaryToDecimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OctalToDecimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +24,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit3 Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -49,7 +56,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaStuff/how-tos/create-a-jar-file-in-java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data-Structures-and-Algorithms-in-Java" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -73,17 +80,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
-    <configuration name="150" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
+  <component name="RunManager" selected="JUnit.BinaryToDecimalTest">
+    <configuration name="BinaryToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="10 6 9 3 + -11 * / * 17 + 5 +" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.codegym.task.task18.task1827.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,22 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileWriterWriteIntExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileWriterWriteIntExample" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileWriterWriteIntTryWithResource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileWriterWriteIntTryWithResource" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="OctalToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OctalToDecimal" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,22 +116,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinaryToDecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BinaryToDecimalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OctalToDecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OctalToDecimalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Solution" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.150" />
-      <item itemvalue="Application.FileWriterWriteIntExample" />
-      <item itemvalue="Application.FileWriterWriteIntTryWithResource" />
       <item itemvalue="Application.FileWriterWriteCharArray" />
+      <item itemvalue="Application.OctalToDecimal" />
+      <item itemvalue="JUnit.OctalToDecimalTest" />
+      <item itemvalue="Application.BinaryToDecimal" />
+      <item itemvalue="JUnit.BinaryToDecimalTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryToDecimalTest" />
+        <item itemvalue="Application.BinaryToDecimal" />
+        <item itemvalue="JUnit.OctalToDecimalTest" />
+        <item itemvalue="Application.OctalToDecimal" />
         <item itemvalue="Application.FileWriterWriteCharArray" />
-        <item itemvalue="Application.FileWriterWriteIntTryWithResource" />
-        <item itemvalue="Application.FileWriterWriteIntExample" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.150" />
       </list>
     </recent_temporary>
   </component>
