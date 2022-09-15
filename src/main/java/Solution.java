@@ -1,8 +1,3 @@
-package com.codegym.task.task19.task1918;
-
-
-
-
 /*
 Introducing tags
 
