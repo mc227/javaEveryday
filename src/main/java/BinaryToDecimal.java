@@ -1,14 +1,19 @@
 public class BinaryToDecimal {
-    public static int convertToDecimal(String binary) {
+    public int convertToDecimal(String binary) {
         int conversion = 1;
         int result = 0;
-        // 16 8 4 2 1
-        //  1 0 1 1 0
-        // 16+0+4+2+0
+        for(int i = binary.length() - 1; i >= 0; i--) {
+            if(binary.charAt(i) == '1') {
+                result *=conversion;
+            }
+            conversion *= 2;
+        }
         return result;
     }
 
-    public static void main(String[] args) {
-        System.out.println(convertToDecimal("10110"));
+
+    public static void main(String args[]) {
+        BinaryToDecimal binaryToDecimal = new BinaryToDecimal();
+        System.out.println(binaryToDecimal.convertToDecimal("10110"));
     }
 }

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BinaryToDecimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BinaryToDecimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BinaryToDecimalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BinaryToDecimalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
@@ -80,8 +81,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.BinaryToDecimal">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
       <method v="2">
@@ -97,13 +105,6 @@
     </configuration>
     <configuration name="OctalToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OctalToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +136,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.stack" />
+      <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.FileWriterWriteCharArray" />
       <item itemvalue="Application.OctalToDecimal" />
-      <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="JUnit.OctalToDecimalTest" />
       <item itemvalue="JUnit.BinaryToDecimalTest" />
     </list>
