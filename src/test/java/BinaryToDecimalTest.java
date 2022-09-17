@@ -5,4 +5,9 @@ public class BinaryToDecimalTest extends TestCase {
         BinaryToDecimal binaryToDecimal = new BinaryToDecimal();
         assertEquals(binaryToDecimal.convertToDecimal("0"), 0);
     }
+
+    public void test55() {
+        BinaryToDecimal binaryToDecimal = new BinaryToDecimal();
+        assertEquals(binaryToDecimal.convertToDecimal("110111"),55);
+    }
 }
