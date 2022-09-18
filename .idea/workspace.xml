@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CatWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BinaryToDecimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BinaryToDecimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BinaryToDecimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BinaryToDecimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CatWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BinaryToDecimalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BinaryToDecimalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CodeGym1918.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CodeGym1918.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +25,9 @@
         <option value="JUnit3 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -89,14 +81,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CodeGym1918">
-    <configuration name="BinaryToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SearchTest.TestOne">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -112,15 +97,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.codegym.task.task19.task1918.Solution" />
+    <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Search" />
       <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.codegym.task.task19.task1918.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,15 +107,6 @@
     <configuration name="stack" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryToDecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinaryToDecimalTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,21 +121,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchTest.TestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="TestOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="METHOD_NAME" value="name" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.BinaryToDecimal" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.CodeGym1918" />
-      <item itemvalue="JUnit.BinaryToDecimalTest" />
       <item itemvalue="JUnit.BinaryToDecimalTest.test55" />
+      <item itemvalue="Application.Search" />
+      <item itemvalue="JUnit.SearchTest.name" />
+      <item itemvalue="JUnit.SearchTest.TestOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchTest.TestOne" />
+        <item itemvalue="JUnit.SearchTest.name" />
+        <item itemvalue="Application.Search" />
         <item itemvalue="Application.CodeGym1918" />
         <item itemvalue="JUnit.BinaryToDecimalTest.test55" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.BinaryToDecimalTest" />
-        <item itemvalue="Application.BinaryToDecimal" />
       </list>
     </recent_temporary>
   </component>

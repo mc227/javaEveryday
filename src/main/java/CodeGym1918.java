@@ -41,6 +41,7 @@ public class CodeGym1918 {
         }
 
 
+
         Stack<String> tagStack = new Stack<>();
         List<String> printList = new ArrayList<>();
 
@@ -53,12 +54,12 @@ public class CodeGym1918 {
                     Integer startIndex = Integer.valueOf(tagList.get(i).get(1));
                     tagStack.push(tagList.get(i).get(0));
 
-
                     innerWhileBlock:
                     while (!tagStack.empty()) {
                         for (int j = i + 1; j < tagList.size(); j++) {
                             if (!tagList.get(j).get(0).startsWith("</")) {
                                 tagStack.push(tagList.get(j).get(0));
+                                System.out.println(tagStack);
                             } else if (tagList.get(j).get(0).startsWith("</")) {
                                 if (tagStack.peek().contains(tagList.get(j).get(0).replace("/", "")
                                         .replace("<", "").replace(">", ""))) {
