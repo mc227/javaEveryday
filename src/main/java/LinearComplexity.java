@@ -6,4 +6,8 @@ public class LinearComplexity {
         }
         return count;
     }
+//    public static void main(String[] args) {
+//
+//        System.out.println(countChars('a', "Sally sells sea shells on the seashore"));
+//    }
 }
