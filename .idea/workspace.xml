@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ContainsDuplicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContainsDuplicatesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CodeGym1918Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CodeGym1918.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CodeGym1918.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainsDuplicatesTest.first">
+  <component name="RunManager" selected="Application.CodeGym1918">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -90,7 +91,7 @@
     <configuration name="CodeGym1918" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodeGym1918" />
       <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="body" />
+      <option name="PROGRAM_PARAMETERS" value="span" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +150,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGym1918" />
         <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
         <item itemvalue="JUnit.SearchTest.TestOne" />
         <item itemvalue="JUnit.SearchTest.name" />
         <item itemvalue="Application.Search" />
-        <item itemvalue="Application.CodeGym1918" />
       </list>
     </recent_temporary>
   </component>
