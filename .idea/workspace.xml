@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ContainsDuplicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContainsDuplicatesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CodeGym1918.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CodeGym1918.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest.TestOne">
+  <component name="RunManager" selected="JUnit.ContainsDuplicatesTest.first">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -111,11 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryToDecimalTest.test55" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainsDuplicatesTest.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinaryToDecimalTest" />
-      <option name="METHOD_NAME" value="test55" />
+      <option name="MAIN_CLASS_NAME" value="ContainsDuplicatesTest" />
+      <option name="METHOD_NAME" value="first" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,18 +142,18 @@
     <list>
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.CodeGym1918" />
-      <item itemvalue="JUnit.BinaryToDecimalTest.test55" />
       <item itemvalue="Application.Search" />
       <item itemvalue="JUnit.SearchTest.name" />
       <item itemvalue="JUnit.SearchTest.TestOne" />
+      <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
         <item itemvalue="JUnit.SearchTest.TestOne" />
         <item itemvalue="JUnit.SearchTest.name" />
         <item itemvalue="Application.Search" />
         <item itemvalue="Application.CodeGym1918" />
-        <item itemvalue="JUnit.BinaryToDecimalTest.test55" />
       </list>
     </recent_temporary>
   </component>
