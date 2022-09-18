@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CodeGym1918Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EvalRPN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EvalRPNTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CodeGym1918.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CodeGym1918.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CodeGym1918">
+  <component name="RunManager" selected="JUnit.EvalRPNTest.MarkCostales">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -92,13 +91,6 @@
       <option name="MAIN_CLASS_NAME" value="CodeGym1918" />
       <module name="javaEveryday" />
       <option name="PROGRAM_PARAMETERS" value="span" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Search" />
-      <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +107,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContainsDuplicatesTest" />
       <option name="METHOD_NAME" value="first" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvalRPNTest.MarkCostales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EvalRPNTest" />
+      <option name="METHOD_NAME" value="MarkCostales" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,20 +143,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.CodeGym1918" />
-      <item itemvalue="Application.Search" />
       <item itemvalue="JUnit.SearchTest.name" />
       <item itemvalue="JUnit.SearchTest.TestOne" />
       <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
+      <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
         <item itemvalue="Application.CodeGym1918" />
         <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
         <item itemvalue="JUnit.SearchTest.TestOne" />
         <item itemvalue="JUnit.SearchTest.name" />
-        <item itemvalue="Application.Search" />
       </list>
     </recent_temporary>
   </component>
