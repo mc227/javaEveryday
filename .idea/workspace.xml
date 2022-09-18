@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinearComplexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinearComplexity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/QuadraticComplexityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuadraticComplexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuadraticComplexity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,18 +79,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore">
+  <component name="RunManager" selected="JUnit.QuadraticComplexityTest.Test123">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CodeGym1918" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CodeGym1918" />
-      <module name="javaEveryday" />
-      <option name="PROGRAM_PARAMETERS" value="span" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,19 +94,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stack" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="QuadraticComplexity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadraticComplexity" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainsDuplicatesTest.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="stack" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContainsDuplicatesTest" />
-      <option name="METHOD_NAME" value="first" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,22 +128,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuadraticComplexityTest.Test123" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuadraticComplexityTest" />
+      <option name="METHOD_NAME" value="Test123" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.CodeGym1918" />
-      <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
-      <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
       <item itemvalue="Application.LinearComplexity" />
+      <item itemvalue="Application.QuadraticComplexity" />
+      <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
       <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
+      <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
+        <item itemvalue="Application.QuadraticComplexity" />
         <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
         <item itemvalue="Application.LinearComplexity" />
         <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
-        <item itemvalue="Application.CodeGym1918" />
-        <item itemvalue="JUnit.ContainsDuplicatesTest.first" />
       </list>
     </recent_temporary>
   </component>
