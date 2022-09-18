@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/QuadraticComplexityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogarithmicComplexity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QuadraticComplexity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuadraticComplexity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuadraticComplexityTest.Test123">
+  <component name="RunManager" selected="JUnit.LogarithmicComplexityTest.foo">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -108,21 +107,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvalRPNTest.MarkCostales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EvalRPNTest" />
-      <option name="METHOD_NAME" value="MarkCostales" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinearComplexityTest.Sallysellsseashellsontheseashore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinearComplexityTest" />
       <option name="METHOD_NAME" value="Sallysellsseashellsontheseashore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogarithmicComplexityTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LogarithmicComplexityTest" />
+      <option name="METHOD_NAME" value="foo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,17 +142,17 @@
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.LinearComplexity" />
       <item itemvalue="Application.QuadraticComplexity" />
-      <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
       <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
       <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
+      <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
         <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
         <item itemvalue="Application.QuadraticComplexity" />
         <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
         <item itemvalue="Application.LinearComplexity" />
-        <item itemvalue="JUnit.EvalRPNTest.MarkCostales" />
       </list>
     </recent_temporary>
   </component>
