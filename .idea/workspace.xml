@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogarithmicComplexity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dereck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogarithmicComplexityTest.foo">
+  <component name="RunManager" selected="JUnit.ContainsDuplicatesTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -86,15 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearComplexity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinearComplexity" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuadraticComplexity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuadraticComplexity" />
+    <configuration name="Dereck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dereck" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,12 +100,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearComplexityTest.Sallysellsseashellsontheseashore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryToDecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinearComplexityTest" />
-      <option name="METHOD_NAME" value="Sallysellsseashellsontheseashore" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="BinaryToDecimalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainsDuplicatesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContainsDuplicatesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +141,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.LinearComplexity" />
-      <item itemvalue="Application.QuadraticComplexity" />
-      <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
+      <item itemvalue="Application.Dereck" />
       <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
       <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
+      <item itemvalue="JUnit.BinaryToDecimalTest" />
+      <item itemvalue="JUnit.ContainsDuplicatesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainsDuplicatesTest" />
+        <item itemvalue="JUnit.BinaryToDecimalTest" />
+        <item itemvalue="Application.Dereck" />
         <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
         <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
-        <item itemvalue="Application.QuadraticComplexity" />
-        <item itemvalue="JUnit.LinearComplexityTest.Sallysellsseashellsontheseashore" />
-        <item itemvalue="Application.LinearComplexity" />
       </list>
     </recent_temporary>
   </component>
