@@ -1,18 +1,14 @@
 package com.codegym.task.task19.task1920;
 
-/*
-The richest
-my solution
-*/
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 /*
-Calculating salaries
+The richest
 
 */
 
@@ -43,13 +39,22 @@ public class Solution {
             /*NOP */
         }
 
-        Double maxValueInMap = (Collections.max(salary.values()));
-        for (String key : salary.keySet()) {
-            if(salary.get(key).equals(maxValueInMap)){
-                System.out.println(key);
+        double maxSalary = salary.firstEntry().getValue();
+        for (double value : salary.values()) {
+            if (value > maxSalary) {
+                maxSalary = value;
             }
         }
 
+        TreeSet<String> names = new TreeSet<>();
+        for (String name : salary.keySet()) {
+            if (maxSalary == salary.get(name)) {
+                names.add(name);
+            }
+        }
 
+        for (String name : names) {
+            System.out.println(name);
+        }
     }
 }
