@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatingSalaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatingSalaries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Intersection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IntersectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainsDuplicatesTest">
+  <component name="RunManager" selected="JUnit.IntersectionTest.foo">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -87,6 +89,13 @@
     </configuration>
     <configuration name="Dereck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dereck" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Intersection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Intersection" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,21 +126,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogarithmicComplexityTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntersectionTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LogarithmicComplexityTest" />
+      <option name="MAIN_CLASS_NAME" value="IntersectionTest" />
       <option name="METHOD_NAME" value="foo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuadraticComplexityTest.Test123" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuadraticComplexityTest" />
-      <option name="METHOD_NAME" value="Test123" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,18 +140,18 @@
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.Dereck" />
-      <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
-      <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
+      <item itemvalue="Application.Intersection" />
       <item itemvalue="JUnit.BinaryToDecimalTest" />
       <item itemvalue="JUnit.ContainsDuplicatesTest" />
+      <item itemvalue="JUnit.IntersectionTest.foo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntersectionTest.foo" />
+        <item itemvalue="Application.Intersection" />
         <item itemvalue="JUnit.ContainsDuplicatesTest" />
         <item itemvalue="JUnit.BinaryToDecimalTest" />
         <item itemvalue="Application.Dereck" />
-        <item itemvalue="JUnit.LogarithmicComplexityTest.foo" />
-        <item itemvalue="JUnit.QuadraticComplexityTest.Test123" />
       </list>
     </recent_temporary>
   </component>
