@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/IntersectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,21 +76,15 @@
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
       <recent name="com.packt.datastructuresandalg.lesson1.activity.improveintersection" />
       <recent name="com.packt.datastructuresandalg.lesson1.binarysearch" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FastInterstectionSol1Test.first">
+  <component name="RunManager" selected="JUnit.FastInterstectionSol2Test.first">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Intersection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Intersection" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,6 +128,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FastInterstectionSol2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastInterstectionSol2Test.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol2Test" />
+      <option name="METHOD_NAME" value="first" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntersectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <extension name="coverage">
@@ -150,32 +174,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntersectionTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntersectionTest" />
-      <option name="METHOD_NAME" value="foo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.Intersection" />
-      <item itemvalue="JUnit.IntersectionTest.foo" />
       <item itemvalue="JUnit.BinarySearchTest" />
       <item itemvalue="JUnit.IntersectionTest" />
       <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
+      <item itemvalue="JUnit.FastInterstectionSol2Test" />
+      <item itemvalue="JUnit.FastInterstectionSol2Test.first" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FastInterstectionSol2Test.first" />
+        <item itemvalue="JUnit.FastInterstectionSol2Test" />
         <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
         <item itemvalue="JUnit.IntersectionTest" />
         <item itemvalue="JUnit.BinarySearchTest" />
-        <item itemvalue="JUnit.IntersectionTest.foo" />
-        <item itemvalue="Application.Intersection" />
       </list>
     </recent_temporary>
   </component>
