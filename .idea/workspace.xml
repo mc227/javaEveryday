@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/Intersection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/IntersectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +25,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,11 +77,12 @@
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.packt.datastructuresandalg.lesson1.activity.improveintersection" />
       <recent name="com.packt.datastructuresandalg.lesson1.binarysearch" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTest">
+  <component name="RunManager" selected="JUnit.FastInterstectionSol1Test.first">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -117,19 +119,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryToDecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FastInterstectionSol1Test.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinaryToDecimalTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol1Test" />
+      <option name="METHOD_NAME" value="first" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainsDuplicatesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntersectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContainsDuplicatesTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.IntersectionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,18 +164,18 @@
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.Intersection" />
-      <item itemvalue="JUnit.BinaryToDecimalTest" />
-      <item itemvalue="JUnit.ContainsDuplicatesTest" />
       <item itemvalue="JUnit.IntersectionTest.foo" />
       <item itemvalue="JUnit.BinarySearchTest" />
+      <item itemvalue="JUnit.IntersectionTest" />
+      <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
+        <item itemvalue="JUnit.IntersectionTest" />
         <item itemvalue="JUnit.BinarySearchTest" />
         <item itemvalue="JUnit.IntersectionTest.foo" />
         <item itemvalue="Application.Intersection" />
-        <item itemvalue="JUnit.ContainsDuplicatesTest" />
-        <item itemvalue="JUnit.BinaryToDecimalTest" />
       </list>
     </recent_temporary>
   </component>
