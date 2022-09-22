@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Intersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1920/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/IntersectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,19 +76,13 @@
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.packt.datastructuresandalg.lesson1.binarysearch" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntersectionTest.foo">
+  <component name="RunManager" selected="JUnit.BinarySearchTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Dereck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dereck" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,6 +98,21 @@
     <configuration name="stack" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.binarysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.binarysearch" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.binarysearch.BinarySearchTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,19 +148,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.Dereck" />
       <item itemvalue="Application.Intersection" />
       <item itemvalue="JUnit.BinaryToDecimalTest" />
       <item itemvalue="JUnit.ContainsDuplicatesTest" />
       <item itemvalue="JUnit.IntersectionTest.foo" />
+      <item itemvalue="JUnit.BinarySearchTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinarySearchTest" />
         <item itemvalue="JUnit.IntersectionTest.foo" />
         <item itemvalue="Application.Intersection" />
         <item itemvalue="JUnit.ContainsDuplicatesTest" />
         <item itemvalue="JUnit.BinaryToDecimalTest" />
-        <item itemvalue="Application.Dereck" />
       </list>
     </recent_temporary>
   </component>
