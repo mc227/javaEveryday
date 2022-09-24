@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/codegym/task/task19/task1921/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MarkBubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MarkBubbleSortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +24,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,14 +76,14 @@
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
       <recent name="com.codegym.task.task19.task1921" />
       <recent name="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
       <recent name="com.packt.datastructuresandalg.lesson1.activity.improveintersection" />
       <recent name="com.packt.datastructuresandalg.lesson1.binarysearch" />
-      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.1921">
+  <component name="RunManager" selected="JUnit.MarkBubbleSortTest.fooTest">
     <configuration name="1921" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.codegym.task.task19.task1921.Solution" />
       <module name="javaEveryday" />
@@ -109,6 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MarkBubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MarkBubbleSort" />
+      <module name="javaEveryday" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
@@ -123,48 +126,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastInterstectionSol1Test.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarkBubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol1Test" />
-      <option name="METHOD_NAME" value="first" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FastInterstectionSol2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol2Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MarkBubbleSortTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastInterstectionSol2Test.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarkBubbleSortTest.fooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution" />
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson1.activity.improveintersection.solution.FastInterstectionSol2Test" />
-      <option name="METHOD_NAME" value="first" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MarkBubbleSortTest" />
+      <option name="METHOD_NAME" value="fooTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,18 +148,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
+      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.1921" />
-      <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
-      <item itemvalue="JUnit.FastInterstectionSol2Test" />
-      <item itemvalue="JUnit.FastInterstectionSol2Test.first" />
+      <item itemvalue="JUnit.MarkBubbleSortTest" />
+      <item itemvalue="JUnit.MarkBubbleSortTest.fooTest" />
+      <item itemvalue="Application.MarkBubbleSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MarkBubbleSortTest.fooTest" />
+        <item itemvalue="Application.MarkBubbleSort" />
+        <item itemvalue="JUnit.MarkBubbleSortTest" />
         <item itemvalue="Application.1921" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.FastInterstectionSol2Test.first" />
-        <item itemvalue="JUnit.FastInterstectionSol2Test" />
-        <item itemvalue="JUnit.FastInterstectionSol1Test.first" />
       </list>
     </recent_temporary>
   </component>
