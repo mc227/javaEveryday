@@ -13,8 +13,8 @@ public class MarkBubbleSort {
         int n = input.length;
         for(int k = 1; k < n; k++){
             for (int j = 0; j < n-1;j++){
-                if (input[k] < input[j]){
-                    swap(input, k, j);
+                if (input[j] > input[j+1]){
+                    swap(input, j, j+1);
                 }
             }
         }

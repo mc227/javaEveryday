@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MarkBubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MarkBubbleSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Conditions.tcs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarkBubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarkBubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MarkBubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MarkBubbleSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data-Structures-and-Algorithms-in-Java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -65,6 +66,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task19\task1921" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task17\task1711" />
     </key>
@@ -83,7 +85,7 @@
       <recent name="com.packt.datastructuresandalg.lesson1.binarysearch" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarkBubbleSortTest.fooTest">
+  <component name="RunManager" selected="JUnit.MarkBubbleSortTest">
     <configuration name="1921" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.codegym.task.task19.task1921.Solution" />
       <module name="javaEveryday" />
@@ -150,15 +152,15 @@
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.Solution" />
       <item itemvalue="Application.1921" />
+      <item itemvalue="Application.MarkBubbleSort" />
       <item itemvalue="JUnit.MarkBubbleSortTest" />
       <item itemvalue="JUnit.MarkBubbleSortTest.fooTest" />
-      <item itemvalue="Application.MarkBubbleSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MarkBubbleSortTest" />
         <item itemvalue="JUnit.MarkBubbleSortTest.fooTest" />
         <item itemvalue="Application.MarkBubbleSort" />
-        <item itemvalue="JUnit.MarkBubbleSortTest" />
         <item itemvalue="Application.1921" />
         <item itemvalue="Application.Solution" />
       </list>
