@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SolutionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SolutionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,23 +86,10 @@
       <recent name="com.codegym.task.task19.task1921" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SelectionSort">
+  <component name="RunManager" selected="JUnit.SelectionSortTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BubbleSort" />
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,6 +136,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectionSortTest.testEvenElements (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.SelectionSortTest" />
+      <option name="METHOD_NAME" value="testEvenElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SelectionSortTest.testEvenElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <extension name="coverage">
@@ -175,18 +172,18 @@
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.BubbleSort" />
       <item itemvalue="JUnit.SelectionSortTest" />
       <item itemvalue="JUnit.SelectionSortTest.testEvenElements" />
       <item itemvalue="Application.SelectionSort" />
+      <item itemvalue="JUnit.SelectionSortTest.testEvenElements (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelectionSortTest" />
+        <item itemvalue="JUnit.SelectionSortTest.testEvenElements (1)" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="JUnit.SelectionSortTest.testEvenElements" />
-        <item itemvalue="JUnit.SelectionSortTest" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -206,31 +203,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
           <line>11</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -238,11 +210,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
           <line>12</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

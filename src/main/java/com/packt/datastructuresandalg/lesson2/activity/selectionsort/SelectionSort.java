@@ -3,17 +3,19 @@ package com.packt.datastructuresandalg.lesson2.activity.selectionsort;
 public class SelectionSort {
 
     public void sort(int[] array) {
-        int left = 0;
-        int right = array.length;
-        while(left < right) {
-            for(int i = 0; i < right; i++) {
-                if(array[i] > array[right-1]){
-                    int temp = array[i];
-                    array[i] = array[right-1];
-                    array[right-1] = temp;
+        for(int i = 0; i < array.length; i++) {
+            int minPointer = i;
+            for(int j = i; j < array.length; j++) {
+                if(array[j] < array[minPointer]) {
+                    minPointer = j;
                 }
             }
-            right--;
+            swap(array,minPointer,i);
         }
+    }
+    public static void swap(int[] array, int j, int k) {
+        int temp = array[j];
+        array[j] = array[k];
+        array[k] = temp;
     }
 }
