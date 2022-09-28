@@ -1,23 +1,31 @@
-import java.util.Arrays;
+
 
 public class Solution {
-
-    public int[] markBubbleSort(int[] input) {
-        for(int i = 1; i < input.length; i++) {
-            for(int j = 0; j < input.length - 1; j++) {
-                if(input[j] > input[j+1]) {
-                    swap(input, j, j+1);
-                }
-                System.out.printf("i = %s, j = %s%n", i,j);
-                System.out.println(Arrays.toString(input));
+    public static void main(String[] args) {
+//        for(int i = 1; i < 6; i++) {
+//            System.out.print(i);
+//        }
+//        System.out.println();
+//        for(int i = 1; i < 5; i++) {
+//            System.out.print(i);
+//        }
+//        System.out.println();
+//        for(int i = 1; i < 4; i++) {
+//            System.out.print(i);
+//        }
+//        System.out.println();
+//        for(int i = 1; i < 3; i++) {
+//            System.out.print(i);
+//        }
+//        System.out.println();
+//        for(int i = 1; i < 2; i++) {
+//            System.out.print(i);
+//        }
+        for(int j = 0; j < 6;j++){
+            for(int i = 0; i < 6 - j; i++) {
+                System.out.print(i);
             }
+            System.out.println();
         }
-        return input;
-    }
-
-    private void swap(int[] array, int j, int k) {
-        int temp = array[j];
-        array[j] = array[k];
-        array[k] = temp;
     }
 }
