@@ -1,37 +1,25 @@
-
+import java.util.Arrays;
 
 public class MarkBubbleSort {
-    /*
-        bubbleSort(array)
-            n = length(array)
-            for (k = 1 until n)
-                for (j = 0 until -1)
-                    if(array[j] > array[j + 1])
-                        swap(array, j, j + 1)
-    * */
-    public int[] bubbleSort(int[] input) {
-        int n = input.length;
-        for(int k = 1; k < n; k++){
-            for (int j = 0; j < n-1;j++){
-                if (input[j] > input[j+1]){
-                    swap(input, j, j+1);
+    public void sort(int[] numbers){
+        for(int i = 1; i < numbers.length; i++) {
+            for(int j = 0; j < numbers.length-1; j++) {
+                System.out.printf("j = %s, j+1 = %s%n", j, j+1);
+                System.out.printf("numbers[j] = %s, numbers[j+1] = %s%n", numbers[j], numbers[j+1]);
+                System.out.println("***********");
+                if(numbers[j] > numbers[j+1]){
+                    int temp = numbers[j];
+                    numbers[j] = numbers[j+1];
+                    numbers[j+1] = temp;
                 }
             }
         }
-        return input;
-        // [12,24,66,75,22,87]
     }
 
-    private void swap(int[] array, int l, int m) {
-        int temp = array[l];
-        array[l] = array[m];
-        array[m] = temp;
-
+    public static void main(String[] args) {
+        int[] mark = {2,4,3,7,1,6};
+        MarkBubbleSort markBubbleSort = new MarkBubbleSort();
+        markBubbleSort.sort(mark);
+        System.out.println(Arrays.toString(mark));
     }
-
-//    public static void main(String[] args) {
-//        int[] arrayOfSomeRandomPerson = new int[] {66, 24, 75, 22, 12, 87};
-//        MarkBubbleSort markBubbleSort = new MarkBubbleSort();
-//        System.out.println(Arrays.toString(markBubbleSort.bubbleSort(arrayOfSomeRandomPerson)));
-//    }
 }
