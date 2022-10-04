@@ -5,19 +5,44 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public void sort(int[] numbers) {
-
+        for(int i = 1; i < numbers.length; i++) {
+            for(int j = 0; j < numbers.length-1; j++) {
+                if(numbers[j] > numbers[j+1]){
+                    swap(numbers,j,j+1);
+                }
+            }
+        }
     }
 
     public void sortImprovement1(int[] numbers) {
-
+        for(int i = 1; i < numbers.length; i++) {
+            for(int j = 0; j < numbers.length-i; j++) {
+                if(numbers[j] > numbers[j+1]){
+                    swap(numbers,j,j+1);
+                }
+            }
+        }
     }
 
     public void sortImprovement2(int[] numbers) {
-
+        int i = 0;
+        boolean swapOccurred = true;
+        while(swapOccurred){
+            swapOccurred = false;
+            i++;
+            for(int j = 0; j < numbers.length-i; j++) {
+                if(numbers[j] > numbers[j+1]){
+                    swap(numbers,j,j+1);
+                    swapOccurred = true;
+                }
+            }
+        }
     }
 
     private void swap(int[] numbers, int j, int k) {
-
+        int temp = numbers[j];
+        numbers[j] = numbers[k];
+        numbers[k] = temp;
     }
 
     public static void main(String[] args) {
