@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,20 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="BinarySearchRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BinarySearchRecursive" />
+      <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -106,22 +123,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarkBubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MarkBubbleSort" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.SelectionSort" />
       <module name="javaEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextJustification" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.google.leetcode.TextJustification" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
       <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,33 +150,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextJustificationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchRecursiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.google.leetcode.*" />
+          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.google.leetcode" />
-      <option name="MAIN_CLASS_NAME" value="com.google.leetcode.TextJustificationTest" />
+      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson2.sorting" />
+      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BinarySearchRecursiveTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextJustificationTest.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.google.leetcode" />
-      <option name="MAIN_CLASS_NAME" value="com.google.leetcode.TextJustificationTest" />
-      <option name="METHOD_NAME" value="first" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,19 +168,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="JUnit.TextJustificationTest.first" />
-      <item itemvalue="JUnit.TextJustificationTest" />
-      <item itemvalue="Application.TextJustification" />
-      <item itemvalue="Application.MarkBubbleSort" />
       <item itemvalue="Application.BubbleSort" />
+      <item itemvalue="Application.SelectionSort" />
+      <item itemvalue="Application.BinarySearchRecursive" />
+      <item itemvalue="JUnit.BinarySearchRecursiveTest" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.BinarySearchRecursive" />
+        <item itemvalue="JUnit.BinarySearchRecursiveTest" />
+        <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.MarkBubbleSort" />
-        <item itemvalue="Application.TextJustification" />
-        <item itemvalue="JUnit.TextJustificationTest.first" />
-        <item itemvalue="JUnit.TextJustificationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -193,22 +194,6 @@
       <updated>1648151003737</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/javaEveryday$GraderTest_fiftyNineShouldReturnF.ic" NAME="GraderTest.fiftyNineShouldReturnF Coverage Results" MODIFIED="1650367057631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
