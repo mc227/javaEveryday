@@ -13,13 +13,10 @@ public class Solution {
         Once the loop exits, we perform the final step of swapping the first item that is larger than the
         pivot's value with the pivot.
         */
-
         int[] numbers = new int[]{7, 15, 14, 5, 9, 18, 3, 21, 23, 16, 12};
         Solution solution = new Solution();
         solution.swap(numbers, 1,2);
         System.out.println(Arrays.toString(numbers));
-
-
     }
     public void swap(int[] array, int first, int second) {
         int temp = array[first];

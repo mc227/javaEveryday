@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SolutionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +23,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -77,14 +78,14 @@
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
       <recent name="com.google.leetcode" />
       <recent name="com.packt.datastructuresandalg.lesson2.sorting" />
-      <recent name="" />
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort.solution" />
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="JUnit.SolutionTest.swapFirstAndLast">
     <configuration name="BinarySearchRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BinarySearchRecursive" />
       <module name="javaEveryday" />
@@ -101,32 +102,6 @@
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BubbleSort" />
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.SelectionSort" />
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.activity.selectionsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,22 +135,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.swapFirstAndLast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="swapFirstAndLast" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.BubbleSort" />
-      <item itemvalue="Application.SelectionSort" />
       <item itemvalue="Application.BinarySearchRecursive" />
       <item itemvalue="JUnit.BinarySearchRecursiveTest" />
       <item itemvalue="Application.Solution" />
+      <item itemvalue="JUnit.SolutionTest" />
+      <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
+        <item itemvalue="JUnit.SolutionTest" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.BinarySearchRecursive" />
         <item itemvalue="JUnit.BinarySearchRecursiveTest" />
-        <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
