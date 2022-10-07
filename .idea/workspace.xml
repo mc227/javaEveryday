@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SolutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionTest.swapFirstAndLast">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="BinarySearchRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BinarySearchRecursive" />
       <module name="javaEveryday" />
@@ -158,16 +160,16 @@
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
       <item itemvalue="Application.BinarySearchRecursive" />
-      <item itemvalue="JUnit.BinarySearchRecursiveTest" />
       <item itemvalue="Application.Solution" />
+      <item itemvalue="JUnit.BinarySearchRecursiveTest" />
       <item itemvalue="JUnit.SolutionTest" />
       <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
         <item itemvalue="JUnit.SolutionTest" />
-        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.BinarySearchRecursive" />
         <item itemvalue="JUnit.BinarySearchRecursiveTest" />
       </list>
