@@ -4,7 +4,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] numbers = new int[]{7, 15, 14, 5, 9, 18, 3, 21, 23, 16, 12};
         Solution solution = new Solution();
-        solution.sort(numbers);
+        solution.sortImprovement2(numbers);
         System.out.println(Arrays.toString(numbers));
     }
 
@@ -30,7 +30,18 @@ public class Solution {
             swap(array,j,j+1)
             swapOccurred = true
      * */
-
+    public void sortImprovement2(int[] array){
+        boolean swapOccurred = true;
+        while(swapOccurred){
+            swapOccurred = false;
+            for(int j = 0; j < array.length - 1; j++) {
+                if(array[j] > array[j+1]){
+                    swap(array, j, j+1);
+                    swapOccurred = true;
+                }
+            }
+        }
+    }
 
     /*
     bubbleSortImprovement(array)
