@@ -84,7 +84,7 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="JUnit.SolutionTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -156,11 +156,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution" />
+        <item itemvalue="JUnit.SolutionTest" />
         <item itemvalue="JUnit.SolutionTest.SelectionSortTest" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionTest.firstTest" />
         <item itemvalue="JUnit.SolutionTest.improvementTest" />
-        <item itemvalue="JUnit.SolutionTest" />
       </list>
     </recent_temporary>
   </component>
