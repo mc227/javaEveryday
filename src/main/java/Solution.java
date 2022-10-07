@@ -32,9 +32,11 @@ public class Solution {
      * */
     public void sortImprovement2(int[] array){
         boolean swapOccurred = true;
+        int i = 0;
         while(swapOccurred){
             swapOccurred = false;
-            for(int j = 0; j < array.length - 1; j++) {
+            i++;
+            for(int j = 0; j < array.length - i; j++) {
                 if(array[j] > array[j+1]){
                     swap(array, j, j+1);
                     swapOccurred = true;
