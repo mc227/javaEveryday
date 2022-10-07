@@ -84,20 +84,7 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
-    <configuration name="BinarySearchRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.sorting.BinarySearchRecursive" />
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SolutionTest.firstTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -128,6 +115,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionTest.improvementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
       <option name="PACKAGE_NAME" value="" />
@@ -151,19 +148,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="Application.BinarySearchRecursive" />
       <item itemvalue="Application.Solution" />
       <item itemvalue="JUnit.SolutionTest" />
       <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
       <item itemvalue="JUnit.SolutionTest.improvementTest" />
+      <item itemvalue="JUnit.SolutionTest.firstTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionTest.firstTest" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionTest.improvementTest" />
         <item itemvalue="JUnit.SolutionTest" />
         <item itemvalue="JUnit.SolutionTest.swapFirstAndLast" />
-        <item itemvalue="Application.BinarySearchRecursive" />
       </list>
     </recent_temporary>
   </component>

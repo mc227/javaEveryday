@@ -19,4 +19,12 @@ class SolutionTest {
         Assert.assertArrayEquals(
                 new int[] {3, 5, 7, 9, 12, 14, 15, 16, 18, 21, 23}, numbers );
     }
+
+    @Test
+    void improvementTest2() {
+        int[] numbers = new int[]{7, 15, 14, 5, 9, 18, 3, 21, 23, 16, 12};
+        solution.sortImprovement2(numbers);
+        Assert.assertArrayEquals(
+                new int[] {3, 5, 7, 9, 12, 14, 15, 16, 18, 21, 23}, numbers );
+    }
 }
