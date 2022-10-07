@@ -7,10 +7,16 @@ public class Solution {
 
     }
 
+    /*
+    bubbleSort(array)
+    n = length(array)
+    for (i = 1 to n)
+        for(j = 0 to n - 1)
+            if(array[j]>array[j+1])
+                swap(array,j,j+1)
+     * */
     public void bubbleSort(int[] input) {
-        /*
 
-        * */
     }
 
 }
