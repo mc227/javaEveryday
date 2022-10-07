@@ -18,8 +18,20 @@ public class Solution {
     In this manner, if we give our method an already sorted list,
     we just need to do one pass on the array and leave it untouched.
     This means that the best case is now O(n), although the worst case stays the same.
-
     * */
+
+    /*
+    bubbleSortImprovement2(array)
+    swapOccurred = true
+    while(swapOccured)
+    swapOccurred = false
+    for(j = 0 to n - 1)
+        if(array[j] > array[j+1]
+            swap(array,j,j+1)
+            swapOccurred = true
+     * */
+
+
     /*
     bubbleSortImprovement(array)
     n = length(array)
