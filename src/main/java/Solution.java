@@ -9,6 +9,18 @@ public class Solution {
     }
 
     /*
+    If we give a sorted list to our bubble sort algorithm,
+    we will still make multiple passes on it without modifying it.
+    We can further improve the algorithm by cutting short the outer
+    loop when the list inside the array is fully sorted.
+    We can check that the array is sorted by checking if any
+    swaps were done during our last pass.
+    In this manner, if we give our method an already sorted list,
+    we just need to do one pass on the array and leave it untouched.
+    This means that the best case is now O(n), although the worst case stays the same.
+
+    * */
+    /*
     bubbleSortImprovement(array)
     n = length(array)
     for (i = 1 to n)
