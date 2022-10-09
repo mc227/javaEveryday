@@ -38,6 +38,6 @@ public class MergeSort {
     }
 
     public void mergeSort(int[] array) {
-
+        mergeSort(array,0, array.length - 1);
     }
 }
