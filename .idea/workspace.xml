@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/NewClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort.solution" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewClass">
+  <component name="RunManager" selected="JUnit.MergeSortTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
       <module name="javaEveryday" />
@@ -171,9 +173,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MergeSortTest" />
         <item itemvalue="Application.NewClass" />
         <item itemvalue="Application.GFG" />
-        <item itemvalue="JUnit.MergeSortTest" />
         <item itemvalue="JUnit.MergeSortTest.testSameNumber" />
         <item itemvalue="JUnit.MergeSortTest.testEmpty" />
       </list>
