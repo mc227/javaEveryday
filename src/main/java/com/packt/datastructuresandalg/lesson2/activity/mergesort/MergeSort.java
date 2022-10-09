@@ -8,7 +8,7 @@ public class MergeSort {
         j = middle + 1
         arrayTemp = initArrayOfSize(end - start + 1)
         for(k = 0 to end - start)
-            if(i <= middle && (j < end || (array[i] <= array[j])
+            if(i <= middle && (j > end || (array[i] <= array[j])
                 arrayTemp[k] = array[i]
                 i++
             else
