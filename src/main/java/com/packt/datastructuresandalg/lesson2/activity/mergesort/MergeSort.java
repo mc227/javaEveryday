@@ -6,6 +6,14 @@ public class MergeSort {
 
     }
 
+    /*
+    mergeSort(array,start,end)
+    if(start < end)
+        middle = (end - start) / 2 + start
+        mergeSort(array,start,middle)
+        mergeSort(array,middle+1,end)
+        merge(array,start,middle,end)
+    * */
     private void mergeSort(int[] array, int start, int end) {
 
     }
