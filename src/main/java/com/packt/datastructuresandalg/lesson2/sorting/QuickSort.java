@@ -11,11 +11,7 @@ public class QuickSort {
     }
 
     public void sort(int[] array) {
-        if(0<array.length){
-            int p = partition(array,0,array.length-1);
-            sort(array,0,p-1);
-            sort(array,p+1,array.length-1);
-        }
+        sort(array, 0, array.length - 1);
     }
 
     public void sort(int[] array, int start, int end) {
