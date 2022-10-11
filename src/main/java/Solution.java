@@ -11,4 +11,16 @@ public class Solution {
         array[first] = array[second];
         array[second] = temp;
     }
+    /*SelectionSort PseudoCode
+
+    [5,4,3,2,1]
+    selectionSort(array)
+        minPtr = 0;
+        while(minPtr < array.length)
+            for(i = minPtr to array.length - 1)
+            if(array[minPtr] < array[i])
+                minPtr = i
+            swap(array,minPtr,i)
+            minPtr++;
+    * */
 }
