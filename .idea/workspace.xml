@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OptionalDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/DblLinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SolutionTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,43 +88,9 @@
       <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort.solution" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
+  <component name="RunManager" selected="JUnit.SolutionTest">
     <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GFG" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.linkedlist.LinkedList" />
-      <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NewClass" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OptionalDemo" />
       <module name="javaEveryday" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,17 +103,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaEveryday" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.packt.datastructuresandalg.lesson2.activity.mergesort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.packt.datastructuresandalg.lesson2.activity.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="com.packt.datastructuresandalg.lesson2.activity.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.testAlreadySorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="testAlreadySorted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.testEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="testEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.testOneElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="testOneElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionTest.testSameNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
+      <option name="METHOD_NAME" value="testSameNumber" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,19 +155,19 @@
     <list>
       <item itemvalue="Application.BinaryToDecimal" />
       <item itemvalue="Application.stack" />
-      <item itemvalue="JUnit.MergeSortTest" />
-      <item itemvalue="Application.GFG" />
-      <item itemvalue="Application.NewClass" />
-      <item itemvalue="Application.OptionalDemo" />
-      <item itemvalue="Application.LinkedList" />
+      <item itemvalue="JUnit.SolutionTest.testOneElement" />
+      <item itemvalue="JUnit.SolutionTest.testEmpty" />
+      <item itemvalue="JUnit.SolutionTest" />
+      <item itemvalue="JUnit.SolutionTest.testSameNumber" />
+      <item itemvalue="JUnit.SolutionTest.testAlreadySorted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.OptionalDemo" />
-        <item itemvalue="JUnit.MergeSortTest" />
-        <item itemvalue="Application.NewClass" />
-        <item itemvalue="Application.GFG" />
+        <item itemvalue="JUnit.SolutionTest" />
+        <item itemvalue="JUnit.SolutionTest.testAlreadySorted" />
+        <item itemvalue="JUnit.SolutionTest.testSameNumber" />
+        <item itemvalue="JUnit.SolutionTest.testEmpty" />
+        <item itemvalue="JUnit.SolutionTest.testOneElement" />
       </list>
     </recent_temporary>
   </component>

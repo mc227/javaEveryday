@@ -1,6 +1,7 @@
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
 
-
-class SolutionTest {
+public class SolutionTest {
     Solution solution = new Solution();
 
 
