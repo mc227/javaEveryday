@@ -34,6 +34,21 @@ public class Solution {
         }
     }
 
+    /*
+    pseudo code for sortImprovement2
+
+    sortImprovement2(numbers)
+        swapOccurred = true
+        i = 0
+        while(swapOccurred){
+            swapOccurred = false
+            i++
+            for(i = 0 to numbers.length - i)
+                if(numbers[i] > numbers[i+1])
+                    swap(numbers,i,i+1)
+                    swapOccurred = true
+        }
+    * */
     public void swap(int[] array, int first, int second) {
         int temp = array[first];
         array[first] = array[second];
