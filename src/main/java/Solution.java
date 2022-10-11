@@ -25,16 +25,14 @@ public class Solution {
             start++;
     * */
     public void selectionSort(int[] array) {
-        int start = 0;
-        while(start < array.length) {
-            int smallestPtr = start;
-            for(int i = start; i < array.length; i++) {
+        for(int m = 0; m < array.length;m++){
+            int smallestPtr = m;
+            for(int i = m; i < array.length; i++) {
                 if(array[smallestPtr] > array[i]){
                     smallestPtr = i;
                 }
             }
-            swap(array,start,smallestPtr);
-            start++;
+            swap(array,m,smallestPtr);
         }
     }
 }
