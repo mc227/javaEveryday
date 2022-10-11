@@ -12,4 +12,13 @@ public class Solution {
     //      for(j = 0 to n - 1)
     //          if(array[j] > array[j+1])
     //              swap(array, j, j+1)
+    public void sort(int[] numbers){
+
+
+    }
+    public void swap(int[] array, int first, int second) {
+        int temp = array[first];
+        array[first] = array[second];
+        array[second] = temp;
+    }
 }
