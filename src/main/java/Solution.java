@@ -16,9 +16,9 @@ public class Solution {
         binarySearch(value,array, start, end){
             if(start<=end)
                 middle = (end - start) / 2 + start
-                if(array[value]==middle) return true
-                if(array[value] > middle) return binarySearch(array, value, middle+1,end)
-                return binarySearch(array,value,start, middle-1)
+                if(array[middle]==value) return true
+                if(array[middle] > value) return binarySearch(array, value,middle-1)
+                return binarySearch(array,value,start,  middle+1,end)
             return false
         }
         * */
