@@ -10,8 +10,15 @@ public class Solution {
         System.out.println(binarySearch.binarySearch(0, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
 
     }
-    public boolean binarySearch(int[] array, int x) {
+    public boolean binarySearch(int[] array, int start,int end, int value) {
         /*
+        binarySearch(array, start, end, value){
+            middle = (end - start) / 2 + start
+            if(start<end)
+                if(array[value]==middle) return true
+                if(array[value] > middle) return binarySearch(array, value, middle+1,end)
+                return binarySearch(array,value,start, middle-1)
+        }
         * */
         return true;
     }
