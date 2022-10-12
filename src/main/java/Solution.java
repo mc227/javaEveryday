@@ -8,6 +8,12 @@ public class Solution {
         BinarySearch binarySearch = new BinarySearch();
         System.out.println(binarySearch.binarySearch(7, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
         System.out.println(binarySearch.binarySearch(0, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+
+    }
+    public boolean binarySearch(int[] array, int x) {
+        /*
+        * */
+        return true;
     }
     public void swap(int[] array, int first, int second) {
         int temp = array[first];
