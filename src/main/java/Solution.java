@@ -10,17 +10,7 @@ public class Solution {
 
     }
     public int partition(int[] array, int start,int end) {
-        // Pick the right most element of the array as the pivot.
-        int pivot = array[end];
-        int x = start - 1;
-        for(int i = 0; i < array.length;i++) {
-            if(pivot > array[i]){
-                x++;
-                swap(array,x,i);
-            }
-        }
-        swap(array,end,x+1);
-        return x+1;
+        return 0;
     }
     public void swap(int[] array, int first, int second) {
         int temp = array[first];
