@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 class Cat {
@@ -21,10 +20,11 @@ class Cat {
     }
 
     public static void main(String[] args) throws Exception {
-        Cat cat = new Cat();
-        PrintWriter writer = new PrintWriter("cat.txt");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        cat.load(reader);
-        cat.save(writer);
+//        Cat cat = new Cat();
+//        PrintWriter writer = new PrintWriter("cat.txt");
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        cat.load(reader);
+//        cat.save(writer);
+        System.out.println("oh hi Mark");
     }
 }
