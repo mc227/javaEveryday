@@ -1,19 +1,38 @@
-
+import java.util.Arrays;
 
 public class Solution {
     public static void main(String[] args) {
-        int[] numbers = new int[] {89,3,66,1,2,54,65,7,11};
-//        System.out.println(Arrays.toString(numbers));
-//        System.out.println(numbers.length);
+        Solution solution = new Solution();
+        int[] numbers = new int[] {2,1};
+        solution.mergeSort(numbers);
+        System.out.println(Arrays.toString(numbers));
     }
-    /*
-    mergeSort Pseudo code
+    private void merge(int[] array, int start, int middle, int end) {
+        int i = start;
+        int j = middle + 1;
+        int[] arrayTemp = new int[end - start + 1];
+        for (int k = 0; k < arrayTemp.length; k++) {
+            if (i <= middle && (j > end || array[i] <= array[j])) {
+                arrayTemp[k] = array[i];
+                i++;
+            } else {
+                arrayTemp[k] = array[j];
+                j++;
+            }
+        }
+        System.arraycopy(arrayTemp, 0, array, start, arrayTemp.length);
+    }
 
-    mergeSort(array, start,end)
-        if(start < end)
-            midPoint = (end - start)/2 + start;
-            mergeSort(array, start, midPoint)
-            mergeSort(array,midPoint+1,end)
-            merge(array, start, midPoint, end)
-    * */
+    private void mergeSort(int[] array, int start, int end) {
+        if (start < end) {
+            int middle = (end - start) / 2 + start;
+            mergeSort(array, start, middle);
+            mergeSort(array, middle + 1, end);
+            merge(array, start, middle, end);
+        }
+    }
+
+    public void mergeSort(int[] array) {
+        mergeSort(array, 0, array.length - 1);
+    }
 }
