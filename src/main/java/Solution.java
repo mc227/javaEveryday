@@ -8,7 +8,7 @@ public class Solution {
         System.out.println(Arrays.toString(numbers));
     }
 
-    private void mergeSort(int[] array) {
+    public void mergeSort(int[] array) {
         mergeSort(array,0,array.length-1);
     }
 
@@ -21,7 +21,7 @@ public class Solution {
             mergeSort(array, middle+1, end)
             merge(array, start, middle, end)
     * */
-    private void mergeSort(int[] array, int start, int end) {
+    public void mergeSort(int[] array, int start, int end) {
         if(start < end){
             int middle = (end - start) / 2 + start;
             mergeSort(array, start, middle);
@@ -44,7 +44,7 @@ public class Solution {
                 j++
         copyArray(arrayTemp,0,array,start,array.length)
     * */
-    private void merge(int[] array, int start, int middle, int end) {
+    public void merge(int[] array, int start, int middle, int end) {
         int i = start;
         int j = middle + 1;
         int[] arrayTemp = new int[end - start + 1];
