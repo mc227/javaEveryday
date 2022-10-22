@@ -1,5 +1,0 @@
-id productName price quantity
-1 product1 100.0 1
-2 product2 200.0 2
-3 product3 300.0 3
-

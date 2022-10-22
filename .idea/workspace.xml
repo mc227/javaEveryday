@@ -4,44 +4,441 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DblLinkedListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LinkedList.java" afterDir="false" />
+    <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CatInput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lion.avi.part8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mark9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AlphaList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AlphaListManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AmigoFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BinarySearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BinaryToDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatingSalaries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodeGym1918.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComputePi1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleRead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ContainsDuplicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DMan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dereck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dereck09282022HW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EvalRPN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileConsoleWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileWriterWriteCharArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileWriterWriteIntExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileWriterWriteIntTryWithResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileWriterWriteStringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GFG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HTTP_REST_Web_Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorldApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorldApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IMF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interface1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interface2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Intersection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KitchenSync.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinearComplexity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogarithmicComplexity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarkBubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFirstThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OctalToDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OptionalDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OurPresident.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PersonScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Problem1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuadraticComplexity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Random1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StackDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SystemRedirectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TimeStampExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WriteFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/album.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appendFiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0102/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0103/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0105/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task01/task0142/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Conditions.tcs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Sex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1711/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Cook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Dish.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1712/Waiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1713/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1715/Drug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1715/DrugController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1715/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1721/CorruptedDataException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task17/task1721/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1801/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1802/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1803/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1804/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1805/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1806/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1807/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1808/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1809/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1810/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1811/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1812/AmigoOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1812/QuestionFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1813/AmigoOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1814/TxtInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1814/UnsupportedFileNameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1815/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1816/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1817/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1818/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1819/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1820/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1821/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1822/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1823/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1824/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1825/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task18/task1826/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1901/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1920/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Conditions.tcs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1921/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1922/Conditions.tcs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1922/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1923/Conditions.tcs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1923/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1924/Conditions.tcs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1924/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/task/task19/task1925/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/google/leetcode/TextJustification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/Intersection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/DblLinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/packt/datastructuresandalg/lesson2/sorting/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myProgram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BinaryToDecimalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CatTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CodeGym1918Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ContainsDuplicatesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EvalRPNTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GraderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IntersectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinearComplexityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogarithmicComplexityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MarkBubbleSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OctalToDecimalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuadraticComplexityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SimpleCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SolutionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codegym/task/task19/task1921/PersonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/leetcode/TextJustificationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/IntersectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/sorting/BubbleSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/packt/datastructuresandalg/lesson2/sorting/QuickSortTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AlphaList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AlphaListManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AmigoFileOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Bean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BinarySearchTree$BinaryNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BinarySearchTree$TreeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BinarySearchTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BinaryToDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CalculatingSalaries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CodeGym1918.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ComputePi1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleRead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ContainsDuplicates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DMan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DblLinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dereck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dereck09282022HW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvalRPN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileConsoleWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileWriterWriteCharArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileWriterWriteIntExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileWriterWriteIntTryWithResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileWriterWriteStringExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GFG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Grader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HTTP_REST_Web_Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWorldApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IMF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interface1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Interface2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Intersection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/KitchenSync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LinearComplexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogarithmicComplexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MarkBubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyFirstThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NewClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OctalToDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OptionalDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OurPresident.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PersonScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Problem1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Program$BST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QuadraticComplexity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Random1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StackDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SystemRedirectService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Testing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ThreadExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TimeStampExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appendFiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task01/task0102/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task01/task0103/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task01/task0105/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task01/task0142/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1711/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1711/Sex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1711/Solution$Partition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1711/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Cook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Restaurant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1712/Waiter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1713/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1715/Drug.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1715/DrugController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1715/Solution$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1715/Solution$Pharmacy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1715/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1721/CorruptedDataException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task17/task1721/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1801/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1802/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1803/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1804/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1805/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1806/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1807/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1808/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1809/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1810/Solution$DownloadException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1810/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1811/Solution$DecoratorMyRunnableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1811/Solution$DecoratorRunnableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1811/Solution$RunnableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1811/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1812/AmigoOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1812/QuestionFileOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1813/AmigoOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1814/TxtInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1814/UnsupportedFileNameException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1815/Solution$TableInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1815/Solution$TableInterfaceWrapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1815/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1816/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1817/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1818/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1819/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1820/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1821/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1822/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1823/Solution$ReadThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1823/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1824/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1825/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task18/task1826/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1901/Solution$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1901/Solution$ATable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1901/Solution$BTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1901/Solution$TableAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1901/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1920/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1921/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1921/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1922/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1923/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1924/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/task/task19/task1925/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/google/leetcode/TextJustification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/Intersection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/linkedlist/DblLinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/linkedlist/LinkedListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/sorting/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/packt/datastructuresandalg/lesson2/sorting/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/myProgram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BinaryToDecimalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CatTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CodeGym1918Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ContainsDuplicatesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/EvalRPNTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GraderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/IntersectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LinearComplexityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LogarithmicComplexityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MarkBubbleSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/OctalToDecimalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/QuadraticComplexityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SimpleCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SolutionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/codegym/task/task19/task1921/PersonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/google/leetcode/TextJustificationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/IntersectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol1Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson1/activity/improveintersection/solution/FastInterstectionSol2Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson1/binarysearch/BinarySearchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/activity/mergesort/MergeSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/SelectionSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/activity/selectionsort/solution/SelectionSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/sorting/BinarySearchRecursiveTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/sorting/BubbleSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/packt/datastructuresandalg/lesson2/sorting/QuickSortTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usman.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit3 Test Class" />
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="26qVFquJdYjrI0J8GC4ruVBuwno" />
+  <component name="ProjectId" id="2GUBA8IV9LAUdUrieAmWzEPdjk1" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -49,135 +446,46 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/com.codegym.task.task01.task0142/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../palnet-linux" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.codegym.task.task18.task1814" />
-      <recent name="com.codegym.task.task17.task1711" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task19\task1924" />
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task19\task1923" />
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task19\task1922" />
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java\com\codegym\task\task19\task1921" />
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\java" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="junit.framework.TestCase" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
-      <recent name="com.packt.datastructuresandalg.lesson2.activity.mergesort" />
-      <recent name="com.packt.datastructuresandalg.lesson2.sorting" />
-      <recent name="com.google.leetcode" />
-      <recent name="com.packt.datastructuresandalg.lesson2.activity.selectionsort.solution" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.LinkedListNode">
-    <configuration name="BinaryToDecimal" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="BinaryToDecimal" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager">
+    <configuration name="javaEveryday [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedListNode" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Solution" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stack" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="javaEveryday" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.whenOrElseGetAndOrElseDiffer_thenCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
-      <option name="METHOD_NAME" value="whenOrElseGetAndOrElseDiffer_thenCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionTest.whenOrElseGetAndOrElseOverlap_thenCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaEveryday" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SolutionTest" />
-      <option name="METHOD_NAME" value="whenOrElseGetAndOrElseOverlap_thenCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.BinaryToDecimal" />
-      <item itemvalue="Application.stack" />
-      <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.LinkedList" />
-      <item itemvalue="Application.LinkedListNode" />
-      <item itemvalue="JUnit.SolutionTest.whenOrElseGetAndOrElseOverlap_thenCorrect" />
-      <item itemvalue="JUnit.SolutionTest.whenOrElseGetAndOrElseDiffer_thenCorrect" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinkedListNode" />
-        <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.SolutionTest.whenOrElseGetAndOrElseDiffer_thenCorrect" />
-        <item itemvalue="JUnit.SolutionTest.whenOrElseGetAndOrElseOverlap_thenCorrect" />
+        <item itemvalue="Gradle.javaEveryday [clean]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="825c67d5-864a-4d1a-9156-d3ce84963f1b" name="Changes" comment="" />
-      <created>1648151003737</created>
+      <changelist id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="" />
+      <created>1666433140794</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648151003737</updated>
+      <updated>1666433140794</updated>
     </task>
     <servers />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/javaEveryday$GraderTest_fiftyNineShouldReturnF.ic" NAME="GraderTest.fiftyNineShouldReturnF Coverage Results" MODIFIED="1650367057631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/javaEveryday$SelectionSortTest.ic" NAME="SelectionSortTest Coverage Results" MODIFIED="1664335469383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.packt.datastructuresandalg.lesson2.activity.selectionsort.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/javaEveryday$GraderTest.ic" NAME="GraderTest Coverage Results" MODIFIED="1650492698476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
