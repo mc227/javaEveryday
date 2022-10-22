@@ -14,6 +14,7 @@ public class LinkedListNode<V> {
     }
 
     public Optional<LinkedListNode<V>> getNext() {
+
         return Optional.ofNullable(next);
     }
 
