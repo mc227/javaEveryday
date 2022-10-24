@@ -46,7 +46,7 @@ public class LinkedList<V> {
         list.addFront("Karl");
         list.addFront("John");
 //        System.out.println(list.find("Isabel"));
-//        System.out.println(list.find("Ruth"));
+        System.out.println(list.find("Ruth").get());
 //        System.out.println(list.find("Karl"));
 //        System.out.println(list.find("John"));
 //        System.out.println(list.find("James"));
