@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/datastructures/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/datastructures/QueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -77,21 +81,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
   </component>
-  <component name="RunManager" selected="Gradle.QueueTest.givenNull_whenThrowsErrorOnCreate_thenCorrect">
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.LinkedList" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="javaEveryday.com.datastructures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.QueueTest.givenOptional_whenIfPresentWorks_thenCorrect">
     <configuration name="QueueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,34 +156,55 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="javaEveryday [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QueueTest.givenOptional_whenIfPresentWorks_thenCorrect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.datastructures.QueueTest.givenOptional_whenIfPresentWorks_thenCorrect&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":app:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QueueTest.givenOptional_whenIsPresentWorks_thenCorrect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.datastructures.QueueTest.givenOptional_whenIsPresentWorks_thenCorrect&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QueueTest.givenOptional_whenIfPresentWorks_thenCorrect" />
+        <item itemvalue="Gradle.QueueTest.givenOptional_whenIsPresentWorks_thenCorrect" />
         <item itemvalue="Gradle.QueueTest.givenNull_whenThrowsErrorOnCreate_thenCorrect" />
         <item itemvalue="Gradle.QueueTest" />
         <item itemvalue="Gradle.QueueTest.givenNonNull_whenCreatesNonNullable_thenCorrect" />
-        <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Gradle.javaEveryday [clean]" />
       </list>
     </recent_temporary>
   </component>
