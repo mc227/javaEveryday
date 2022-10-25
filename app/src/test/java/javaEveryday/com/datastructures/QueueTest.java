@@ -12,4 +12,19 @@ class QueueTest {
         Optional<String> empty = Optional.empty();
         assertFalse(empty.isPresent());
     }
+
+    @Test
+    void givenNonNull_whenCreatesNonNullable_thenCorrect() {
+        String name = "baeldung";
+        Optional<String> opt = Optional.of(name);
+        assertTrue(opt.isPresent());
+    }
+
+    @Test
+    void givenNull_whenThrowsErrorOnCreate_thenCorrect() {
+        assertThrows(NullPointerException.class, () ->{
+            String name = null;
+            Optional.of(name);
+        });
+    }
 }
