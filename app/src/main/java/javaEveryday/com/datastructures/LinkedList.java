@@ -1,12 +1,11 @@
 package javaEveryday.com.datastructures;
+
+import java.util.Optional;
+
 /*
-Before we can use any linked list operations,
-we need to initialize the data structure and mark it as empty.
-Conceptually, this is when the head of the list is pointing to nothing.
-We can do this in Java by adding this logic in a constructor.
-The following code snippet shows this.
-Notice that, once again,
-we use generics to hold the type of the items we want to store in the linked list:
+Adding a node in a linked list requires a two pointer reassignment.
+On the new node, you set the next pointer to point to whatever
+the head pointer is assigned to. Then, you set the head pointer to point to this newly created node.
 * */
 public class LinkedList<V> {
     private LinkedListNode<V> head;
@@ -15,6 +14,9 @@ public class LinkedList<V> {
         head = null;
     }
 
+    public void addFront(V item) {
+        this.head = new LinkedListNode<V>(item, head.getNext().orElse(null));
+    }
 
 
 }
