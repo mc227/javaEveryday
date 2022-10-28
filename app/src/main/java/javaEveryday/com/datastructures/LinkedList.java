@@ -25,4 +25,8 @@ public class LinkedList<V> {
         }
         return node;
     }
+
+    public void addAfter(LinkedListNode<V> aNode, V item) {
+        aNode.setNext(new LinkedListNode<V>(item, aNode.getNext().orElse(null)));
+    }
 }
