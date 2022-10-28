@@ -26,4 +26,9 @@ public class LinkedListNode<V> {
         this.next = next;
         return this;
     }
+
+    public static void main(String[] args) {
+        LinkedListNode<String> linkedListNode = new LinkedListNode<>("Leon S Kennedy", null);
+        System.out.println(linkedListNode.value);
+    }
 }
