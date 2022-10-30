@@ -27,26 +27,18 @@ public class DblLinkedListNode<V> {
         return value;
     }
 
-    public DblLinkedListNode<V> setValue(V value) {
+    public DblLinkedListNode setValue(V value) {
         this.value = value;
         return this;
     }
 
-
-    public DblLinkedListNode<V> setNext(DblLinkedListNode<V> next) {
+    public DblLinkedListNode setNext(DblLinkedListNode<V> next) {
         this.next = next;
         return this;
     }
 
-
     public DblLinkedListNode setPrevious(DblLinkedListNode<V> previous) {
         this.previous = previous;
         return this;
-    }
-
-    public static void main(String[] args) {
-        DblLinkedListNode<Integer> four = new DblLinkedListNode<>(4,null,null);
-        four.setNext(new DblLinkedListNode<>(2,null,null));
-        System.out.println(four.toString());
     }
 }
