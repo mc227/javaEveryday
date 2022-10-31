@@ -3,18 +3,21 @@ package javaEveryday.com.datastructures;
 import java.util.Optional;
 
 public class LinkedList<V> {
-    private LinkedListNode<V> head;
+    LinkedListNode<V> head;
+
     public LinkedList() {
         head = null;
     }
-    public void addFront(V value) {
-        this.head = new LinkedListNode<V>(value, head);
+    public void addFront(V item) {
+        this.head = new LinkedListNode<>(item,head);
     }
+
     public void deleteFront() {
-        Optional<LinkedListNode<V>> firstNode = Optional.ofNullable(this.head);
-        this.head = firstNode.flatMap(LinkedListNode::getNext).orElse(null);
-        firstNode.ifPresent(n->n.setNext(null));
+        Optional<LinkedListNode<V>> node = Optional.ofNullable(this.head);
+        this.head = node.flatMap(LinkedListNode::getNext).orElse(null);
+        node.ifPresent(n->n.setNext(null));
     }
+
     public Optional<LinkedListNode<V>> find(V item) {
         Optional<LinkedListNode<V>> node = Optional.ofNullable(this.head);
         while(node.filter(n->n.getValue()!=item).isPresent()){
@@ -22,8 +25,9 @@ public class LinkedList<V> {
         }
         return node;
     }
+
     public void addAfter(LinkedListNode<V> aNode, V item) {
-        aNode.setNext(new LinkedListNode<V>(item, aNode.getNext().orElse(null)));
+        aNode.setNext(new LinkedListNode<>(item,aNode.getNext().orElse(null)));
     }
 
     @Override
@@ -31,24 +35,39 @@ public class LinkedList<V> {
         Optional<LinkedListNode<V>> node = Optional.ofNullable(this.head);
         StringBuffer result = new StringBuffer("[");
         while(node.isPresent()){
-            node.ifPresent(n->result.append(n.getValue().toString()));
+            node.ifPresent(n->result.append(n.getValue()));
             node = node.flatMap(LinkedListNode::getNext);
             node.ifPresent(n->result.append(", "));
         }
         return result.append("]").toString();
     }
 
-    /**
-     We have a linked list containing some elements and we need to build a string of the
-     form [3,6,4,2,4]. If the list is empty, it should output [].
-     */
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.addFront(4);
-        linkedList.addFront(2);
-        linkedList.addFront(4);
-        linkedList.addFront(6);
-        linkedList.addFront(3);
-        System.out.println(linkedList.toString());
+//        LinkedList<Integer> linkedList = new LinkedList<>();
+//        linkedList.addFront(4);
+//        linkedList.addFront(2);
+//        linkedList.addFront(4);
+//        linkedList.addFront(6);
+//        linkedList.addFront(3);
+//        System.out.println(linkedList.toString());
+        LinkedList<String> list = new LinkedList();
+        list.addFront("Isabel");
+        list.addFront("Ruth");
+        list.addFront("Karl");
+        list.addFront("John");
+        System.out.println(list.find("Isabel"));
+        System.out.println(list.find("Ruth"));
+        System.out.println(list.find("Karl"));
+        System.out.println(list.find("John"));
+        System.out.println(list.find("James"));
+
+        list.deleteFront();
+        System.out.println(list.find("John"));
+        list.addFront("Oliver");
+        System.out.println(list.find("Ruth"));
+        list.addAfter(list.find("Ruth").get(), "Sam");
+        System.out.println(list.toString());
+
+        LinkedListNode<Integer> x = new LinkedListNode<>(5, null);
     }
 }
