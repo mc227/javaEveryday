@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Project1">
+  <component name="RunManager" selected="Application.LinkedList">
     <configuration name="DblLinkedListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.DblLinkedListNode" />
       <module name="javaEveryday.app.main" />
@@ -104,8 +104,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.LinkedListNode" />
+    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.LinkedList" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.Project1" />
         <item itemvalue="Application.Weight" />
         <item itemvalue="Application.DblLinkedListNode" />
         <item itemvalue="Gradle.LinkedListNodeTest" />
-        <item itemvalue="Application.LinkedListNode" />
       </list>
     </recent_temporary>
   </component>
