@@ -11,6 +11,7 @@ public class Snack
     private String size;
     private BigDecimal price;
 
+    // constructor to initialize ID and size
     public Snack(String id, String size) {
         this.id = id;
         this.size = size;
@@ -39,4 +40,4 @@ public class Snack
     private void setPrice(BigDecimal price) {
         this.price = price;
     }
-}
+} // end class Employee
