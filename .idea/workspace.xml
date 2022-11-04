@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/BasePlusCommissionEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/CommissionEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/random/walaLang/BasePlusCommissionEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,16 +92,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="javaEveryday.com.random.walaLang" />
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
-    <configuration name="DblLinkedListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.DblLinkedListNode" />
-      <module name="javaEveryday.app.main" />
+  <component name="RunManager" selected="Application.BasePlusCommissionEmployeeTest">
+    <configuration name="BasePlusCommissionEmployeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.random.walaLang.BasePlusCommissionEmployeeTest" />
+      <module name="javaEveryday.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
+          <option name="PATTERN" value="javaEveryday.com.random.walaLang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasePlusCommissionEmployeeTest" />
         <item itemvalue="Application.Queue" />
         <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.Project1" />
         <item itemvalue="Application.Weight" />
-        <item itemvalue="Application.DblLinkedListNode" />
       </list>
     </recent_temporary>
   </component>

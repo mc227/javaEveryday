@@ -3,7 +3,7 @@ package javaEveryday.com.DW.Assignment2;
 import java.math.BigDecimal;
 
 /**
- * The Snack class description here
+ * The Snack class represents
  * */
 public class Snack
 {
