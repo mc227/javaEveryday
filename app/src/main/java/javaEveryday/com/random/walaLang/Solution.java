@@ -1,9 +1,10 @@
 package javaEveryday.com.random.walaLang;
 
+import java.util.ArrayList;
+
 public class Solution {
     public static void main(String[] args) {
-        for(int i = 0; i <args.length;i++) {
-            System.out.println(args[i]);
-        }
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("one");
     }
 }
