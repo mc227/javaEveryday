@@ -35,4 +35,10 @@ public class Queue<V> {
         tail = node
         if(head==null) head = node
      */
+    public void enqueue(V item) {
+        DblLinkedListNode<V> node = new DblLinkedListNode<>(item, null,tail);
+        Optional.ofNullable(tail).ifPresent(n->n.setNext(node));
+        tail=node;
+        if(head==null) head = node;
+    }
 }
