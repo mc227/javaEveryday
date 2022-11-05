@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Tutorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +96,7 @@
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasePlusCommissionEmployeeTest">
+  <component name="RunManager" selected="Application.OrderSystem">
     <configuration name="BasePlusCommissionEmployeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.random.walaLang.BasePlusCommissionEmployeeTest" />
       <module name="javaEveryday.app.test" />
@@ -106,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.LinkedList" />
+    <configuration name="FruitSnack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.FruitSnack" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.Assignment2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Project1" />
+    <configuration name="OrderSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.OrderSystem" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.Assignment2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Weight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Weight" />
+    <configuration name="SaltySnack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.SaltySnack" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.Assignment2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SaltySnack" />
+        <item itemvalue="Application.FruitSnack" />
+        <item itemvalue="Application.OrderSystem" />
         <item itemvalue="Application.BasePlusCommissionEmployeeTest" />
         <item itemvalue="Application.Queue" />
-        <item itemvalue="Application.LinkedList" />
-        <item itemvalue="Application.Project1" />
-        <item itemvalue="Application.Weight" />
       </list>
     </recent_temporary>
   </component>
