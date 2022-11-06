@@ -4,6 +4,8 @@ package javaEveryday.com.DW.Assignment2;
 import java.text.DecimalFormat;
 
 /**
+ * @author: Dereck Watters
+ * @date: 11/7/2022
  * This class represents a Fruit Snack.
  * It is a child class of the Snack class
  */
@@ -20,23 +22,6 @@ public class FruitSnack extends Snack{
     private static final DecimalFormat df = new DecimalFormat("0.00");
 
     /**
-     * This method indicates whether citrusFruit is true or false
-     * @return true or false
-     */
-    public Boolean getCitrusFruit() {
-        return citrusFruit;
-    }
-
-    /**
-     * This method sets citrusFruit as true or false
-     * @param citrusFruit
-     */
-    public void setCitrusFruit(Boolean citrusFruit) {
-        this.citrusFruit = citrusFruit;
-    }
-
-
-    /**
      * This constructor initializes the fruitsnack with the following parameters
      * @param id
      * @param size
@@ -50,12 +35,11 @@ public class FruitSnack extends Snack{
     /**
      * This method overrides the totalCost method and
      * adds $5.99 to the total cost if getCitrusFruit is true
-     * @return
+     * @return cost amount in double
      */
     @Override
     public double totalCost() {
-        if(this.getCitrusFruit()==true){
-            System.out.println("here");
+        if(citrusFruit){
             return 5.99 + super.totalCost();
         }
         return super.totalCost();
@@ -72,5 +56,4 @@ public class FruitSnack extends Snack{
                 ", id = "+ getId() +
                 " and price = " + df.format(getPrice());
     }
-
 }

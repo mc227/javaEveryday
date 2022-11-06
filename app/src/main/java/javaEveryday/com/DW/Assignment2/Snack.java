@@ -3,6 +3,8 @@ package javaEveryday.com.DW.Assignment2;
 import java.math.BigDecimal;
 
 /**
+ * @author: Dereck Watters
+ * @date: 11/7/2022
  * The Snack class represents the base class of snacks
  * and will the parent class of the FruitSnack and SaltySnack
  * */
@@ -12,10 +14,12 @@ public class Snack
      * A String of (combination of numbers and letters) representing Snack ID
      */
     private String id;
+
     /**
      * A String representing Snack size. It assumes Small (S), Medium (M) and Large (L) as values.
      */
     private String size;
+
     /**
      * A double to keep track of the price of the snac
      */
@@ -26,7 +30,8 @@ public class Snack
      * @param id Snack ID
      * @param size Snack Size (S,M or L)
      */
-    public Snack(String id, String size) {
+    public Snack(String id, String size)
+    {
         this.id = id;
         this.size = size;
     }
@@ -35,7 +40,8 @@ public class Snack
      * This methods gets the Snack ID
      * @return id
      */
-    public String getId() {
+    public String getId()
+    {
         return id;
     }
 
@@ -43,7 +49,8 @@ public class Snack
      * This method sets the snack ID value
      * @param id
      */
-    public void setId(String id) {
+    public void setId(String id)
+    {
         this.id = id;
     }
 
@@ -51,7 +58,8 @@ public class Snack
      * This method gets the Size of the Snack
      * @return size
      */
-    public String getSize() {
+    public String getSize()
+    {
         return size;
     }
 
@@ -59,7 +67,8 @@ public class Snack
      * This methods sets the size of the Snack
      * @param size
      */
-    public void setSize(String size) {
+    public void setSize(String size)
+    {
         this.size = size;
     }
 
@@ -67,7 +76,8 @@ public class Snack
      * This method gets the Price of the Snack
      * @return price
      */
-    public double getPrice() {
+    public double getPrice()
+    {
         return price;
     }
 
@@ -75,7 +85,8 @@ public class Snack
      * This method sets the price of the snack
      * @param price
      */
-    public void setPrice(double price) {
+    public void setPrice(double price)
+    {
         this.price = price;
     }
 
@@ -84,14 +95,17 @@ public class Snack
      * price of the snack
      * @return totalCost in double precision
      */
-    public double totalCost(){
-        if(this.getSize().equals("S")){
+    public double totalCost()
+    {
+        if(this.getSize().equals("S"))
+        {
             return 19.99;
-        } else if(this.getSize().equals("M")){
+        } else if(this.getSize().equals("M"))
+        {
             return 29.99;
-        } else {
+        } else
+        {
             return 39.99;
         }
     }
-
 } // end class Snack

@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Tutorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" afterDir="false" />
     </list>
