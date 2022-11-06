@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/FruitSnack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/OrderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/SaltySnack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment2/Snack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,7 @@
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderSystem">
+  <component name="RunManager" selected="Application.Stack">
     <configuration name="BasePlusCommissionEmployeeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.random.walaLang.BasePlusCommissionEmployeeTest" />
       <module name="javaEveryday.app.test" />
@@ -135,19 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.Queue" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SaltySnack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.SaltySnack" />
       <module name="javaEveryday.app.main" />
@@ -161,13 +144,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.Stack" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack" />
         <item itemvalue="Application.SaltySnack" />
         <item itemvalue="Application.FruitSnack" />
         <item itemvalue="Application.OrderSystem" />
         <item itemvalue="Application.BasePlusCommissionEmployeeTest" />
-        <item itemvalue="Application.Queue" />
       </list>
     </recent_temporary>
   </component>
