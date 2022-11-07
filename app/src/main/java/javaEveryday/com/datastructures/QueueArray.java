@@ -6,6 +6,7 @@ public class QueueArray<V> {
     private int headPtr = 0;
     private int tailPtr = 0;
     private V[] array;
+    private boolean full = false;
 
     public QueueArray(int capacity) {
         array = (V[]) new Object[capacity];
@@ -32,6 +33,25 @@ public class QueueArray<V> {
         if(headPtr != tailPtr) {
             Optional<V> item = Optional.of(array[headPtr]);
             headPtr = (headPtr+1) % array.length;
+            return item;
+        } else {
+            return Optional.empty();
+        }
+    }
+    public boolean enqueueSafe(V item){
+        if(!full) {
+            array[tailPtr] = item;
+            tailPtr = (tailPtr + 1) % array.length;
+            this.full = headPtr == tailPtr;
+            return true;
+        }
+        return false;
+    }
+    public Optional<V> dequeueSafe(){
+        if(headPtr != tailPtr || full) {
+            Optional<V> item = Optional.of(array[headPtr]);
+            headPtr = (headPtr+1) % array.length;
+            this.full = false;
             return item;
         } else {
             return Optional.empty();
