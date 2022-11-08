@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="" />
+    <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/EvalPostFix.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,13 +91,13 @@
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QueueArray">
-    <configuration name="FruitSnack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.FruitSnack" />
+  <component name="RunManager" selected="Application.EvalPostFix">
+    <configuration name="EvalPostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.EvalPostFix" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.Assignment2.*" />
+          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.OrderSystem" />
+    <configuration name="FruitSnack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.FruitSnack" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -157,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EvalPostFix" />
         <item itemvalue="Application.QueueArray" />
         <item itemvalue="Application.Stack" />
         <item itemvalue="Application.SaltySnack" />
         <item itemvalue="Application.FruitSnack" />
-        <item itemvalue="Application.OrderSystem" />
       </list>
     </recent_temporary>
   </component>
