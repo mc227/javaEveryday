@@ -45,4 +45,16 @@ public class Stack<V> {
         System.out.println(stack.reverse("kraM"));
 
     }
+
+    @Override
+    public String toString() {
+        Optional<LinkedListNode<V>> node = Optional.ofNullable(this.head);
+        StringBuffer result = new StringBuffer("[");
+        while(node.isPresent()){
+            node.ifPresent(n->result.append(n.getValue()));
+            node = node.flatMap(LinkedListNode::getNext);
+            node.ifPresent(n->result.append(", "));
+        }
+        return result.append("]").toString();
+    }
 }
