@@ -32,4 +32,11 @@ public class SimpleBinaryTree<K,V> implements BinaryTree<K,V>{
             return node.getRight().flatMap(n->get(key,n));
         }
     }
+    public Optional<K> minKey(){
+        return Optional.of(root).map(this::minKey);
+    }
+
+    public K minKey(BinaryTreeNode<K,V> node) {
+        return node.getLeft().map(this::minKey).orElse(node.getKey());
+    }
 }
