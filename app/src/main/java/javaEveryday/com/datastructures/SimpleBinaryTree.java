@@ -47,4 +47,22 @@ public class SimpleBinaryTree<K,V> implements BinaryTree<K,V> {
             return node.getRight().flatMap(n->get(key,n));
         }
     }
+
+    public Optional<K> minKey(){
+        return Optional.ofNullable(root).map(this::minKey);
+    }
+
+    public K minKey(BinaryTreeNode<K,V> node) {
+        return node.getLeft().map(this::minKey).orElse(node.getKey());
+    }
+    public void printDfs() {
+        Optional.ofNullable(root).ifPresent(this::printDfs);
+    }
+    private void printDfs(BinaryTreeNode<K,V> node) {
+//        System.out.println("PREORDER " + node.getKey());
+        node.getLeft().ifPresent(this::printDfs);
+        System.out.println("INORDER " + node.getKey());
+        node.getRight().ifPresent(this::printDfs);
+//        System.out.println("POSTORDER " + node.getKey());
+    }
 }
