@@ -70,7 +70,16 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
     }
 
     public void printBfs() {
-
+        Optional.ofNullable(root).ifPresent(r -> {
+            Queue<BinaryTreeNode<K,V>> queue = new LinkedList<>();
+            queue.add(r);
+            while(!queue.isEmpty()){
+                BinaryTreeNode<K,V> node =queue.remove();
+                System.out.println(node.getKey());
+                node.getLeft().ifPresent(queue::add);
+                node.getRight().ifPresent(queue::add);
+            }
+        });
     }
 
 
