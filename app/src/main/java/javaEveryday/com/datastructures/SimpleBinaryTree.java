@@ -70,7 +70,7 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
     }
 
     public void printBfs() {
-        Optional.ofNullable(root).ifPresent(r-> {
+        Optional.ofNullable(root).ifPresent(r -> {
             Queue<BinaryTreeNode<K,V>> queue = new LinkedList<>();
             queue.add(r);
             while(!queue.isEmpty()){
