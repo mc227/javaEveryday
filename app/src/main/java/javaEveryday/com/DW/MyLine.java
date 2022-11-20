@@ -1,32 +1,30 @@
-package javaEveryday.com.random.walaLang;
-// Fig. 8.8: Employee.java
-// Employee class with references to other objects.
+package javaEveryday.com.DW;
+// GCS Exercise 10.2 Solution: MyLine.java
+// Declaration of class MyLine.
+import java.awt.Color;
+import java.awt.Graphics;
 
-public class Employee
+public class MyLine extends MyShape
 {
-    private String firstName;
-    private String lastName;
-    private Date birthDate;
-    private Date hireDate;
-
-    // constructor to initialize name, birth date and hire date
-    public Employee(String firstName, String lastName, Date birthDate,
-                    Date hireDate)
+    // call default superclass constructor
+    public MyLine()
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthDate = birthDate;
-        this.hireDate = hireDate;
-    }
+        super();
+    } // end MyLine no-argument constructor
 
-    // convert Employee to String format
-    public String toString()
+    // call superclass constructor passing parameters
+    public MyLine(int x1, int y1, int x2, int y2, Color color)
     {
-        return String.format("%s, %s  Hired: %s  Birthday: %s",
-                lastName, firstName, hireDate, birthDate);
-    }
-} // end class Employee
+        super(x1, y1, x2, y2, color);
+    } // end MyLine constructor
 
+    // draw line in specified color
+    public void draw(Graphics g)
+    {
+        g.setColor(getColor());
+        g.drawLine(getX1(), getY1(), getX2(), getY2());
+    } // end method draw
+} // end class MyLine
 
 
 /**************************************************************************
@@ -42,4 +40,4 @@ public class Employee
  * and publisher shall not be liable in any event for incidental or       *
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
+ **************************************************************************/

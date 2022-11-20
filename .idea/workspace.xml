@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/HelloWorldGui2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/MyLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/MyShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/PasswordDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week5/discussion/MyGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week5/discussion/PasswordDemonstration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/SimpleBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/datastructures/SimpleBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/app/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/app/MessageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/stuff/Weight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/stuff/robomouse1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/BasePlusCommissionEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/CommissionEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/random/walaLang/Tutorial.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +98,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafp2_examples" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/stuff" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="javaEveryday.com.random.walaLang" />
+      <recent name="javaEveryday.com.DW" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\javaEveryday\com\my\random\stuff" />
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java" />
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\javaEveryday\com\random" />
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\painter" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -94,13 +120,13 @@
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DereckWattersGUI1">
-    <configuration name="ChainedHashTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.ChainedHashTable" />
+  <component name="RunManager" selected="Application.AddressBookDisplay">
+    <configuration name="AddressBookDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.stuff.AddressBookDisplay" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
+          <option name="PATTERN" value="javaEveryday.com.my.random.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DereckWattersGUI1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.DereckWattersGUI1" />
+    <configuration name="BoxLayoutDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.stuff.BoxLayoutDemo" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
+          <option name="PATTERN" value="javaEveryday.com.my.random.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldGui1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.HelloWorldGui1" />
+    <configuration name="DesktopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.random.DesktopTest" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
+          <option name="PATTERN" value="javaEveryday.com.random.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldGui2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.datastructures.HelloWorldGui2" />
+    <configuration name="GridBagDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.stuff.GridBagDemo" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.datastructures.*" />
+          <option name="PATTERN" value="javaEveryday.com.my.random.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment2.OrderSystem" />
+    <configuration name="JTabbedPaneDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.stuff.JTabbedPaneDemo" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.Assignment2.*" />
+          <option name="PATTERN" value="javaEveryday.com.my.random.stuff.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DereckWattersGUI1" />
-        <item itemvalue="Application.HelloWorldGui2" />
-        <item itemvalue="Application.HelloWorldGui1" />
-        <item itemvalue="Application.ChainedHashTable" />
-        <item itemvalue="Application.OrderSystem" />
+        <item itemvalue="Application.AddressBookDisplay" />
+        <item itemvalue="Application.GridBagDemo" />
+        <item itemvalue="Application.BoxLayoutDemo" />
+        <item itemvalue="Application.JTabbedPaneDemo" />
+        <item itemvalue="Application.DesktopTest" />
       </list>
     </recent_temporary>
   </component>
