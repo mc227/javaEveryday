@@ -48,17 +48,16 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
             return node.getRight().flatMap(n -> get(key, n));
     }
 
-    public void leftRotate(BinaryTreeNode<K, V> nodeX,
-                           BinaryTreeNode<K, V> parent) {
-        BinaryTreeNode<K, V> nodeY = nodeX.getRight().get();
+    public void leftRotate(BinaryTreeNode<K, V> nodeX, BinaryTreeNode<K, V> parent) {
+        BinaryTreeNode<K,V> nodeY = nodeX.getRight().get();
         nodeX.setRight(nodeY.getLeft().orElse(null));
-        if (parent == null)
+        if(parent==null)
             this.root = nodeY;
-        else if (parent.getLeft().filter(n -> n == nodeX).isPresent())
+        else if(parent.getLeft().filter(n->n==nodeX).isPresent())
             parent.setLeft(nodeY);
         else
-            parent.setRight(nodeY);
-        nodeY.setLeft(nodeX);
+            parent.setLeft(nodeY);
+            nodeY.setLeft(nodeX);
     }
 
     public Optional<K> minKey() {
@@ -98,28 +97,10 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
 
     public static void main(String[] args) {
         SimpleBinaryTree<Integer, String> binaryTree = new SimpleBinaryTree<Integer, String>();
-//        System.out.println(binaryTree.minKey());
-        binaryTree.put(457998224, "Isabel");
-        binaryTree.put(366112467, "John");
-        binaryTree.put(671031776, "Ruth");
-        binaryTree.put(225198452, "Sarah");
-        binaryTree.put(419274013, "Peter");
-        binaryTree.put(751965387, "Tom");
-//
-//        System.out.println(binaryTree.get(457998224));
-//        System.out.println(binaryTree.get(366112467));
-//        System.out.println(binaryTree.get(671031776));
-//        System.out.println(binaryTree.get(225198452));
-//        System.out.println(binaryTree.get(419274013));
-//        System.out.println(binaryTree.get(751965387));
-//
-//        binaryTree.put(751965387, "Sam");
-//
-//        System.out.println(binaryTree.get(751965387));
-//        System.out.println(binaryTree.get(999999999));
-//        System.out.println(binaryTree.minKey());
-
-//        binaryTree.printDfs();
-        binaryTree.printBfs();
+        binaryTree.put(3, "Monica");
+        binaryTree.put(5, "Jessica");
+        binaryTree.put(7, "Tina");
+        binaryTree.put(9, "Sandra");
+        binaryTree.put(10, "Mary");
     }
 }

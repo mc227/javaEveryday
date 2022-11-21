@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Arrays;
 
-/* PasswordDemonstration.java requires no other files. */
+/* PasswordDemonstration.java requires MyGui.java . */
 
 public class PasswordDemonstration extends JPanel implements ActionListener {
 
@@ -57,8 +57,6 @@ public class PasswordDemonstration extends JPanel implements ActionListener {
         if ("ok".equals(cmd)) { //Process the password.
             char[] input = passwordDomain.getPassword();
             if (passwordMatches(input)) {
-                JOptionPane.showMessageDialog(controllingFixture,
-                        "Correct!!!");
                 MyGui myGui = new MyGui();
                 myGui.main(null);
 
