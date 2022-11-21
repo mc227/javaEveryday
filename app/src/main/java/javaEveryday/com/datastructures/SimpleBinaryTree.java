@@ -59,6 +59,17 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
             parent.setRight(nodeY);
             nodeY.setLeft(nodeX);
     }
+    public void rightRotate(BinaryTreeNode<K, V> nodeX, BinaryTreeNode<K, V> parent) {
+        BinaryTreeNode<K,V> nodeY = nodeX.getLeft().get();
+        nodeX.setLeft(nodeY.getRight().orElse(null));
+        if(parent==null)
+            this.root = nodeY;
+        else if(parent.getRight().filter(n->n==nodeX).isPresent())
+            parent.setRight(nodeY);
+        else
+            parent.setLeft(nodeY);
+        nodeY.setRight(nodeX);
+    }
 
     public Optional<K> minKey() {
         return Optional.ofNullable(root).map(this::minKey);
