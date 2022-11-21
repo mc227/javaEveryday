@@ -52,12 +52,13 @@ public class SimpleBinaryTree<K, V> implements BinaryTree<K, V> {
         BinaryTreeNode<K,V> nodeY = nodeX.getRight().get();
         nodeX.setRight(nodeY.getLeft().orElse(null));
         if(parent==null)
-            this.root = nodeY;
+            this.root=nodeY;
         else if(parent.getLeft().filter(n->n==nodeX).isPresent())
             parent.setLeft(nodeY);
         else
             parent.setRight(nodeY);
-            nodeY.setLeft(nodeX);
+            nodeY.setRight(nodeX);
+
     }
 
     public Optional<K> minKey() {
