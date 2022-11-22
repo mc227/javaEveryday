@@ -4,10 +4,10 @@ import java.util.Optional;
 
 public class InOrderSuccessorBinaryTree<K,V> extends SimpleBinaryTree<K,V> {
     public Optional<K> inOrderSuccessorKey(K key) {
-        Optional<BinaryTreeNode<K,V>> node = Optional.ofNullable(root);
+        Optional<BinaryTreeNode<K, V>> node = Optional.ofNullable(root);
         Optional<K> successor = Optional.empty();
-        while(node.isPresent() && !node.get().getKey().equals(key)) {
-            if(((Comparable)node.get().getKey()).compareTo(key)>0){
+        while(node.isPresent() && ! node.get().getKey().equals(key)){
+            if(((Comparable) node.get().getKey()).compareTo(key)>0){
                 successor = node.map(BinaryTreeNode::getKey);
                 node = node.flatMap(BinaryTreeNode::getLeft);
             } else {
