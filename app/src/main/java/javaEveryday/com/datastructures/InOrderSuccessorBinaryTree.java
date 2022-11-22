@@ -18,4 +18,14 @@ public class InOrderSuccessorBinaryTree<K,V> extends SimpleBinaryTree<K,V> {
                 .map(Optional::of).orElse(successor);
     }
 
+    public static void main(String[] args) {
+        InOrderSuccessorBinaryTree<Integer, String> binaryTree = new InOrderSuccessorBinaryTree<Integer, String>();
+        binaryTree.put(1, "Isabel");
+        binaryTree.put(2, "John");
+        binaryTree.put(3, "Ruth");
+        binaryTree.put(4, "Sarah");
+        binaryTree.put(5, "Peter");
+        binaryTree.put(6, "Tom");
+        System.out.println(binaryTree.inOrderSuccessorKey(1));
+    }
 }
