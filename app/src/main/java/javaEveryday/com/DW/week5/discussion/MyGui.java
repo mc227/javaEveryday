@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class MyGui {
     public static int COUNTER = 0;
 
-    private static class MessageButtonHandler implements ActionListener {
+    public static class MessageButtonHandler implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JOptionPane.showMessageDialog(null,"Hello World!!!");
         }
@@ -49,8 +49,8 @@ public class MyGui {
 
         JFrame window = new JFrame("Welcome");
         window.setContentPane(content);
-        window.setSize(400,180); //good
-        window.setLocation(100,100); // good
-        window.setVisible(true); //good
+        window.setSize(400,180);
+        window.setLocation(100,100);
+        window.setVisible(true);
     }
 }

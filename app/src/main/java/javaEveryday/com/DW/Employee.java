@@ -15,7 +15,7 @@ package javaEveryday.com.DW;
  * Employee is the parent class of Network Engineer and Software Tester
  */
 public class Employee {
-    private double salary; // Salary is yearly compensation
+    protected double salary; // Salary is yearly compensation
 
     /**
      * Initializes Employee class with one parameter
