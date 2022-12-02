@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment3/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment3/DistanceConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment3/MyGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Assignment3/TemperatureConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/JTabbedPaneFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/OneRowNim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/OptionPaneExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Toyota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/leetcode/TextJustification/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/IconDnD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/SimpleDnD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/leetcode/TextJustification/SolutionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/NetworkEngineer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/NetworkEngineer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week5/discussion/MyGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week5/discussion/MyGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/random/walaLang/BasePlusCommissionEmployeeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/javaEveryday/app/MessageUtilsTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +56,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -98,7 +87,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafp2_examples" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Data-Structures-and-Algorithms-in-Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -115,17 +104,18 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="javaEveryday.com.leetcode.TextJustification" />
       <recent name="javaEveryday.com.random.walaLang" />
       <recent name="javaEveryday.com.datastructures" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyGui (1)">
-    <configuration name="DistanceConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment3.DistanceConverter" />
+  <component name="RunManager" selected="Gradle.SolutionTest.first">
+    <configuration name="IconDnD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.IconDnD" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.Assignment3.*" />
+          <option name="PATTERN" value="javaEveryday.com.my.random.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyGui (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment3.MyGui" />
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.leetcode.TextJustification.Solution" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.Assignment3.*" />
+          <option name="PATTERN" value="javaEveryday.com.leetcode.TextJustification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionPaneExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.OptionPaneExample" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.leetcode.Solution" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
+          <option name="PATTERN" value="javaEveryday.com.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,39 +149,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.Assignment3.TemperatureConverter" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.Assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="SolutionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.leetcode.TextJustification.SolutionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.calculator" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="SolutionTest.first" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.leetcode.TextJustification.SolutionTest.first&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DistanceConverter" />
-        <item itemvalue="Application.TemperatureConverter" />
-        <item itemvalue="Application.calculator" />
-        <item itemvalue="Application.MyGui (1)" />
-        <item itemvalue="Application.OptionPaneExample" />
+        <item itemvalue="Gradle.SolutionTest.first" />
+        <item itemvalue="Gradle.SolutionTest" />
+        <item itemvalue="Application.Solution (1)" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.IconDnD" />
       </list>
     </recent_temporary>
   </component>
