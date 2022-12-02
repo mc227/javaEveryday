@@ -22,7 +22,6 @@ class Solution {
             } else {
                 result.add(middleJustify(words, diff, i, j));
             }
-
             i = j;
         }
         return result;
