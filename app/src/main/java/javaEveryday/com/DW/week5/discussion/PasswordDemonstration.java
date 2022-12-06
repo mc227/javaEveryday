@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Arrays;
 
-/* PasswordDemonstration.java requires MyGui.java . */
+/* PasswordDemonstration.java requires MyGui.java. */
 
 public class PasswordDemonstration extends JPanel implements ActionListener {
 
