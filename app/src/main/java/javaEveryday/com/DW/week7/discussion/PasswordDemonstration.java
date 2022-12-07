@@ -20,7 +20,7 @@ public class PasswordDemonstration extends JPanel implements ActionListener
     private JPasswordField passwordDomain;
 
     /**
-     * constructor's parameter is a JFrame
+     * constructor's only parameter is a JFrame
      * @param f
      */
     public PasswordDemonstration(JFrame f) {
@@ -32,9 +32,11 @@ public class PasswordDemonstration extends JPanel implements ActionListener
         passwordDomain.setActionCommand("ok");
         passwordDomain.addActionListener(this);
 
+        // text in the GUI asking the user a question
         JLabel label = new JLabel("What is the password? ");
         label.setLabelFor(passwordDomain);
 
+        // instantiate buttons with this method
         JComponent jcomponent = createButtonGroup();
 
         //Lay out everything.
@@ -52,10 +54,10 @@ public class PasswordDemonstration extends JPanel implements ActionListener
      */
     protected JComponent createButtonGroup() {
         JPanel p = new JPanel(new GridLayout(0,1));
-        JButton okButton = new JButton("OK");
+        JButton okButton = new JButton("OK"); // these are the texts you see in the gui buttons
         JButton helpButton = new JButton("Help");
 
-        okButton.setActionCommand("ok");
+        okButton.setActionCommand("ok"); // "ok" action will trigger when OK button is clicked
         helpButton.setActionCommand("help");
         okButton.addActionListener(this);
         helpButton.addActionListener(this);
@@ -83,17 +85,23 @@ public class PasswordDemonstration extends JPanel implements ActionListener
                 myGui.main(null);
 
             } else {
+                /**
+                 * here we wrapped the if else statement in a try catch block.
+                 * We are accounting for the case where the user submits a blank password.
+                 */
                 try{
-                    System.out.println(input);
-                    System.out.println(input.getClass());
-                    System.out.println(input.length);
-                    if(input == null) {
-                        System.out.println("here");
+                    if(Arrays.equals(input,new char[0])){
+                        Exception e1 = new IllegalPasswordArgumentException(null);
+                        JOptionPane.showMessageDialog(controllingFixture,
+                                e1.toString(),
+                                "Error Message",
+                                JOptionPane.ERROR_MESSAGE);
+                    } else {
+                        JOptionPane.showMessageDialog(controllingFixture,
+                                "Wrong password!!!\nPlease Try again.",
+                                "Error Message",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-//                    JOptionPane.showMessageDialog(controllingFixture,
-//                            "Invalid password. Try again.",
-//                            "Error Message",
-//                            JOptionPane.ERROR_MESSAGE);
                 } catch (IllegalPasswordArgumentException exception) {
                     exception.printStackTrace();
                 }
@@ -125,7 +133,7 @@ public class PasswordDemonstration extends JPanel implements ActionListener
             isCorrect = Arrays.equals (input, correctPassword);
         }
 
-        //Zero out the password.
+        //Zero out the correct password.
         Arrays.fill(correctPassword,'0');
 
         return isCorrect;
