@@ -3,6 +3,7 @@ package javaEveryday.com.DW.week7.discussion;
 import javaEveryday.com.DW.week5.discussion.MyGui;
 
 import javax.swing.*;
+//import javax.swing.JPasswordField;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Arrays;
