@@ -5,9 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/DriveManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/MenuLookDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/MyDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/ReverseFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Snake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/SwingTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TrivialEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TwoD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/comments/Discussion8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/discussion/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/EBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/Media.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MediaRentalSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MovieDVD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MusicCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/RunRental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/sample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/leetcode/TextJustification/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/leetcode/TextJustification/Solution3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grades.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twoDimArray.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week7/discussion/PasswordDemonstration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week7/discussion/PasswordDemonstration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/TextJustification.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/TextJustification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +98,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2GUBA8IV9LAUdUrieAmWzEPdjk1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -78,6 +108,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -102,8 +133,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="javaEveryday.com.my.random" />
       <recent name="javaEveryday.com.leetcode.TextJustification" />
+      <recent name="javaEveryday.com.my.random" />
       <recent name="javaEveryday.com.random.walaLang" />
       <recent name="javaEveryday.com.datastructures" />
     </key>
@@ -111,13 +142,13 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextJustification">
-    <configuration name="MyClickBait" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week7.MyClickBait" />
+  <component name="RunManager" selected="Application.MediaRentalSystem">
+    <configuration name="DriveManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.DriveManager" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week7.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextJustification" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.TextJustification" />
+    <configuration name="DriverManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.DriverManager" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.my.random.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.project.media.rental.system.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,76 +169,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextJustificationTest.example1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.my.random.TextJustificationTest.example1&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="MediaRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.MediaRentalSystem" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.project.media.rental.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TextJustificationTest.example2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.my.random.TextJustificationTest.example2&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="MenuLookDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.MenuLookDemo" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TextJustificationTest.example3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;javaEveryday.com.my.random.TextJustificationTest.example3&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="SwingTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.SwingTester" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TextJustificationTest.example3" />
-        <item itemvalue="Gradle.TextJustificationTest.example2" />
-        <item itemvalue="Gradle.TextJustificationTest.example1" />
-        <item itemvalue="Application.TextJustification" />
-        <item itemvalue="Application.MyClickBait" />
+        <item itemvalue="Application.SwingTester" />
+        <item itemvalue="Application.MenuLookDemo" />
+        <item itemvalue="Application.MediaRentalSystem" />
+        <item itemvalue="Application.DriveManager" />
+        <item itemvalue="Application.DriverManager" />
       </list>
     </recent_temporary>
   </component>
@@ -222,18 +229,16 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/TextJustification.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/javaEveryday/com/my/random/TextJustification.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TwoD.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
