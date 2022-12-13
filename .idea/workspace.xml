@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/DriveManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/MenuLookDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/MyDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/ReverseFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/SwingTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TrivialEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TwoD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/comments/Discussion8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/discussion/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/EBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MediaRentalSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MovieDVD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MusicCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/RunRental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/leetcode/TextJustification/Solution2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/leetcode/TextJustification/Solution3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grades.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twoDimArray.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MediaRentalSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/MediaRentalSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

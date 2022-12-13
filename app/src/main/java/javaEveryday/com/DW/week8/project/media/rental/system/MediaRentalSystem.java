@@ -112,9 +112,10 @@ public class MediaRentalSystem extends JFrame {
             fileDialog = new JFileChooser();
         boolean hidingEnabled = fileDialog.isFileHidingEnabled();
         fileDialog.setFileHidingEnabled(false);
+        fileDialog.setMultiSelectionEnabled(false);
         fileDialog.setDialogTitle("Open");
         fileDialog.setSelectedFile(null);  // No file is initially selected.
-        fileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+//        fileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int option = fileDialog.showOpenDialog(this);
         if(option == JFileChooser.APPROVE_OPTION){
             File file = fileDialog.getSelectedFile();
