@@ -15,7 +15,6 @@ public class MyGui {
             String miles = JOptionPane.showInputDialog(null,"Input miles distance to convert");
             DistanceConverter distanceConverter = new DistanceConverter(Double.parseDouble(miles));
             JOptionPane.showMessageDialog(f, distanceConverter.toString());
-
         }
     }
 

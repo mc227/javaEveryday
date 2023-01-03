@@ -5,13 +5,27 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * Menu driven user interface
- * This program lets user
+ * This program lets user load, find and rent media files.
  */
 public class MediaRentalSystem extends JFrame {
+    public static  Manager mgt = new Manager();
+    public static  ArrayList<Media> mediaObjects = new ArrayList<Media>();
+    /**
+     * This  directory is temporarily hard coded.
+     */
+    public static File directoryPath = new File("C:\\Users\\Mark Costales\\Documents\\tmp-umuc");
+    // Get list of all files and directories
+    public static File fileslist[] = directoryPath.listFiles();
+    public static  Media media = null;
+    public static  String line = null;
+    public static  Scanner scan = null;
+    private JTextArea text;   // Holds the text that is displayed in the window.
+    private JFileChooser fileDialog;  // File dialog for use in doOpen() an doSave().
 
 
     /**
@@ -19,21 +33,51 @@ public class MediaRentalSystem extends JFrame {
      * Then the window takes care of itself until the program is ended with the
      * Quit command or when the user closes the window.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         JFrame window = new MediaRentalSystem();
         window.setVisible(true);
+
+        // create some media objects
+        EBook ebook = new EBook(123, "Forever Young", 2018, true, 20);
+        MovieDVD movieDVD = new MovieDVD(126, "Forever Young", 2020, false, 140.0);
+        MusicCD musicCD = new MusicCD(127, "Song", 2022, true, 100);
+        // add Media objects to manager's list
+        mgt.addMedia(ebook);
+        mgt.addMedia(movieDVD);
+        mgt.addMedia(musicCD);
+        mgt.createMediaFiles(directoryPath.getAbsolutePath());
+
+
+        // Process each Media file
+        for(File file: fileslist) {
+            // parse files whose filename starts with "Ebook" , "MusicCD" or "MovieDVD"
+            if (file.getName().contains("EBook") || file.getName().contains("MusicCD") || file.getName().contains(
+                    "MovieDVD")) {
+
+                // open and read line (assumes whole object is stored on single line)
+                scan = new Scanner(file);
+                line = scan.nextLine();   // assumes the file is not empty
+
+                // if Ebook object than call Ebook constructor
+                if (file.getName().contains("EBook"))
+                    media = new EBook(line);
+
+                // if MusicCD object than call MusicCD constructor
+                if (file.getName().contains("MusicCD"))
+                    media = new MusicCD(line);
+
+                // if MovieDVD object than call MovieDVD constructor
+                if (file.getName().contains("MovieDVD"))
+                    media = new MovieDVD(line);
+
+                // add Pet object to pets attribute
+                mediaObjects.add(media);
+            }
+        }//end of for loop
     }
 
-
-    private JTextArea text;   // Holds the text that is displayed in the window.
-
-    private JFileChooser fileDialog;  // File dialog for use in doOpen() an doSave().
-
-    private File editFile;  // The file, if any that is currently being edited.
-
-
     /**
-     * Create a TrivialEdit window, with a JTextArea where the user can
+     * Create a MediaRental window, with a JTextArea where the user can
      * edit some text and with a menu bar.
      */
     public MediaRentalSystem() {
@@ -41,6 +85,8 @@ public class MediaRentalSystem extends JFrame {
         setJMenuBar( makeMenus() );
         text = new JTextArea(25,50);
         text.setMargin( new Insets(3,5,0,0) ); // Some space around the text.
+        text.setEditable(false);
+        text.setBackground(new Color(238,238,238,255));// customize the color
         JScrollPane scroller = new JScrollPane(text);
         setContentPane(scroller);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -48,10 +94,9 @@ public class MediaRentalSystem extends JFrame {
         setLocation(50,50);
     }
 
-
     /**
      * Create and return a menu bar containing a single menu, the
-     * File menu.  This menu contains four commands, New, Open, Save,
+     * File menu.  This menu contains commands Load, Find, Rent
      * and Quit.
      */
     private JMenuBar makeMenus() {
@@ -64,36 +109,41 @@ public class MediaRentalSystem extends JFrame {
                 // which command was selected and calls another
                 // routine to carry out the command.
                 String cmd = evt.getActionCommand();
-                if (cmd.equals("New"))
-                    doNew();
-                else if (cmd.equals("Open..."))
-                    doOpen();
-                else if (cmd.equals("Save..."))
-                    doSave();
-                else if (cmd.equals("Quit"))
-                    doQuit();
-                else if (cmd.equals("Load Media objects..."))
-                    doLoad();
+                if (cmd.equals("Load Media objects...")) {
+                    try {
+                        doLoad();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                } else if(cmd.equals("Find Media object...")) {
+                    try {
+                        doFind();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                } else if(cmd.equals("Rent Media object...")) {
+                    try {
+                        doRent();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         };
 
-        JMenu fileMenu = new JMenu("File");
-
-        JMenuItem newCmd = new JMenuItem("New");
-        newCmd.addActionListener(listener);
-        fileMenu.add(newCmd);
-
-        JMenuItem openCmd = new JMenuItem("Open...");
-        openCmd.addActionListener(listener);
-        fileMenu.add(openCmd);
-
-        JMenuItem saveCmd = new JMenuItem("Save...");
-        saveCmd.addActionListener(listener);
-        fileMenu.add(saveCmd);
+        JMenu fileMenu = new JMenu("Menu");
 
         JMenuItem loadCmd = new JMenuItem("Load Media objects...");
         loadCmd.addActionListener(listener);
         fileMenu.add(loadCmd);
+
+        JMenuItem findCmd = new JMenuItem("Find Media object...");
+        findCmd.addActionListener(listener);
+        fileMenu.add(findCmd);
+
+        JMenuItem rentCmd = new JMenuItem("Rent Media object...");
+        rentCmd.addActionListener(listener);
+        fileMenu.add(rentCmd);
 
         fileMenu.addSeparator();
 
@@ -107,136 +157,85 @@ public class MediaRentalSystem extends JFrame {
 
     } // end makeMenus()
 
-    private void doLoad() {
+    /**
+     * Method for renting media
+     * @throws IOException
+     */
+    private void doRent() throws IOException {
+        mgt.displayAllMedia();
+        String idEntry = JOptionPane.showInputDialog(null,"Enter the id");
+        for(Media item: mediaObjects) {
+            if(item.getId()==Integer.parseInt(idEntry)) {
+                if(item.calculateRentalFee()==2.0){
+                    JOptionPane.showMessageDialog(this,
+                            "Media was successfully rented. Rental fee = $2.00");
+                    item.setAvailable(false);
+                } else if(item.calculateRentalFee()==3.5){
+                    JOptionPane.showMessageDialog(this,
+                            "Media was successfully rented. Rental fee = $3.50");
+                    item.setAvailable(false);
+                } else if(item.calculateRentalFee()==3.0) {
+                    JOptionPane.showMessageDialog(this,
+                            "Media was successfully rented. Rental fee = $3.00");
+                    item.setAvailable(false);
+                }
+            } else {
+                JOptionPane.showMessageDialog(this,
+                        "The media object id="+idEntry+" is not found");
+            }
+        }
+        mgt.createMediaFiles(directoryPath.getAbsolutePath());
+    }
+
+    /**
+     * Uses the instatiated manager object to load the files to the directory
+     * @throws FileNotFoundException
+     */
+    private void doLoad() throws FileNotFoundException {
         if (fileDialog == null)
             fileDialog = new JFileChooser();
-        boolean hidingEnabled = fileDialog.isFileHidingEnabled();
         fileDialog.setFileHidingEnabled(false);
         fileDialog.setMultiSelectionEnabled(false);
         fileDialog.setDialogTitle("Open");
         fileDialog.setSelectedFile(null);  // No file is initially selected.
-//        fileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        fileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int option = fileDialog.showOpenDialog(this);
         if(option == JFileChooser.APPROVE_OPTION){
-            File file = fileDialog.getSelectedFile();
-            System.out.println(file.getName());
+            File file = new File(fileDialog.getSelectedFile().getAbsolutePath());
+            System.out.println(file.getAbsolutePath());
+            mgt = new Manager(file.getAbsolutePath());
+            // // display Media data to the console
+            System.out.println("\nMedia objects loaded by manager:");
+            mgt.displayAllMedia();
+        } else {
+            // will work on this case in the future
         }
     }
 
-
     /**
-     * Carry out the "New" command from the File menu by clearing all
-     * the text from the JTextArea.  Also sets the title bar of the
-     * window to read "TrivialEdit: Untitled".
+     * Method to Search for media file
      */
-    private void doNew() {
-        text.setText("");
-        editFile = null;
-        setTitle("TrivialEdit: Untitled");
-    }
+    private void doFind() throws FileNotFoundException {
 
-
-    /**
-     *  Carry out the Save command by letting the user specify an output file
-     *  and writing the text from the JTextArea to that file.
-     */
-    private void doSave() {
-        if (fileDialog == null)
-            fileDialog = new JFileChooser();
-        File selectedFile;  //Initially selected file name in the dialog.
-        if (editFile == null)
-            selectedFile = new File("filename.txt");
-        else
-            selectedFile = new File(editFile.getName());
-        fileDialog.setSelectedFile(selectedFile);
-        fileDialog.setDialogTitle("Select File to be Saved");
-        int option = fileDialog.showSaveDialog(this);
-        if (option != JFileChooser.APPROVE_OPTION)
-            return;  // User canceled or clicked the dialog's close box.
-        selectedFile = fileDialog.getSelectedFile();
-        if (selectedFile.exists()) {  // Ask the user whether to replace the file.
-            int response = JOptionPane.showConfirmDialog( this,
-                    "The file \"" + selectedFile.getName()
-                            + "\" already exists.\nDo you want to replace it?",
-                    "Confirm Save",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.WARNING_MESSAGE );
-            if (response != JOptionPane.YES_OPTION)
-                return;  // User does not want to replace the file.
-        }
-        PrintWriter out;
-        try {
-            FileWriter stream = new FileWriter(selectedFile);
-            out = new PrintWriter( stream );
-        }
-        catch (Exception e) {
-            JOptionPane.showMessageDialog(this,
-                    "Sorry, but an error occurred while trying to open the file:\n" + e);
-            return;
-        }
-        try {
-            out.print(text.getText());  // Write text from the TextArea to the file.
-            out.close();
-            if (out.checkError())   // (need to check for errors in PrintWriter)
-                throw new IOException("Error check failed.");
-            editFile = selectedFile;
-            setTitle("TrivialEdit: " + editFile.getName());
-        }
-        catch (Exception e) {
-            JOptionPane.showMessageDialog(this,
-                    "Sorry, but an error occurred while trying to write the text:\n" + e);
-        }
-    }
-
-
-    /**
-     * Carry out the Open command by letting the user specify a file to be opened
-     * and reading up to 10000 characters from that file.  If the file is read
-     * successfully and is not too long, then the text from the file replaces the
-     * text in the JTextArea.
-     */
-    public void doOpen() {
-        if (fileDialog == null)
-            fileDialog = new JFileChooser();
-        fileDialog.setDialogTitle("Select File to be Opened");
-        fileDialog.setSelectedFile(null);  // No file is initially selected.
-        int option = fileDialog.showOpenDialog(this);
-        if (option != JFileChooser.APPROVE_OPTION)
-            return;  // User canceled or clicked the dialog's close box.
-        File selectedFile = fileDialog.getSelectedFile();
-        Scanner in;
-        try {
-            in = new Scanner( selectedFile );
-        }
-        catch (FileNotFoundException e) {
-            JOptionPane.showMessageDialog(this,
-                    "Sorry, but an error occurred while trying to open the file:\n" + e);
-            return;
-        }
-        try {
-            StringBuilder input = new StringBuilder();
-            while (in.hasNextLine()) {
-                String lineFromFile = in.nextLine();
-                if (lineFromFile == null)
-                    break;  // End-of-file has been reached.
-                input.append(lineFromFile);
-                input.append('\n');
-                if (input.length() > 10000)
-                    throw new IOException("Input file is too large for this program.");
+        String title = JOptionPane.showInputDialog(this,"Enter the title");
+        StringBuilder sb = new StringBuilder();
+        ArrayList<String> found = new ArrayList<>();
+        for(Media item: mediaObjects) {
+            if(item.getTitle().equals(title)) {
+                found.add(item.toString());
             }
-            text.setText(input.toString());
-            editFile = selectedFile;
-            setTitle("TrivialEdit: " + editFile.getName());
         }
-        catch (Exception e) {
-            JOptionPane.showMessageDialog(this,
-                    "Sorry, but an error occurred while trying to read the data:\n" + e);
-        }
-        finally {
-            in.close();
+        if (found.size() > 0) {
+            String result = "";
+            for(int i = 0; i < found.size();i++) {
+                result += found.get(i) +"\n";
+            }
+            JOptionPane.showMessageDialog(this, result);
+             // display Strings that were found
+        } else {
+            JOptionPane.showMessageDialog(this, "There is no media with this title: "+title);
         }
     }
-
 
     /**
      * Carry out the Quit command by exiting the program.
@@ -246,4 +245,4 @@ public class MediaRentalSystem extends JFrame {
     }
 
 
-} // end class TrivialEdit
+} // end class MediaRentalSystem

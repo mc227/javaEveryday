@@ -23,14 +23,14 @@ public class DriverManager {
 
         try {
             // create media files in directory "tmp-umuc"
-            mgt.createMediaFiles("tmp-umuc");
+            mgt.createMediaFiles("C:\\Users\\Mark Costales\\Documents\\tmp-umuc");
         } catch (IOException e) {
             e.printStackTrace();  // just print trace if there are issues
         }
 
         try {
             // create new manager object loading the files
-            Manager mgt2 = new Manager("tmp-umuc");
+            Manager mgt2 = new Manager("C:\\Users\\Mark Costales\\Documents\\tmp-umuc");
 
             // // display Media data to the console
             System.out.println("\nMedia objects loaded by manager2 at startup:");
