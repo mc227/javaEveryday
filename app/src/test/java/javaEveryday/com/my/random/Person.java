@@ -20,10 +20,6 @@ public class Person {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return name + ":" + age;
-    }
 
     public static void main(String[] args) {
         Person trang = new Person();
