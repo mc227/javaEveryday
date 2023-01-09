@@ -30,6 +30,5 @@ public class SimpleStartupTestDrive {
         } else {
             System.out.println("failed");
         }
-
     }
 }
