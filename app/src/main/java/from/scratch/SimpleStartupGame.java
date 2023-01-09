@@ -31,12 +31,11 @@ public class SimpleStartupGame {
         SimpleStartup simpleStartup = new SimpleStartup();
         int start = 0 + (int)(Math.random() * ((4 - 0) + 1)); // https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
         int[] location = {start, start+1,start+2};
+        GameHelper gameHelper = new GameHelper();
         simpleStartup.setLocation(location);
         boolean isAlive = true;
         while (isAlive){
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            System.out.print("enter a number: ");
-            int userGuess = Integer.parseInt(bufferedReader.readLine());
+            int userGuess = gameHelper.getUserInput("enter a number");
             numOfGuesses++;
             String result = simpleStartup.checkYourself(userGuess);
             System.out.println(result);
