@@ -1,5 +1,11 @@
 package from.scratch;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
 public class SimpleStartupGame {
     /**
      PREP CODE
@@ -20,4 +26,24 @@ public class SimpleStartupGame {
         Tell the user how many guesses it took.
      }
      */
+    public static void main(String[] args) throws IOException {
+        int numOfGuesses = 0;
+        SimpleStartup simpleStartup = new SimpleStartup();
+        int start = 0 + (int)(Math.random() * ((4 - 0) + 1)); // https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+        int[] location = {start, start+1,start+2};
+        simpleStartup.setLocation(location);
+        boolean isAlive = true;
+        while (isAlive){
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("enter a number: ");
+            int userGuess = Integer.parseInt(bufferedReader.readLine());
+            numOfGuesses++;
+            String result = simpleStartup.checkYourself(userGuess);
+            System.out.println(result);
+            if(result.equals("kill")){
+                isAlive = false;
+            }
+        }
+        System.out.println("you took "+ numOfGuesses + " guesses");
+    }
 }
