@@ -1,5 +1,7 @@
 package from.scratch;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SimpleStartupTestDrive {
@@ -30,5 +32,21 @@ public class SimpleStartupTestDrive {
         } else {
             System.out.println("failed");
         }
+//        assertEquals(foo,"hit","passed");
+
+    }
+
+    @Test
+    void correctUserGuess() {
+        // Instantiate a SimpleStartup object.
+        SimpleStartup simpleStartup = new SimpleStartup();
+        // Assign it a location (an array of 3 ints, like {2, 3, 4}).
+        simpleStartup.setLocation(new int[]{2, 3, 4});
+        // Create an int to represent a user guess (2, 0, etc.).
+        int userGuess = 2;
+        // Invoke the checkYourself() method passing it the fake user guess.
+        String foo = simpleStartup.checkYourself(userGuess);
+        System.out.println(foo);
+        assertEquals(foo,"hit","passed");
     }
 }
