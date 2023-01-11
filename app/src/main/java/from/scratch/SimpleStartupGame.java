@@ -7,42 +7,26 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class SimpleStartupGame {
-    /**
-     PREP CODE
-     public static void main(String[] args) {
-        DECLARE an int variable to hold the number of user guesses, named numOfGuesses and set it to 0.
-        MAKE the single SimpleStartup object.
-        COMPUTE a random number between 0 and 4 that will be the starting location cell position
-        CREATE a three item int array with the starting random number plus 1 and plus 2 to complete the three
-        MAKE a location for the startup object using random number generated and the other 2 numbers
-        CREATE a boolean isAlive
-        // Repeat until the Startup is sunk.
-        WHILE the Startup is still alive:
-            ASK the user for a guess.
-            incremetnt numOfguess
-            GET user input from the command line
-            CHECK the guess.
-            SET isAlive to false once start up is killed
-        Tell the user how many guesses it took.
-     }
-     */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         int numOfGuesses = 0;
-        SimpleStartup simpleStartup = new SimpleStartup();
-        int start = 0 + (int)(Math.random() * ((4 - 0) + 1)); // https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
-        int[] location = {start, start+1,start+2};
-        GameHelper gameHelper = new GameHelper();
-        simpleStartup.setLocation(location);
+        GameHelper helper = new GameHelper();
+
+        SimpleStartup theStartup = new SimpleStartup();
+        int randomNum = (int) (Math.random() * 5);
+
+        int[] locations = {randomNum, randomNum + 1, randomNum + 2};
+        theStartup.setLocationCells(locations);
         boolean isAlive = true;
-        while (isAlive){
-            int userGuess = gameHelper.getUserInput("enter a number");
+
+        while (isAlive) {
+            int guess = helper.getUserInput("enter a number");
+            String result = theStartup.checkYourself(guess);
             numOfGuesses++;
-            String result = simpleStartup.checkYourself(userGuess);
-            System.out.println(result);
-            if(result.equals("kill")){
+            if (result.equals("kill")) {
                 isAlive = false;
-            }
-        }
-        System.out.println("you took "+ numOfGuesses + " guesses");
-    }
+                System.out.println("You took " + numOfGuesses + " guesses");
+            } // close if
+        } // close while
+    } // close main
+
 }

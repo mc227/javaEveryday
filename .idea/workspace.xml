@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/MultiFor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/ByteArrayOutputStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/DataStreamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/OutputStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/GameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/GameHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/MultiFor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/MultiFor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/SimpleStartup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/SimpleStartup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/SimpleStartupGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/SimpleStartupGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/SimpleStartupTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/from/scratch/SimpleStartupTestDrive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,22 +130,9 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SimpleStartupTestDrive (1)">
-    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.my.random.Person" />
-      <module name="javaEveryday.app.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.my.random.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleStartup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.SimpleStartup" />
+  <component name="RunManager" selected="Application.SimpleStartupGame">
+    <configuration name="ByteArrayOutputStreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.ByteArrayOutputStreamDemo" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -150,8 +144,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleStartupGame (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.SimpleStartupGame" />
+    <configuration name="DataStreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.DataStreamExample" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="from.scratch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiFor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.MultiFor" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="from.scratch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OutputStreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.OutputStreamDemo" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -164,21 +184,8 @@
       </method>
     </configuration>
     <configuration name="SimpleStartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.Head.First.Third.Edition.SimpleStartupGame" />
-      <module name="javaEveryday.app.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaEveryday.com.Head.First.Third.Edition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleStartupTestDrive (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.SimpleStartupTestDrive" />
-      <module name="javaEveryday.app.test" />
+      <option name="MAIN_CLASS_NAME" value="from.scratch.SimpleStartupGame" />
+      <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="from.scratch.*" />
@@ -191,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleStartupGame (1)" />
-        <item itemvalue="Application.SimpleStartupTestDrive (1)" />
-        <item itemvalue="Application.SimpleStartup" />
-        <item itemvalue="Application.Person" />
         <item itemvalue="Application.SimpleStartupGame" />
+        <item itemvalue="Application.ByteArrayOutputStreamDemo" />
+        <item itemvalue="Application.OutputStreamDemo" />
+        <item itemvalue="Application.DataStreamExample" />
+        <item itemvalue="Application.MultiFor" />
       </list>
     </recent_temporary>
   </component>

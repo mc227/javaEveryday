@@ -1,8 +1,6 @@
 package from.scratch;
 
-import java.util.Arrays;
-
-public class SimpleStartup {
+public class Startup {
     private int[] locationCells;
     private int numOfHits = 0;
 
