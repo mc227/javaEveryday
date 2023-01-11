@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Startup {
     private ArrayList<Integer> locationCells;
-//    private int[] locationCells;
     private int numOfHits = 0;
 
     public void setLocationCells(ArrayList<Integer> locs) {
@@ -16,11 +15,12 @@ public class Startup {
         for (Integer cell : locationCells) {
             if (guess == cell) {
                 result = "hit";
+                locationCells.remove(cell);
                 numOfHits++;
                 break;
             } // end if
         } // end for
-        if (numOfHits == locationCells.size()) {
+        if (locationCells.size() == 0) {
             result = "kill";
         } // end if
 //        System.out.println(result);
