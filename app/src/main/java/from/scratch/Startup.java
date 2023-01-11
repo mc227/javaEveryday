@@ -1,26 +1,29 @@
 package from.scratch;
 
+import java.util.ArrayList;
+
 public class Startup {
-    private int[] locationCells;
+    private ArrayList<Integer> locationCells;
+//    private int[] locationCells;
     private int numOfHits = 0;
 
-    public void setLocationCells(int[] locs) {
+    public void setLocationCells(ArrayList<Integer> locs) {
         locationCells = locs;
     }
 
-    public String checkYourself(int guess) {
+    public String checkYourself(Integer guess) {
         String result = "miss";
-        for (int cell : locationCells) {
+        for (Integer cell : locationCells) {
             if (guess == cell) {
                 result = "hit";
                 numOfHits++;
                 break;
             } // end if
         } // end for
-        if (numOfHits == locationCells.length) {
+        if (numOfHits == locationCells.size()) {
             result = "kill";
         } // end if
-        System.out.println(result);
+//        System.out.println(result);
         return result;
     } // end method
 } // close class
