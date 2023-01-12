@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/StartupGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/StartupTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/from/scratch/StartupTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/GameHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/java/network/programming/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +124,20 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StartupGame">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.network.programming.Main" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.network.programming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="from.scratch.StartupGame" />
       <module name="javaEveryday.app.main" />
@@ -149,27 +163,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="StartupTestDrive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;from.scratch.StartupTestDrive&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="StartupTestDrive.correctUserGuess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -215,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartupGame" />
         <item itemvalue="Gradle.StartupTestDrive.repeatedTwos" />
         <item itemvalue="Gradle.StartupTestDrive.correctUserGuess" />
         <item itemvalue="Application.StartupTestDrive" />
-        <item itemvalue="Gradle.StartupTestDrive" />
       </list>
     </recent_temporary>
   </component>
