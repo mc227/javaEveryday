@@ -33,7 +33,6 @@ public class SimpleStartupTestDrive {
             System.out.println("failed");
         }
 //        assertEquals(result,"hit","passed");
-
     }
 
     @Test

@@ -3,6 +3,7 @@ package from.scratch.hfj3e.ch6;
 import java.util.ArrayList;
 
 public class Startup {
+    private String name;
     private ArrayList<String> locationCells;
     private int numOfHits = 0;
 
@@ -24,4 +25,14 @@ public class Startup {
         }
         return result;
     } // end method
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public ArrayList<String> getLocationCells() {
+        return locationCells;
+    }
 }

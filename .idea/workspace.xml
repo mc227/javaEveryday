@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/GameHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/java/network/programming/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/StartupBust.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/StartupBust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/SimpleStartupTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/from/scratch/SimpleStartupTestDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/hfj3e/ch6/StartupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/from/scratch/hfj3e/ch6/StartupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,17 +115,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="from.scratch.hfj3e.ch6" />
       <recent name="from.scratch" />
       <recent name="javaEveryday.com.Head.First.Third.Edition" />
       <recent name="javaEveryday.com.leetcode.TextJustification" />
       <recent name="javaEveryday.com.my.random" />
-      <recent name="javaEveryday.com.random.walaLang" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.StartupBust">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java.network.programming.Main" />
       <module name="javaEveryday.app.main" />
@@ -138,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.StartupGame" />
+    <configuration name="StartupBust" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.hfj3e.ch6.StartupBust" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="from.scratch.*" />
+          <option name="PATTERN" value="from.scratch.hfj3e.ch6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,9 +152,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupTestDrive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.StartupTestDrive" />
-      <module name="javaEveryday.app.test" />
+    <configuration name="StartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.StartupGame" />
+      <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="from.scratch.*" />
@@ -208,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartupBust" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartupGame" />
         <item itemvalue="Gradle.StartupTestDrive.repeatedTwos" />
         <item itemvalue="Gradle.StartupTestDrive.correctUserGuess" />
-        <item itemvalue="Application.StartupTestDrive" />
       </list>
     </recent_temporary>
   </component>
