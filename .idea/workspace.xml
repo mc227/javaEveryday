@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/java/network/programming/RFnestMessageTypeConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/Startup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/StartupGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/GameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/GameHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/StartupBust.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/hfj3e/ch6/StartupBust.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/java/network/programming/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/java/network/programming/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/SimpleStartupTestDrive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/StartupTestDrive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/hfj3e/ch6/StartupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/from/scratch/hfj3e/ch6/StartupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +106,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="java.network.programming" />
       <recent name="javaEveryday.com.Head.First.Third.Edition" />
       <recent name="javaEveryday.com.random.walaLang" />
       <recent name="javaEveryday.com.DW" />
@@ -121,7 +132,7 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.MediaRentalSystem">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projects.project1.App" />
       <module name="javaEveryday.app.main" />
@@ -135,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java.network.programming.Main" />
+    <configuration name="MediaRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.MediaRentalSystem" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java.network.programming.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.week8.project.media.rental.system.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupBust" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.hfj3e.ch6.StartupBust" />
+    <configuration name="MyGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week5.discussion.MyGui" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="from.scratch.hfj3e.ch6.*" />
+          <option name="PATTERN" value="javaEveryday.com.DW.week5.discussion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,8 +172,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="from.scratch.StartupGame" />
+    <configuration name="PasswordDemonstration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week5.discussion.PasswordDemonstration" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaEveryday.com.DW.week5.discussion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleStartupGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="from.scratch.SimpleStartupGame" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -174,34 +198,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupTestDrive.repeatedTwos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;from.scratch.StartupTestDrive.repeatedTwos&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MediaRentalSystem" />
+        <item itemvalue="Application.PasswordDemonstration" />
+        <item itemvalue="Application.MyGui" />
+        <item itemvalue="Application.SimpleStartupGame" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.StartupBust" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.StartupGame" />
-        <item itemvalue="Gradle.StartupTestDrive.repeatedTwos" />
       </list>
     </recent_temporary>
   </component>

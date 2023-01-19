@@ -41,7 +41,8 @@ public class GameHelper {
                 startupCoords[i] = location;                    // put current location in array
                 location += increment;                          // calculate the next location
             }
-            System.out.println("Trying: " + Arrays.toString(startupCoords));
+            //TODO uncomment this later
+//            System.out.println("Trying: " + Arrays.toString(startupCoords));
 
             if (startupFits(startupCoords, increment)) {      // startup fits on the grid?
                 success = coordsAvailable(startupCoords);       // ...and locations aren't taken?
@@ -67,7 +68,8 @@ public class GameHelper {
     boolean coordsAvailable(int[] startupCoords) {
         for (int coord : startupCoords) {                   // check all potential positions
             if (grid[coord] != 0) {                           // this position already taken
-                System.out.println("position: " + coord + " already taken.");
+                //TODO uncomment this later
+//                System.out.println("position: " + coord + " already taken.");
                 return false;                                   // NO success
             }
         }
