@@ -1,0 +1,86 @@
+in general my steps are
+
+- [ ] come up with the project myself
+- [ ] make improvements based on the books work
+- [ ] edit read me
+
+I need to make my
+- [ ] prep code
+- [ ] test code
+- [ ] actual code
+for each class
+
+I'm also gonna be doing some free writing here
+just to keep the ideas flowing
+
+I need a startup class
+I need a game class
+I need a gamehelper class (for the next project I think I'll be needing the book's help)
+
+Startup
+----------
+name
+location
+-----------
+checkIfGuessIsCorrect
+setLocation
+********************
+Game
+----------
+
+-----------
+instantiate the gamehelper
+instantiate the startup
+create random location
+instantiate still alive
+********************
+GameHelper
+----------
+
+-----------
+getUserInput()
+********************
+
+I don't know who does the setting
+
+
+
+
+Start the game and ask the user to sink this single start up
+located somewhere in the array.
+check the user for an array
+if it's correct take out the
+
+for example
+
+0 1 2 3 4 5 6
+
+     * * *
+
+array for example is in position 2 3 4
+
+user will give his guess
+
+guess will be verified
+
+0 1 2 3 4 5 6
+
+    *   *
+so this will happen until all the locations have been hit
+
+so what do I know, think about objects
+there are startup objects
+the game object will instantiate the start up object
+the game object will instantiate the gamehelper
+give it a location
+who will give it a location
+
+man this is harder than i thought. this simple without notes has a lot of things involved with it.
+
+Game helper
+knows nothing and just asks the user for input
+
+Game
+knows nothing and instantiates the
+
+so who is giving
