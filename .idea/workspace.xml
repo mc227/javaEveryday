@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/TOTEM_X2_Controller/MatrixInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/projects/project1/StartUpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/projects/project1/scratchwork.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/projects/project1/scratchwork.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/from/scratch/hfj3e/ch6/StartupTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +54,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -114,30 +114,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="projects.project1" />
       <recent name="from.scratch.hfj3e.ch6" />
       <recent name="from.scratch" />
       <recent name="javaEveryday.com.Head.First.Third.Edition" />
       <recent name="javaEveryday.com.leetcode.TextJustification" />
-      <recent name="javaEveryday.com.my.random" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MediaRentalSystem">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="projects.project1.App" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="projects.project1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.StartUpTest.firstTest">
     <configuration name="MediaRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.MediaRentalSystem" />
       <module name="javaEveryday.app.main" />
@@ -190,13 +177,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartUpTest.firstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;projects.project1.StartUpTest.firstTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StartUpTest.firstTest" />
         <item itemvalue="Application.MediaRentalSystem" />
         <item itemvalue="Application.PasswordDemonstration" />
         <item itemvalue="Application.MyGui" />
         <item itemvalue="Application.SimpleStartupGame" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
