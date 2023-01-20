@@ -17,6 +17,9 @@ I need a startup class
 I need a game class
 I need a gamehelper class (for the next project I think I'll be needing the book's help)
 
+********
+**UMLs**
+********
 Startup
 ----------
 name
@@ -41,7 +44,6 @@ GameHelper
 getUserInput()
 ********************
 
-I don't know who does the setting
 
 
 
