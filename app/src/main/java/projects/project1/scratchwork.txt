@@ -2,7 +2,7 @@ in general my steps are
 
 - [ ] come up with the project myself
 - [ ] make improvements based on the books work
-- [ ] edit read me
+
 
 I need to make my
 - [ ] prep code
@@ -10,12 +10,9 @@ I need to make my
 - [ ] actual code
 for each class
 
-I'm also gonna be doing some free writing here
-just to keep the ideas flowing
-
 I need a startup class
 I need a game class
-I need a gamehelper class (for the next project I think I'll be needing the book's help)
+I need a gamehelper class
 
 ********
 **UMLs**
@@ -32,26 +29,24 @@ Game
 ----------
 
 -----------
-instantiate the gamehelper
-instantiate the startup
-create random location
-instantiate still alive
+startGame
+setUpGame
+checkUserInput
+endGame
 ********************
 GameHelper
 ----------
 
 -----------
 getUserInput()
+giveUserLocation()
 ********************
-
-
-
 
 
 Start the game and ask the user to sink this single start up
 located somewhere in the array.
-check the user for an array
-if it's correct take out the
+check the user guess and see if hits the location in the array
+if it's correct take out the location (in this case I'm going to use an array list)
 
 for example
 
@@ -69,20 +64,3 @@ guess will be verified
 
     *   *
 so this will happen until all the locations have been hit
-
-so what do I know, think about objects
-there are startup objects
-the game object will instantiate the start up object
-the game object will instantiate the gamehelper
-give it a location
-who will give it a location
-
-man this is harder than i thought. this simple without notes has a lot of things involved with it.
-
-Game helper
-knows nothing and just asks the user for input
-
-Game
-knows nothing and instantiates the
-
-so who is giving
