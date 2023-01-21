@@ -12,4 +12,6 @@ public class StartUp {
     public ArrayList<Integer> getLocation() {
         return location;
     }
+
+
 }

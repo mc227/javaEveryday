@@ -17,9 +17,8 @@ class StartUpTest {
         ArrayList<Integer> location = new ArrayList<Integer>(
                 Arrays.asList(0,1,2));
         startUp.setLocation(location);
-        System.out.println("Where are you located?");
-        System.out.println(startUp.getLocation());
         // get user input
+        Integer userGuess = 2;
         // check if user input is correct
     }
 }
