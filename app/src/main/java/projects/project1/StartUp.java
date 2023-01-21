@@ -8,4 +8,8 @@ public class StartUp {
     public void setLocation(ArrayList<Integer> location) {
         this.location = location;
     }
+
+    public ArrayList<Integer> getLocation() {
+        return location;
+    }
 }
