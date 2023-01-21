@@ -13,5 +13,9 @@ public class StartUp {
         return location;
     }
 
+    public String checkYourself(Integer guess) {
+        String result = "miss";
 
+        return result;
+    }
 }

@@ -20,5 +20,6 @@ class StartUpTest {
         // get user input
         Integer userGuess = 2;
         // check if user input is correct
+        System.out.println(startUp.checkYourself(userGuess));
     }
 }
