@@ -18,7 +18,7 @@ class StartUpTest {
                 Arrays.asList(0,1,2));
         startUp.setLocation(location);
         // get user input
-        Integer userGuess = 2;
+        Integer userGuess = 3;
         // check if user input is correct
         System.out.println(startUp.checkYourself(userGuess));
     }

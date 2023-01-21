@@ -15,7 +15,8 @@ public class StartUp {
 
     public String checkYourself(Integer guess) {
         String result = "miss";
-
+        Integer index = location.indexOf(guess);
+        System.out.println(index);
         return result;
     }
 }
