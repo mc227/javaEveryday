@@ -124,7 +124,7 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StartUpTest">
+  <component name="RunManager" selected="Gradle.StartUpTest.firstTest">
     <configuration name="MediaRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.MediaRentalSystem" />
       <module name="javaEveryday.app.main" />
@@ -208,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.StartUpTest" />
         <item itemvalue="Gradle.StartUpTest.firstTest" />
+        <item itemvalue="Gradle.StartUpTest" />
         <item itemvalue="Application.MediaRentalSystem" />
         <item itemvalue="Application.PasswordDemonstration" />
         <item itemvalue="Application.MyGui" />

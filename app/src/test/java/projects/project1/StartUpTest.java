@@ -17,14 +17,9 @@ class StartUpTest {
         ArrayList<Integer> location = new ArrayList<Integer>(
                 Arrays.asList(0,1,2));
         startUp.setLocation(location);
-        // get user input
-        Integer first = 0;
-        // check if user input is correct
-        System.out.println(startUp.checkYourself(first));
-        System.out.println(startUp.getLocation());
-
-        Integer second = 1;
-        System.out.println(startUp.checkYourself(second));
-        System.out.println(startUp.getLocation());
+        // get user input and check
+        System.out.println(startUp.checkYourself(0));
+        System.out.println(startUp.checkYourself(1));
+        System.out.println(startUp.checkYourself(2));
     }
 }

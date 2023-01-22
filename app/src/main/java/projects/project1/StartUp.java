@@ -15,13 +15,13 @@ public class StartUp {
 
     public String checkYourself(Integer guess) {
         String result = "miss";
-        Integer index = location.indexOf(guess);
+        int index = location.indexOf(guess);
         if(index >= 0) {
             location.remove(index);
-            if (!location.isEmpty()){
-                result = "hit";
-            } else {
+            if (location.size() == 0){
                 result = "kill";
+            } else {
+                result = "hit";
             }
         }
         return result;
