@@ -16,12 +16,12 @@ public class StartUp {
     public String checkYourself(Integer guess) {
         String result = "miss";
         Integer index = location.indexOf(guess);
-        if(index >=0) {
+        if(index >= 0) {
             location.remove(index);
-            if (location.isEmpty()){
-                result = "kill";
-            } else {
+            if (!location.isEmpty()){
                 result = "hit";
+            } else {
+                result = "kill";
             }
         }
         return result;
