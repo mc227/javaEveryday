@@ -21,5 +21,9 @@ class StartUpTest {
         Integer userGuess = 3;
         // check if user input is correct
         System.out.println(startUp.checkYourself(userGuess));
+        // check if location is removed
+        System.out.println(startUp.checkYourself(0));
+        System.out.println(startUp.checkYourself(0));
+        System.out.println(startUp.getLocation());
     }
 }
