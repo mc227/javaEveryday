@@ -13,7 +13,7 @@ public class StartUp {
         return location;
     }
 
-    public String checkYourself(Integer guess) {
+    public String checkYourself(int guess) {
         String result = "miss";
         int index = location.indexOf(guess);
         if(index >= 0) {
