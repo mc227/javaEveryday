@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="" />
+    <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/Jimmy/Interest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/projects/project1/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/projects/project1/Game.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +124,7 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Game">
+  <component name="RunManager" selected="Application.Interest">
     <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projects.project1.Game" />
       <module name="javaEveryday.app.main" />
@@ -134,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediaRentalSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week8.project.media.rental.system.MediaRentalSystem" />
+    <configuration name="Interest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Jimmy.Interest" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week8.project.media.rental.system.*" />
+          <option name="PATTERN" value="Jimmy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Interest" />
         <item itemvalue="Gradle.StartUpTest.firstTest" />
         <item itemvalue="Gradle.StartUpTest.secondTest" />
         <item itemvalue="Application.Game" />
         <item itemvalue="Gradle.StartUpTest" />
-        <item itemvalue="Application.MediaRentalSystem" />
       </list>
     </recent_temporary>
   </component>
