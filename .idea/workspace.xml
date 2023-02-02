@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Jimmy/Interest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Jimmy/Interest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/projects/project2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/projects/project2/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +125,7 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Game (1)">
     <configuration name="Game (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projects.project2.Game" />
       <module name="javaEveryday.app.main" />

@@ -9,3 +9,6 @@
 
 rootProject.name = 'javaEveryday'
 include('app', 'list', 'utilities')
+
+
+
