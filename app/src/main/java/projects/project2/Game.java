@@ -21,17 +21,24 @@ public class Game {
         first.setLocation(helper.placeStartup(3));
         second.setLocation(helper.placeStartup(3));
         third.setLocation(helper.placeStartup(3));
-        /**
-         * delete below when shipping to production
-         */
-        System.out.println(first.getLocation());
-        System.out.println(second.getLocation());
-        System.out.println(third.getLocation());
-        /***/
-        // i need to keep asking guesses until
-//        String guess = helper.getUserInput("please enter your guess");
-        /**
-         * Check each user guess with all three Startups, instead of just one.
-         */
+
+        int numOfGuesses = 0;
+        while(!startups.isEmpty()){
+            String result = "miss";
+            String guess = helper.getUserInput("please enter your guess");
+            for(int i = 0; i < startups.size(); i++) {
+                System.out.println(startups.get(i).name);
+                result = startups.get(i).checkYourself(guess);
+                System.out.println(startups.get(i).getLocation());
+                System.out.println(result);
+                if(result == "kill") {
+                    startups.remove(i);
+                }
+            }
+            numOfGuesses++;
+            System.out.println("Number of Guesses: " + numOfGuesses);
+        }
+        System.out.println("GAME OVER");
+        System.out.println("Total Number of Guesses: "+numOfGuesses);
     }
 }
