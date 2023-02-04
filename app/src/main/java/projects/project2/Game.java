@@ -3,6 +3,21 @@ package projects.project2;
 import java.util.ArrayList;
 
 public class Game {
+    public void setUpGame() {
+
+    }
+
+    public void startPlaying() {
+
+    }
+
+    public void checkUserGuess() {
+
+    }
+
+    public void finishGame() {
+
+    }
     public static void main(String[] args) {
         // create three startups (cabista, poniez, hacqi) instead of one.
         GameHelper helper = new GameHelper();
