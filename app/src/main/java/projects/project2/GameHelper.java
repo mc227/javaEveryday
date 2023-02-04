@@ -105,5 +105,13 @@ public class GameHelper {
             return VERTICAL_INCREMENT;                        // place vertically
         }
     } //end getIncrement
+
+//    public static void main(String[] args) {
+//        GameHelper gameHelper = new GameHelper();
+//        gameHelper.placeStartup(3);
+//        gameHelper.placeStartup(3);
+//        gameHelper.placeStartup(3);
+//        System.out.println(gameHelper.startupCount);
+//    }
 } //end class
 

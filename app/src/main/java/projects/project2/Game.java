@@ -3,25 +3,12 @@ package projects.project2;
 import java.util.ArrayList;
 
 public class Game {
-    public void setUpGame() {
+    private GameHelper helper = new GameHelper();
+    private ArrayList<StartUp> startups = new ArrayList<>();
+    private int numOfGuesses = 0;
 
-    }
-
-    public void startPlaying() {
-
-    }
-
-    public void checkUserGuess() {
-
-    }
-
-    public void finishGame() {
-
-    }
-    public static void main(String[] args) {
+    private void setUpGame() {
         // create three startups (cabista, poniez, hacqi) instead of one.
-        GameHelper helper = new GameHelper();
-        ArrayList<StartUp> startups = new ArrayList<>();
         StartUp first = new StartUp();
         StartUp second = new StartUp();
         StartUp third = new StartUp();
@@ -37,23 +24,48 @@ public class Game {
         second.setLocation(helper.placeStartup(3));
         third.setLocation(helper.placeStartup(3));
 
-        int numOfGuesses = 0;
+        System.out.println("Welcome to StartUp Bust");
+        System.out.println("Your goal is to sink three startups");
+        System.out.println("poniez, hacqi, cabista");
+        System.out.println("Try to sink them all in the fewest number of guesses");
+    }
+
+    private void startPlaying() {
         while(!startups.isEmpty()){
-            String result = "miss";
             String guess = helper.getUserInput("please enter your guess");
-            for(int i = 0; i < startups.size(); i++) {
-                System.out.println(startups.get(i).name);
-                result = startups.get(i).checkYourself(guess);
-                System.out.println(startups.get(i).getLocation());
-                System.out.println(result);
-                if(result == "kill") {
-                    startups.remove(i);
-                }
-            }
-            numOfGuesses++;
-            System.out.println("Number of Guesses: " + numOfGuesses);
+            checkUserGuess(guess);
         }
+    }
+
+    public void checkUserGuess(String userGuess) {
+        numOfGuesses++;
+        String result = "miss";
+        for (StartUp startUp:startups) {
+            result = startUp.checkYourself(userGuess);
+            if(result.equals("hit")){
+                break;
+            }
+            if(result.equals("kill")) {
+                startups.remove(startUp);
+                break;
+            }
+        }
+        System.out.println(result);
+        System.out.println("Number of Guesses: " + numOfGuesses);
+        for(StartUp startUp: startups) {
+            System.out.println(startUp.getName() + " still alive");
+        }
+    }
+
+    public void finishGame() {
         System.out.println("GAME OVER");
         System.out.println("Total Number of Guesses: "+numOfGuesses);
+    }
+
+    public static void main(String[] args) {
+        Game game = new Game();
+        game.setUpGame();
+        game.startPlaying();
+        game.finishGame();
     }
 }
