@@ -88,9 +88,15 @@ public class GameHelper {
 
     String getAlphaCoordsFromIndex(int index) {
         int row = calcRowFromIndex(index);                  // get row value
+        // TODO
+        System.out.println("row " + row);
         int column = index % GRID_LENGTH;                   // get numeric column value
+        // TODO
+        System.out.println("column " + column);
 
         String letter = ALPHABET.substring(column, column + 1); // convert to letter
+        System.out.println("letter " + letter);
+        System.out.println("letter + row " + (letter + row));
         return letter + row;
     } // end getAlphaCoordsFromIndex
 
@@ -106,12 +112,9 @@ public class GameHelper {
         }
     } //end getIncrement
 
-//    public static void main(String[] args) {
-//        GameHelper gameHelper = new GameHelper();
-//        gameHelper.placeStartup(3);
-//        gameHelper.placeStartup(3);
-//        gameHelper.placeStartup(3);
-//        System.out.println(gameHelper.startupCount);
-//    }
+    public static void main(String[] args) {
+        GameHelper gameHelper = new GameHelper();
+        gameHelper.placeStartup(3);
+    }
 } //end class
 
