@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/SongV3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/Jukebox3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/MockSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/MockSongs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/SongV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter11/SongV3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +103,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="HFJ3e.Chapter11" />
       <recent name="java.network.programming" />
       <recent name="javaEveryday.com.Head.First.Third.Edition" />
       <recent name="javaEveryday.com.random.walaLang" />
@@ -125,26 +130,13 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Jukebox1">
-    <configuration name="DataGramReceiver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Learning.Sockets.DataGramReceiver" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter11.App" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Learning.Sockets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataGramSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Learning.Sockets.DataGramSender" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Learning.Sockets.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,6 +146,19 @@
     </configuration>
     <configuration name="Jukebox1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter11.Jukebox1" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HFJ3e.Chapter11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jukebox4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter11.Jukebox4" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -178,12 +183,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Wrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter10.Wrapper" />
+    <configuration name="SongV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter11.SongV3" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter10.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.SongV3" />
+        <item itemvalue="Application.Jukebox4" />
         <item itemvalue="Application.Jukebox1" />
         <item itemvalue="Application.MockSongs" />
-        <item itemvalue="Application.Wrapper" />
-        <item itemvalue="Application.DataGramSender" />
-        <item itemvalue="Application.DataGramReceiver" />
       </list>
     </recent_temporary>
   </component>
