@@ -9,6 +9,7 @@ public class MockSongs {
         songs.add("Boom Boom");
         songs.add("Baam");
         songs.add("I'm so hot");
+        songs.add("Welcome to Momoland");
         return songs;
     }
 }
