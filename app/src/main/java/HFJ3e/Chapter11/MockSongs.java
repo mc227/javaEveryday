@@ -12,4 +12,13 @@ public class MockSongs {
         songs.add("Welcome to Momoland");
         return songs;
     }
+
+    public static List<SongV2> getSongsV2() {
+        List<SongV2> songs = new ArrayList<>();
+        songs.add(new SongV2("Boom Boom","Momoland",126));
+        songs.add(new SongV2("Baam","Momoland",127));
+        songs.add(new SongV2("I'm so hot","Momoland",127));
+        songs.add(new SongV2("Welcome to Momoland","Momoland",170));
+        return songs;
+    }
 }

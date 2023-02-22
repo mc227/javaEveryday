@@ -3,14 +3,15 @@ package HFJ3e.Chapter11;
 import java.util.Collections;
 import java.util.List;
 
-public class Jukebox1 {
+public class Jukebox2 {
     public static void main(String[] args) {
-        new Jukebox1().go();
+        new Jukebox2().go();
     }
 
     public void go() {
-        List<String> songList = MockSongs.getSongStrings();
+        List<SongV2> songList = MockSongs.getSongsV2();
         System.out.println(songList);
+
         Collections.sort(songList);
         System.out.println(songList);
     }
