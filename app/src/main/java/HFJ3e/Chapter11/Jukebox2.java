@@ -11,8 +11,8 @@ public class Jukebox2 {
     public void go() {
         List<SongV2> songList = MockSongs.getSongsV2();
         System.out.println(songList);
-
-        Collections.sort(songList);
+        // This line intentionally fails compilation
+//        Collections.sort(songList);
         System.out.println(songList);
     }
 }
