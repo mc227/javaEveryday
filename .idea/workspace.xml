@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter12/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter12/Songs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter12/StreamPuzzle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter13/MiniMiniMusicApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter13/MiniMusicCmdLine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter13/MiniMusicCmdLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter13/MusicTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyDrawPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/Scratch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/TwoButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter15/Button1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/DungeonGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/from/scratch/SimpleGui3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dg.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter12/Scratch.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter12/Scratch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +138,13 @@
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamPuzzle">
-    <configuration name="CoffeeOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter12.CoffeeOrder" />
+  <component name="RunManager" selected="Application.Button1">
+    <configuration name="Button1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter15.Button1" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter12.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MixForLoops" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter12.MixForLoops" />
+    <configuration name="MyDrawPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.MyDrawPanel" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter12.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,12 +165,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter12.Scratch" />
+    <configuration name="SimpleAnimation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.SimpleAnimation" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter12.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,12 +178,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Songs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter12.Songs" />
+    <configuration name="SimpleGui3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.SimpleGui3" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter12.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,12 +191,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamPuzzle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter12.StreamPuzzle" />
+    <configuration name="TwoButtons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.TwoButtons" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter12.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,13 +204,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MyDrawPanel" />
+      <item itemvalue="Application.SimpleGui3" />
+      <item itemvalue="Application.TwoButtons" />
+      <item itemvalue="Application.SimpleAnimation" />
+      <item itemvalue="Application.Button1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StreamPuzzle" />
-        <item itemvalue="Application.Songs" />
-        <item itemvalue="Application.CoffeeOrder" />
-        <item itemvalue="Application.MixForLoops" />
-        <item itemvalue="Application.Scratch" />
+        <item itemvalue="Application.Button1" />
+        <item itemvalue="Application.SimpleAnimation" />
+        <item itemvalue="Application.TwoButtons" />
+        <item itemvalue="Application.SimpleGui3" />
+        <item itemvalue="Application.MyDrawPanel" />
       </list>
     </recent_temporary>
   </component>
