@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter15/Panel1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/MyFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/Pond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/QuizCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/QuizCardBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/QuizCardPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/Scratch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter16/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/DailyAdviceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/DailyAdviceServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/HelloWorldSwing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/Scratch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/SimpleChatClientA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter17/SimpleChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foo.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/Easy/TwoSum/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/LeetCode/Easy/TwoSum/SolutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter15/Button1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter15/Button1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/leetcode/TextJustification/SolutionTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +58,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -107,7 +97,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../palnet-common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Gradle/gradle-7.6" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -129,23 +119,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="LeetCode.Easy.TwoSum" />
       <recent name="projects.project1" />
       <recent name="from.scratch.hfj3e.ch6" />
       <recent name="from.scratch" />
       <recent name="javaEveryday.com.Head.First.Third.Edition" />
-      <recent name="javaEveryday.com.leetcode.TextJustification" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PingingClient">
-    <configuration name="DailyAdviceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter17.DailyAdviceServer" />
-      <module name="javaEveryday.app.main" />
+  <component name="RunManager" selected="JUnit.SolutionTest">
+    <configuration name="ClockTestDrive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.Head.First.Third.Edition.ClockTestDrive" />
+      <module name="javaEveryday.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter17.*" />
+          <option name="PATTERN" value="javaEveryday.com.Head.First.Third.Edition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,72 +143,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter17.HelloWorldSwing" />
-      <module name="javaEveryday.app.main" />
+    <configuration name="SolutionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;LeetCode.Easy.TwoSum.SolutionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SolutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter17.*" />
+          <option name="PATTERN" value="LeetCode.Easy.TwoSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LeetCode.Easy.TwoSum" />
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Easy.TwoSum.SolutionTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PingingClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter17.PingingClient" />
-      <module name="javaEveryday.app.main" />
+    <configuration name="SolutionTest.example1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter17.*" />
+          <option name="PATTERN" value="LeetCode.Easy.TwoSum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LeetCode.Easy.TwoSum" />
+      <option name="MAIN_CLASS_NAME" value="LeetCode.Easy.TwoSum.SolutionTest" />
+      <option name="METHOD_NAME" value="example1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter17.Scratch" />
-      <module name="javaEveryday.app.main" />
+    <configuration name="StartUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaEveryday.app.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter17.*" />
+          <option name="PATTERN" value="projects.project1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter17.SimpleChatClient" />
-      <module name="javaEveryday.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HFJ3e.Chapter17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="projects.project1" />
+      <option name="MAIN_CLASS_NAME" value="projects.project1.StartUpTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Scratch (1)" />
-      <item itemvalue="Application.DailyAdviceServer" />
-      <item itemvalue="Application.HelloWorldSwing" />
-      <item itemvalue="Application.SimpleChatClient" />
-      <item itemvalue="Application.PingingClient" />
+      <item itemvalue="Gradle.SolutionTest" />
+      <item itemvalue="JUnit.SolutionTest" />
+      <item itemvalue="Application.ClockTestDrive" />
+      <item itemvalue="JUnit.StartUpTest" />
+      <item itemvalue="JUnit.SolutionTest.example1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PingingClient" />
-        <item itemvalue="Application.SimpleChatClient" />
-        <item itemvalue="Application.HelloWorldSwing" />
-        <item itemvalue="Application.DailyAdviceServer" />
-        <item itemvalue="Application.Scratch (1)" />
+        <item itemvalue="JUnit.SolutionTest" />
+        <item itemvalue="JUnit.SolutionTest.example1" />
+        <item itemvalue="JUnit.StartUpTest" />
+        <item itemvalue="Application.ClockTestDrive" />
+        <item itemvalue="Gradle.SolutionTest" />
       </list>
     </recent_temporary>
   </component>
