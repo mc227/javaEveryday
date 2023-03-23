@@ -2,21 +2,24 @@ package LeetCode.Easy.TwoSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * i took a quick peek on the solution one
- * with time complexity of O(n^2)
- * and space complexity of O(1)
+ * I took a quick peek of the hashmap solution.
+ * I don't have it down pat
+ * but i saw hashmap
  */
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<>();
         for(int i = 0; i < nums.length; i++) {
-            for(int j = i+1; j <  nums.length; j++) {
-                if(nums[i]+nums[j]==target){
-                    return new int[]{i,j};
-                }
+            int complement = target - nums[i];
+            if(map.containsKey(complement)) {
+                return new int[] {map.get(complement),i};
             }
+            map.put(nums[i],i);
         }
         return null;
     }
