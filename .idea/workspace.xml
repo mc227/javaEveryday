@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/Easy/TwoSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/LeetCode/Easy/TwoSum/SolutionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/javaEveryday/com/leetcode/TextJustification/SolutionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/LeetCode/Easy/TwoSum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/Easy/TwoSum/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
