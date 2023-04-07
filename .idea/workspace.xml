@@ -5,115 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/bin/main/HFJ3e/Chapter14/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/HFJ3e/Chapter14/SimpleGui1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/HFJ3e/Chapter14/SimpleGui2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/LeetCode/Easy/TwoSum/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/LeetCode/UniqueEmailAddresses/Solution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/LeetCode/UniqueEmailAddresses/chatGPT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/ByteArrayOutputStreamDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/DataStreamExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/DungeonGame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/DungeonTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/GameHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/MultiFor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/MyDrawPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/OutputStreamDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/SimpleGui3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/SimpleStartup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/SimpleStartupGame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/hfj3e/ch6/GameHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/hfj3e/ch6/Startup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/from/scratch/hfj3e/ch6/StartupBust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project1/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project1/GameHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project1/StartUp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project1/scratchwork.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project2/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project2/GameHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/main/projects/project2/StartUp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/test/LeetCode/Easy/TwoSum/SolutionTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/bin/test/projects/project1/StartUpTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MySimpleGui1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/Scratch.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/chatGPT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment2/FruitSnack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment2/OrderSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment2/SaltySnack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment2/Snack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/Converter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/DistanceConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/MyGui$ExitButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/MyGui$distanceButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/MyGui$tempButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/MyGui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Assignment3/TemperatureConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/DereckWattersGUI1$CounterButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/DereckWattersGUI1$ExitButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/DereckWattersGUI1$MessageButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/DereckWattersGUI1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/HelloWorldGui1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/JTabbedPaneFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/MyLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/MyShape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/NetworkEngineer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/OneRowNim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/OptionPaneExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/PasswordDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/PasswordDemo$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/PasswordDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Project1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/SoftwareTester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Toyota.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/Weight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/MyGui$CounterButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/MyGui$ExitButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/MyGui$MessageButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/MyGui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/PasswordDemonstration$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/PasswordDemonstration$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/DW/week5/discussion/PasswordDemonstration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/AddElementsToHashtable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/BinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/BinaryTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/ChainedHashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/DblLinkedListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/EvalPostFix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/GFG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/HashProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/HashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/HelloWorldGui2$ButtonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/HelloWorldGui2$HelloWorldDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/HelloWorldGui2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/InOrderSuccessorBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/LinkedListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/OpenAddrHashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/OpenAddrPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/QueueArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/RemainderHashing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/SimpleBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/datastructures/StackArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/leetcode/TextJustification/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/my/random/Mark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/main/javaEveryday/com/my/random/TextJustification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/test/javaEveryday/com/leetcode/TextJustification/SolutionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/test/javaEveryday/com/my/random/MarkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bin/test/javaEveryday/com/my/random/TextJustificationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/SimpleGui1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/MySimpleGui1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/SimpleGui2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/LeetCode/UniqueEmailAddresses/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/LeetCode/UniqueEmailAddresses/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MySimpleGui1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/SimpleGui2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/Solution.java" afterDir="false" />
     </list>
@@ -304,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SimpleGui2" />
-        <item itemvalue="Application.MySimpleGui1" />
+        <item itemvalue="Application.SimpleGui1" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.MyDrawPanel" />
-        <item itemvalue="Application.SimpleGui1" />
+        <item itemvalue="Application.MySimpleGui1" />
       </list>
     </recent_temporary>
   </component>

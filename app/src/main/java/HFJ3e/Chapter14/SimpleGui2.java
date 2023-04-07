@@ -8,27 +8,23 @@ public class SimpleGui2 implements ActionListener {
     private JButton button;
     public void go() {
         JFrame frame = new JFrame();
-        button = new JButton("Click me");
-
+        button = new JButton("Oh Hi Mark");
         button.addActionListener(this);
-
-        frame.setSize(500,500);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
         frame.getContentPane().add(button);
+        frame.setSize(300,300);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (button.getText().equals("Click me")) {
-            button.setText("Clicked");
+        if(button.getText().equals("Oh Hi Mark")) {
+            button.setText("Oh Hi Danny");
         } else {
-            button.setText("Click me");
+            button.setText("Oh Hi Mark");
         }
     }
 
     public static void main(String[] args) {
-        SimpleGui2 gui = new SimpleGui2();
-        gui.go();
+        new SimpleGui2().go();
     }
 }

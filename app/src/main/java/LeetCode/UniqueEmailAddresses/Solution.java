@@ -33,18 +33,39 @@ import java.util.*;
 //
 //        return set.size();
 //    }
+//    public static void main(String[] args) {
+//        String[] arr = new String[] { "test.email+alex@leetcode.com",
+//                "test.e.mail+bob.cathy@leetcode.com",
+//                "testemail+david@lee.tcode.com" };
+//        System.out.println(new Solution().numUniqueEmails(arr));
+//    }
 //}
 //
-//
+
 class Solution {
     public int numUniqueEmails(String[] emails) {
-        for(String email:emails) {
-            StringBuilder local = new StringBuilder();
-            
-        }
-        return emails.length;
-    }
+        Set<String> uniqueEmails = new HashSet<>();
+        for(String email : emails) {
+            StringBuilder cleanEmail = new StringBuilder();
+            for(int i = 0; i < email.length(); ++i) {
+                char currChar = email.charAt(i);
 
+                if(currChar == '+' || currChar == '@') break;
+
+                if(currChar != '.') cleanEmail.append(currChar);
+            }
+            StringBuilder domainName = new StringBuilder();
+            for(int i = email.length() - 1; i >=0; --i) {
+                char currChar = email.charAt(i);
+                domainName.append(currChar);
+                if(currChar =='@') break;
+            }
+            domainName = domainName.reverse();
+            cleanEmail.append(domainName);
+            uniqueEmails.add(cleanEmail.toString());
+        }
+        return uniqueEmails.size();
+    }
     public static void main(String[] args) {
         String[] arr = new String[] { "test.email+alex@leetcode.com",
                 "test.e.mail+bob.cathy@leetcode.com",
