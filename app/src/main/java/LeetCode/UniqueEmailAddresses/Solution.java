@@ -45,24 +45,23 @@ import java.util.*;
 class Solution {
     public int numUniqueEmails(String[] emails) {
         Set<String> uniqueEmails = new HashSet<>();
+
         for(String email : emails) {
             StringBuilder cleanEmail = new StringBuilder();
-            for(int i = 0; i < email.length(); ++i) {
+            for(int i = 0; i < email.length(); i++) {
                 char currChar = email.charAt(i);
-
                 if(currChar == '+' || currChar == '@') break;
 
                 if(currChar != '.') cleanEmail.append(currChar);
             }
             StringBuilder domainName = new StringBuilder();
-            for(int i = email.length() - 1; i >=0; --i) {
-                char currChar = email.charAt(i);
-                domainName.append(currChar);
-                if(currChar =='@') break;
+            for(int j = email.length() - 1; j >=0; j--) {
+                char currChar = email.charAt(j);
+                if(currChar=='@') break;
+                else domainName.append(currChar);
             }
             domainName = domainName.reverse();
-            cleanEmail.append(domainName);
-            uniqueEmails.add(cleanEmail.toString());
+            uniqueEmails.add(cleanEmail+"@"+domainName);
         }
         return uniqueEmails.size();
     }
