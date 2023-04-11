@@ -1,7 +1,8 @@
 package LeetCode.UniqueEmailAddresses;
 
 import java.util.*;
-
+/*mark brute force
+* */
 //class Solution {
 //    public int numUniqueEmails(String[] emails){
 //        List<String> list = Arrays.asList(emails);
@@ -42,6 +43,8 @@ import java.util.*;
 //}
 //
 
+/*mark brute force
+ * */
 class Solution {
     public int numUniqueEmails(String[] emails) {
         Set<String> uniqueEmails = new HashSet<>();
