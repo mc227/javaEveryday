@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyDrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/MyDrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/HFJ3e/Chapter14/MyDrawPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyDrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyDrawPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/out/production/classes/LeetCode/UniqueEmailAddresses/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/out/production/classes/LeetCode/UniqueEmailAddresses/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/prompt.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/LeetCode/UniqueEmailAddresses/prompt.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,8 +124,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.MyDrawPanel">
-    <configuration name="MyDrawPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.MyDrawPanel" />
+    <configuration name="DynamicColorPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.DynamicColorPanel" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +137,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySimpleGui1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.MySimpleGui1" />
+    <configuration name="MyDrawPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.MyDrawPanel" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
@@ -192,15 +194,15 @@
       <item itemvalue="Application.SimpleGui2" />
       <item itemvalue="Application.MyDrawPanel" />
       <item itemvalue="Application.Solution" />
-      <item itemvalue="Application.MySimpleGui1" />
+      <item itemvalue="Application.DynamicColorPanel" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MyDrawPanel" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.DynamicColorPanel" />
         <item itemvalue="Application.SimpleGui2" />
         <item itemvalue="Application.SimpleGui1" />
-        <item itemvalue="Application.MySimpleGui1" />
       </list>
     </recent_temporary>
   </component>

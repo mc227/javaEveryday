@@ -43,28 +43,41 @@ import java.util.*;
 //}
 //
 
-/*mark brute force
+/*Linear Iteration
  * */
+//class Solution {
+//    public int numUniqueEmails(String[] emails) {
+//        Set<String> uniqueEmails = new HashSet<>();
+//
+//        for(String email : emails) {
+//            StringBuilder cleanEmail = new StringBuilder();
+//            for(int i = 0; i < email.length(); i++) {
+//                char currChar = email.charAt(i);
+//                if(currChar == '+' || currChar == '@') break;
+//
+//                if(currChar != '.') cleanEmail.append(currChar);
+//            }
+//            StringBuilder domainName = new StringBuilder();
+//            for(int j = email.length() - 1; j >=0; j--) {
+//                char currChar = email.charAt(j);
+//                if(currChar=='@') break;
+//                else domainName.append(currChar);
+//            }
+//            domainName = domainName.reverse();
+//            uniqueEmails.add(cleanEmail+"@"+domainName);
+//        }
+//        return uniqueEmails.size();
+//    }
+/*Using String Split method
+* */
 class Solution {
     public int numUniqueEmails(String[] emails) {
         Set<String> uniqueEmails = new HashSet<>();
-
         for(String email : emails) {
-            StringBuilder cleanEmail = new StringBuilder();
-            for(int i = 0; i < email.length(); i++) {
-                char currChar = email.charAt(i);
-                if(currChar == '+' || currChar == '@') break;
-
-                if(currChar != '.') cleanEmail.append(currChar);
-            }
-            StringBuilder domainName = new StringBuilder();
-            for(int j = email.length() - 1; j >=0; j--) {
-                char currChar = email.charAt(j);
-                if(currChar=='@') break;
-                else domainName.append(currChar);
-            }
-            domainName = domainName.reverse();
-            uniqueEmails.add(cleanEmail+"@"+domainName);
+            String local = email.split("@")[0].split("\\+")[0].replace(".","");
+//            System.out.println(local);
+            String domain = email.split("@")[1];
+            uniqueEmails.add(local+"@"+domain);
         }
         return uniqueEmails.size();
     }
