@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5b1dee-83ea-462c-8c2a-60a5875af760" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/HFJ3e/Chapter14/MyDrawPanel.java" beforeDir="false" />
+>>>>>>> bef7d9ac84ac97293a2087257884d942c1cdbc3d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +68,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2GUBA8IV9LAUdUrieAmWzEPdjk1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.javaEveryday:app [:app:calculator.main()].executor": "Run",
@@ -79,38 +88,60 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+=======
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Gradle/gradle-7.6" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+>>>>>>> bef7d9ac84ac97293a2087257884d942c1cdbc3d
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="HFJ3e.Chapter16" />
+      <recent name="HFJ3e.Chapter11" />
+      <recent name="java.network.programming" />
+      <recent name="javaEveryday.com.Head.First.Third.Edition" />
       <recent name="javaEveryday.com.random.walaLang" />
-      <recent name="javaEveryday.com.DW" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\javaEveryday\com\DW\week7" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\javaEveryday\com\my\random\stuff" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java" />
       <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\javaEveryday\com\random" />
-      <recent name="C:\Users\Mark Costales\Desktop\dev\javaEveryday\app\src\main\java\painter" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="javaEveryday.com.my.random" />
-      <recent name="javaEveryday.com.leetcode.TextJustification" />
-      <recent name="javaEveryday.com.random.walaLang" />
-      <recent name="javaEveryday.com.datastructures" />
+      <recent name="LeetCode.Easy.TwoSum" />
+      <recent name="projects.project1" />
+      <recent name="from.scratch.hfj3e.ch6" />
+      <recent name="from.scratch" />
+      <recent name="javaEveryday.com.Head.First.Third.Edition" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="javaEveryday.com.DW.week7.discussion" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.MyGui">
     <configuration name="MyGui (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week7.discussion.MyGui" />
+=======
+  <component name="RunManager" selected="Application.MyDrawPanel">
+    <configuration name="DynamicColorPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.DynamicColorPanel" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week7.discussion.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week5.discussion.MyGui" />
+    <configuration name="MyDrawPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.MyDrawPanel" />
+>>>>>>> bef7d9ac84ac97293a2087257884d942c1cdbc3d
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week5.discussion.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordDemonstration (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week7.discussion.PasswordDemonstration" />
+    <configuration name="SimpleGui1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.SimpleGui1" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week7.discussion.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordDemonstration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaEveryday.com.DW.week5.discussion.PasswordDemonstration" />
+    <configuration name="SimpleGui2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HFJ3e.Chapter14.SimpleGui2" />
       <module name="javaEveryday.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaEveryday.com.DW.week5.discussion.*" />
+          <option name="PATTERN" value="HFJ3e.Chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,12 +189,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.UniqueEmailAddresses.Solution" />
+      <module name="javaEveryday.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.UniqueEmailAddresses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SimpleGui1" />
+      <item itemvalue="Application.SimpleGui2" />
+      <item itemvalue="Application.MyDrawPanel" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.DynamicColorPanel" />
+    </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.MyGui (1)" />
         <item itemvalue="Application.PasswordDemonstration (1)" />
         <item itemvalue="Application.PasswordDemonstration" />
         <item itemvalue="Application.MyGui" />
+=======
+        <item itemvalue="Application.MyDrawPanel" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.DynamicColorPanel" />
+        <item itemvalue="Application.SimpleGui2" />
+        <item itemvalue="Application.SimpleGui1" />
+>>>>>>> bef7d9ac84ac97293a2087257884d942c1cdbc3d
       </list>
     </recent_temporary>
   </component>
@@ -183,5 +243,24 @@
       <updated>1666433140794</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/TwoD.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/javaEveryday/com/DW/week8/project/media/rental/system/Manager.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
